@@ -23,7 +23,7 @@ filelock==3.14.0
 flashtext==2.7
 fsspec==2024.3.1
 future==1.0.0
-gensim==4.3.2
+gensim @ git+https://github.com/RaRe-Technologies/gensim
 huggingface-hub==0.22.2
 idna==3.7
 intel-openmp==2021.4.0
