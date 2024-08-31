@@ -1,0 +1,14 @@
+{
+    "exclude": [
+      "**/node_modules",
+      "**/__pycache__",
+      "**/.git",
+      "**/dist",
+      "**/build",
+      "**/datasets",  // Adjust this to the specific folder path if there are large datasets you want to exclude
+      "**/logs",                   // Example: add any other folders that contain temporary or unnecessary files
+      "**/src/legacy_code"         // Example: exclude specific subdirectories if not needed for current analysis
+    ],
+    "reportMissingImports": true    // Optional: Enable or disable reporting of missing imports
+  }
+  

@@ -28,7 +28,7 @@ warnings.filterwarnings("ignore", message="This sequence already has </s>.")
 
 
 # Define base directory as the directory where this script is located
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Define paths relative to the base directory
 RANDOM_PASSAGE_PATH = os.path.join(BASE_DIR, 'datasets', 'processed', 'generated_qa.csv')
@@ -224,9 +224,10 @@ if __name__ == "__main__":
     # Generate multiple-choice questions
     mca_questions = get_mca_questions(context, t5qg_model, t5qg_tokenizer, s2v, sentence_transformer_model, num_questions=5)
 
-    # Print generated questions and distractors
     for i, qa in enumerate(mca_questions, 1):
-        print(f"Question {i}: {qa['question']}")
-        print(f"Answer: {qa['answer']}")
-        print(f"Distractors: {', '.join(qa['distractors'])}\n")
+        question, answer, distractors = qa
+        print(f"Question {i}: {question}")
+        print(f"Answer: {answer}")
+        print(f"Distractors: {', '.join(distractors)}\n")
+
         
