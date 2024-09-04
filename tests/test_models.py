@@ -29,7 +29,6 @@ nltk.download('punkt')
 nltk.download('brown')
 nltk.download('wordnet')
 
-print(f"Current working directory: {os.getcwd()}")
 RANDOM_PASSAGE_PATH = os.path.join('..', 'datasets', 'processed', 'generated_qa.csv')
 T5QG_MODEL_DIR = os.path.join('..', 'src', 'models', 't5_base_questiongeneration_model')
 T5QG_TOKENIZER_DIR = os.path.join('..', 'src', 'models', 't5_base_questiongeneration_tokenizer')
@@ -46,6 +45,7 @@ t5qg_tokenizer = T5Tokenizer.from_pretrained(T5QG_TOKENIZER_DIR)
 s2v = Sense2Vec().from_disk(S2V_MODEL_PATH)
 sentence_transformer_model = SentenceTransformer("sentence-transformers/LaBSE")
 
+print(f"Current working directory: {os.getcwd()}")
 
 def answer_question(question, context):
     """Generate an answer for a given question and context."""
