@@ -29,13 +29,13 @@ nltk.download('punkt')
 nltk.download('brown')
 nltk.download('wordnet')
 
-
-RANDOM_PASSAGE_PATH = os.path.join('datasets', 'generated_qa.csv')
-T5QG_MODEL_DIR = os.path.join('models', 'qg_model')
-T5QG_TOKENIZER_DIR = os.path.join('models', 'qg_tokenizer')
-T5AG_MODEL_DIR = os.path.join('models', 't5_model')
-T5AG_TOKENIZER_DIR = os.path.join('models', 't5_tokenizer')
-S2V_MODEL_PATH = os.path.join('models', 's2v_old')
+print(f"Current working directory: {os.getcwd()}")
+RANDOM_PASSAGE_PATH = os.path.join('..', 'datasets', 'processed', 'generated_qa.csv')
+T5QG_MODEL_DIR = os.path.join('..', 'src', 'models', 't5_base_questiongeneration_model')
+T5QG_TOKENIZER_DIR = os.path.join('..', 'src', 'models', 't5_base_questiongeneration_tokenizer')
+T5AG_MODEL_DIR = os.path.join('..', 'src', 'models', 't5_base_answergeneration_model')
+T5AG_TOKENIZER_DIR = os.path.join('..', 'src', 'models', 't5_base_answergeneration_tokenizer')
+S2V_MODEL_PATH = os.path.join('..', 'src', 'models', 's2v_old')
 
 
 random_passage = pd.read_csv(RANDOM_PASSAGE_PATH)
@@ -299,13 +299,15 @@ def get_mca_questions(context, qg_model, qg_tokenizer, s2v, sentence_transformer
             print(f"[DEBUG] Options: {choices} for question: '{question}'")
 
             output_list.append({
-                'difficulty' : difficulty,
-                'passage' : context,
-                'questions-choices-answer': {
-                    'question' : question,
-                    'choices' : choices,
-                    'answer' : t5_answer
-                },
+                'answer': t5_answer,
+                'answer_length': len(t5_answer),
+                'choices': choices,
+                'passage': context,
+                'passage_length': len(context),
+                'difficulty': difficulty,
+                'question': question,
+                'question_length': len(question),
+                'question_type': 'unknown'
             })
 
         print(f"[DEBUG] Generated {len(output_list)} questions so far after {attempts} attempts")
@@ -325,16 +327,46 @@ print(original_context)
 questions_and_distractors = get_mca_questions(original_context, t5qg_model, t5qg_tokenizer, s2v, sentence_transformer_model, num_questions=5)
 
 # Save to JSON file
-output_file = "outputs\plots\predictions\generated_questions.json"
+# output_file = r"outputs\plots\predictions\generated_questions.json"
+
+
+OUTPUT_FILE = os.path.join('..', 'outputs', 'plots', 'predictions', 'generated_questions.json')
+
+def convert_to_serializable(data):
+    if isinstance(data, pd.Series):
+        return data.tolist()
+    elif isinstance(data, dict):
+        return {k: convert_to_serializable(v) for k, v in data.items()}
+    elif isinstance(data, list):
+        return [convert_to_serializable(i) for i in data]
+    else:
+        return data
+
 try:
-    with open(output_file, 'r') as f:
+    with open(OUTPUT_FILE, 'r') as f:
         existing_data = json.load(f)
+        if not isinstance(existing_data, list):  # Ensure existing data is a list
+            raise ValueError("The existing data is not a list.")
 except FileNotFoundError:
     existing_data = []
+except json.JSONDecodeError:
+    print(f"Warning: {OUTPUT_FILE} contains invalid JSON. Initializing with an empty list.")
+    existing_data = []
+except ValueError as e:
+    print(f"ValueError: {e}")
+    existing_data = []
+except Exception as e:
+    print(f"An unexpected error occurred while reading {OUTPUT_FILE}: {e}")
+    existing_data = []
 
-existing_data.extend(questions_and_distractors)
+# Convert any non-serializable data to a serializable format
+questions_and_distractors_serializable = convert_to_serializable(questions_and_distractors)
+existing_data.extend(questions_and_distractors_serializable)
 
-with open(output_file, 'w') as f:
-    json.dump(existing_data, f, indent=4)
-
-print(f"Generated {len(questions_and_distractors)} questions. Saved to {output_file}")
+# Write updated data back to the file
+try:
+    with open(OUTPUT_FILE, 'w') as f:
+        json.dump(existing_data, f, indent=4)
+    print(f"Data successfully written to {OUTPUT_FILE}.")
+except Exception as e:
+    print(f"An error occurred while writing to {OUTPUT_FILE}: {e}")

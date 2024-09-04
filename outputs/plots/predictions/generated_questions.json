@@ -1,0 +1,97 @@
+[
+    {
+        "answer": "A dragon",
+        "answer_length": 8,
+        "choices": [
+            "A dragon",
+            "A wizard",
+            "A giant",
+            "A king"
+        ],
+        "passage": "In a distant kingdom, there lived a brave knight named Sir Cedric. Sir Cedric was famous for his many battles against the fearsome dragon that terrorized the land. One day, the dragon attacked the castle itself, and Sir Cedric knew it was time for a final showdown. Armed with his magical sword, he ventured into the dragon's lair, determined to end the threat once and for all.",
+        "passage_length": 378,
+        "question": "Who was Sir Cedric fighting?",
+        "question_length": 28,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Football",
+        "answer_length": 8,
+        "choices": [
+            "Bball",
+            "Football",
+            "Rugby League",
+            "Gridiron"
+        ],
+        "passage": "Bern was the site of the 1954 Football (Soccer) World Cup Final, a huge upset for the Hungarian Golden Team, who were beaten 3\u20132 by West Germany. The football team BSC Young Boys is based in Bern at the Stade de Suisse Wankdorf, which also was one of the venues for the European football championship 2008 in which it hosted 3 matches.",
+        "passage_length": 335,
+        "difficulty": "easy",
+        "question": "What sport is the BSC Young Boys a part of?",
+        "question_length": 43,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Bern",
+        "answer_length": 4,
+        "choices": [
+            "Ulm",
+            "Tuscany",
+            "Innsbruck",
+            "Bern"
+        ],
+        "passage": "Bern was the site of the 1954 Football (Soccer) World Cup Final, a huge upset for the Hungarian Golden Team, who were beaten 3\u20132 by West Germany. The football team BSC Young Boys is based in Bern at the Stade de Suisse Wankdorf, which also was one of the venues for the European football championship 2008 in which it hosted 3 matches.",
+        "passage_length": 335,
+        "difficulty": "easy",
+        "question": "Where was the 1954 Football (Soccer) World Cup Final held?",
+        "question_length": 58,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "1954",
+        "answer_length": 4,
+        "choices": [
+            "1922",
+            "1954",
+            "1975",
+            "1968"
+        ],
+        "passage": "Bern was the site of the 1954 Football (Soccer) World Cup Final, a huge upset for the Hungarian Golden Team, who were beaten 3\u20132 by West Germany. The football team BSC Young Boys is based in Bern at the Stade de Suisse Wankdorf, which also was one of the venues for the European football championship 2008 in which it hosted 3 matches.",
+        "passage_length": 335,
+        "difficulty": "easy",
+        "question": "In what year was the Football World Cup Final held in Bern?",
+        "question_length": 59,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "2008",
+        "answer_length": 4,
+        "choices": [
+            "2010",
+            "2008",
+            "Football",
+            "1989"
+        ],
+        "passage": "Bern was the site of the 1954 Football (Soccer) World Cup Final, a huge upset for the Hungarian Golden Team, who were beaten 3\u20132 by West Germany. The football team BSC Young Boys is based in Bern at the Stade de Suisse Wankdorf, which also was one of the venues for the European football championship 2008 in which it hosted 3 matches.",
+        "passage_length": 335,
+        "difficulty": "easy",
+        "question": "In what year did the BSC Young Boys host the European football championship?",
+        "question_length": 76,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Bern",
+        "answer_length": 4,
+        "choices": [
+            "Tuscany",
+            "Innsbruck",
+            "Wellington",
+            "Bern"
+        ],
+        "passage": "Bern was the site of the 1954 Football (Soccer) World Cup Final, a huge upset for the Hungarian Golden Team, who were beaten 3\u20132 by West Germany. The football team BSC Young Boys is based in Bern at the Stade de Suisse Wankdorf, which also was one of the venues for the European football championship 2008 in which it hosted 3 matches.",
+        "passage_length": 335,
+        "difficulty": "easy",
+        "question": "Where is the BSC Young Boys football team located?",
+        "question_length": 50,
+        "question_type": "unknown"
+    }
+]
