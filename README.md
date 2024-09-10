@@ -54,8 +54,6 @@ This guide provides a detailed overview of the project directory structure, expl
   - **`README.md`**: Provides an overview of the project, setup instructions, usage examples, and links to further documentation.
   - **`.gitignore`**: Specifies files and directories to be ignored by Git (e.g., `datasets/`, `logs/`).
   - **`requirements.txt` or `environment.yml`**: Lists dependencies for the project, which can be installed using pip or conda.
-  - **`train.py`**: Main script for training the model, which may include data loading, model instantiation, and training loop.
-  - **`evaluate.py`**: Script for evaluating the trained model on test data, calculating metrics, and visualizing results.
   - **`pyrightconfig.json`**: Configuration file for Pyright, specifying type-checking settings.
 
 ## 2. `src/` (Source Code)
