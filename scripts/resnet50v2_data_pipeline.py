@@ -19,7 +19,7 @@ def preprocess_image(image, target_size=(224, 224)):
     """
     image = image.resize(target_size)
     image_array = np.array(image)
-    image_array = image_array / 255.0  # Normalize pixel values to [0, 1]
+    image_array = image_array / 255.0
     return image_array
 
 def multi_label_binarize(labels_list):
