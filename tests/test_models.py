@@ -1,51 +1,52 @@
-import warnings
 import os
+import sys
+import warnings
+
+# Suppress specific warnings
 warnings.filterwarnings("ignore", message="This sequence already has </s>.")
 
+# Append path for module imports
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'scripts')))
+
+# Import custom models from model_manager
+from model_manager import (
+    get_answergeneration_model,
+    get_questiongeneration_model,
+    get_sense2vec_model,
+    get_sentence_transformer_model,
+    get_random_passage
+)
 
 # Standard library imports
 import random
 import string
 
 # Third-party imports
-import nltk
 import json
 import numpy as np
 import pandas as pd
 import pke
 import torch
+import nltk
 from nltk.corpus import stopwords, wordnet as wn
-from sentence_transformers import SentenceTransformer
-from sense2vec import Sense2Vec
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from textdistance import levenshtein
-from transformers import T5ForConditionalGeneration, T5Tokenizer
 
-# Download NLTK data
+# Download necessary NLTK data
 nltk.download('omw-1.4')
 nltk.download('stopwords')
 nltk.download('punkt')
 nltk.download('brown')
 nltk.download('wordnet')
 
-RANDOM_PASSAGE_PATH = os.path.join('..', 'datasets', 'processed', 'generated_qa.csv')
-T5QG_MODEL_DIR = os.path.join('..', 'src', 'models', 't5_base_questiongeneration_model')
-T5QG_TOKENIZER_DIR = os.path.join('..', 'src', 'models', 't5_base_questiongeneration_tokenizer')
-T5AG_MODEL_DIR = os.path.join('..', 'src', 'models', 't5_base_answergeneration_model')
-T5AG_TOKENIZER_DIR = os.path.join('..', 'src', 'models', 't5_base_answergeneration_tokenizer')
-S2V_MODEL_PATH = os.path.join('..', 'src', 'models', 's2v_old')
+# Initialize models
+t5ag_model, t5ag_tokenizer = get_answergeneration_model()
+t5qg_model, t5qg_tokenizer = get_questiongeneration_model()
+s2v = get_sense2vec_model()
+sentence_transformer_model = get_sentence_transformer_model()
+random_passage = get_random_passage()
 
-
-random_passage = pd.read_csv(RANDOM_PASSAGE_PATH)
-t5ag_model = T5ForConditionalGeneration.from_pretrained(T5AG_MODEL_DIR)
-t5ag_tokenizer = T5Tokenizer.from_pretrained(T5AG_TOKENIZER_DIR)
-t5qg_model = T5ForConditionalGeneration.from_pretrained(T5QG_MODEL_DIR)
-t5qg_tokenizer = T5Tokenizer.from_pretrained(T5QG_TOKENIZER_DIR)
-s2v = Sense2Vec().from_disk(S2V_MODEL_PATH)
-sentence_transformer_model = SentenceTransformer("sentence-transformers/LaBSE")
-
-print(f"Current working directory: {os.getcwd()}")
 
 def answer_question(question, context):
     """Generate an answer for a given question and context."""
@@ -182,9 +183,16 @@ def get_distractors_wordnet(word):
 
 def get_distractors(word, original_sentence, sense2vec_model, sentence_model, top_n, lambda_val):
     """Get distractors for a given word using various methods."""
+    
+    # Retrieve distractors using Sense2Vec
     distractors = sense2vec_get_words(word, sense2vec_model, top_n, original_sentence)
+    
+    # Additional distractors using WordNet
     if not distractors:
-        return []
+        # Get distractors from WordNet
+        distractors_wordnet = get_distractors_wordnet(word)
+        if distractors_wordnet:
+            distractors = distractors_wordnet
 
     distractors_new = [word.capitalize()] + distractors
     embedding_sentence = f"{original_sentence} {word.capitalize()}"
@@ -194,6 +202,7 @@ def get_distractors(word, original_sentence, sense2vec_model, sentence_model, to
     max_keywords = min(len(distractors_new), 5)
     filtered_keywords = mmr(keyword_embedding, distractor_embeddings, distractors_new, max_keywords, lambda_val)
     return [kw.capitalize() for kw in filtered_keywords if kw.lower() != word.lower()][1:]
+
 
 
 def get_mca_questions(context, qg_model, qg_tokenizer, s2v, sentence_transformer_model, num_questions=5, max_attempts=2):

@@ -28,7 +28,7 @@
         "difficulty": "easy",
         "question": "What sport is the BSC Young Boys a part of?",
         "question_length": 43,
-        "question_type": "unknown"
+        "question_type": "literal"
     },
     {
         "answer": "Bern",
@@ -44,7 +44,7 @@
         "difficulty": "easy",
         "question": "Where was the 1954 Football (Soccer) World Cup Final held?",
         "question_length": 58,
-        "question_type": "unknown"
+        "question_type": "literal"
     },
     {
         "answer": "1954",
@@ -60,7 +60,7 @@
         "difficulty": "easy",
         "question": "In what year was the Football World Cup Final held in Bern?",
         "question_length": 59,
-        "question_type": "unknown"
+        "question_type": "literal"
     },
     {
         "answer": "2008",
@@ -76,7 +76,7 @@
         "difficulty": "easy",
         "question": "In what year did the BSC Young Boys host the European football championship?",
         "question_length": 76,
-        "question_type": "unknown"
+        "question_type": "literal"
     },
     {
         "answer": "Bern",
@@ -92,6 +92,1094 @@
         "difficulty": "easy",
         "question": "Where is the BSC Young Boys football team located?",
         "question_length": 50,
+        "question_type": "literal"
+    },
+    {
+        "answer": "The political party",
+        "answer_length": 19,
+        "choices": [
+            "President",
+            "The Political Party",
+            "Prime",
+            "Appoints"
+        ],
+        "passage": "According to the Constitution, executive power is exercised by the President of the Republic and the Government. From the Constitutional amendment of 1986 the President's duties were curtailed to a significant extent, and they are now largely ceremonial; most political power thus lies in the hands of the Prime Minister. The position of Prime Minister, Greece's head of government, belongs to the current leader of the political party that can obtain a vote of confidence by the Parliament. The President of the Republic formally appoints the Prime Minister and, on his recommendation, appoints and dismisses the other members of the Cabinet.",
+        "passage_length": 643,
+        "difficulty": "easy",
+        "question": "Greece's Prime Minister is the head of government.",
+        "question_length": 50,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Formally appoints the prime minister",
+        "answer_length": 36,
+        "choices": [
+            "Minister",
+            "Prime",
+            "Formally Appoints The Prime Minister",
+            "President"
+        ],
+        "passage": "According to the Constitution, executive power is exercised by the President of the Republic and the Government. From the Constitutional amendment of 1986 the President's duties were curtailed to a significant extent, and they are now largely ceremonial; most political power thus lies in the hands of the Prime Minister. The position of Prime Minister, Greece's head of government, belongs to the current leader of the political party that can obtain a vote of confidence by the Parliament. The President of the Republic formally appoints the Prime Minister and, on his recommendation, appoints and dismisses the other members of the Cabinet.",
+        "passage_length": 643,
+        "difficulty": "easy",
+        "question": "What does the President of the Republic do to the Prime Minister?",
+        "question_length": 65,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Head of government",
+        "answer_length": 18,
+        "choices": [
+            "President",
+            "Prime",
+            "Head Of Government",
+            "Minister"
+        ],
+        "passage": "According to the Constitution, executive power is exercised by the President of the Republic and the Government. From the Constitutional amendment of 1986 the President's duties were curtailed to a significant extent, and they are now largely ceremonial; most political power thus lies in the hands of the Prime Minister. The position of Prime Minister, Greece's head of government, belongs to the current leader of the political party that can obtain a vote of confidence by the Parliament. The President of the Republic formally appoints the Prime Minister and, on his recommendation, appoints and dismisses the other members of the Cabinet.",
+        "passage_length": 643,
+        "difficulty": "easy",
+        "question": "What is the position of Prime Minister in Greece?",
+        "question_length": 49,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Political power",
+        "answer_length": 15,
+        "choices": [
+            "Common Man",
+            "Ruling Class",
+            "Disproportionate Influence",
+            "Political Power"
+        ],
+        "passage": "According to the Constitution, executive power is exercised by the President of the Republic and the Government. From the Constitutional amendment of 1986 the President's duties were curtailed to a significant extent, and they are now largely ceremonial; most political power thus lies in the hands of the Prime Minister. The position of Prime Minister, Greece's head of government, belongs to the current leader of the political party that can obtain a vote of confidence by the Parliament. The President of the Republic formally appoints the Prime Minister and, on his recommendation, appoints and dismisses the other members of the Cabinet.",
+        "passage_length": 643,
+        "difficulty": "easy",
+        "question": "What type of power is in the hands of the Prime Minister?",
+        "question_length": 57,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Executive power",
+        "answer_length": 15,
+        "choices": [
+            "Judicial Branch",
+            "Executive Power",
+            "Sole Power",
+            "Overreach"
+        ],
+        "passage": "According to the Constitution, executive power is exercised by the President of the Republic and the Government. From the Constitutional amendment of 1986 the President's duties were curtailed to a significant extent, and they are now largely ceremonial; most political power thus lies in the hands of the Prime Minister. The position of Prime Minister, Greece's head of government, belongs to the current leader of the political party that can obtain a vote of confidence by the Parliament. The President of the Republic formally appoints the Prime Minister and, on his recommendation, appoints and dismisses the other members of the Cabinet.",
+        "passage_length": 643,
+        "difficulty": "easy",
+        "question": "What is exercised by the President of the Republic and the Government according to the Constitution?",
+        "question_length": 100,
+        "question_type": "literal"
+    },
+    {
+        "answer": "The relationship between genes",
+        "answer_length": 30,
+        "choices": [
+            "Change",
+            "The Relationship Between Genes",
+            "Selection",
+            "Sequence"
+        ],
+        "passage": "The relationship between genes can be measured by comparing the sequence alignment of their DNA.:7.6 The degree of sequence similarity between homologous genes is called conserved sequence. Most changes to a gene's sequence do not affect its function and so genes accumulate mutations over time by neutral molecular evolution. Additionally, any selection on a gene will cause its sequence to diverge at a different rate. Genes under stabilizing selection are constrained and so change more slowly whereas genes under directional selection change sequence more rapidly. The sequence differences between genes can be used for phylogenetic analyses to study how those genes have evolved and how the organisms they come from are related.",
+        "passage_length": 733,
+        "difficulty": "easy",
+        "question": "What can be measured by comparing the sequence alignment of their DNA?",
+        "question_length": 70,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Any selection on a gene",
+        "answer_length": 23,
+        "choices": [
+            "Genes",
+            "Sequence",
+            "Any Selection On A Gene",
+            "Change"
+        ],
+        "passage": "The relationship between genes can be measured by comparing the sequence alignment of their DNA.:7.6 The degree of sequence similarity between homologous genes is called conserved sequence. Most changes to a gene's sequence do not affect its function and so genes accumulate mutations over time by neutral molecular evolution. Additionally, any selection on a gene will cause its sequence to diverge at a different rate. Genes under stabilizing selection are constrained and so change more slowly whereas genes under directional selection change sequence more rapidly. The sequence differences between genes can be used for phylogenetic analyses to study how those genes have evolved and how the organisms they come from are related.",
+        "passage_length": 733,
+        "difficulty": "easy",
+        "question": "What causes a gene's sequence to diverge at a different rate?",
+        "question_length": 61,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Most changes to a gene's sequence",
+        "answer_length": 33,
+        "choices": [
+            "Selection",
+            "Sequence",
+            "Most Changes To A Gene'S Sequence",
+            "Genes"
+        ],
+        "passage": "The relationship between genes can be measured by comparing the sequence alignment of their DNA.:7.6 The degree of sequence similarity between homologous genes is called conserved sequence. Most changes to a gene's sequence do not affect its function and so genes accumulate mutations over time by neutral molecular evolution. Additionally, any selection on a gene will cause its sequence to diverge at a different rate. Genes under stabilizing selection are constrained and so change more slowly whereas genes under directional selection change sequence more rapidly. The sequence differences between genes can be used for phylogenetic analyses to study how those genes have evolved and how the organisms they come from are related.",
+        "passage_length": 733,
+        "difficulty": "easy",
+        "question": "What does not affect a gene's function?",
+        "question_length": 39,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Genes",
+        "answer_length": 5,
+        "choices": [
+            "Random Mutation",
+            "Genes",
+            "Reproductive Success",
+            "Mitochondrial Dna"
+        ],
+        "passage": "The relationship between genes can be measured by comparing the sequence alignment of their DNA.:7.6 The degree of sequence similarity between homologous genes is called conserved sequence. Most changes to a gene's sequence do not affect its function and so genes accumulate mutations over time by neutral molecular evolution. Additionally, any selection on a gene will cause its sequence to diverge at a different rate. Genes under stabilizing selection are constrained and so change more slowly whereas genes under directional selection change sequence more rapidly. The sequence differences between genes can be used for phylogenetic analyses to study how those genes have evolved and how the organisms they come from are related.",
+        "passage_length": 733,
+        "difficulty": "easy",
+        "question": "What is the relationship between?",
+        "question_length": 33,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Mutations over time",
+        "answer_length": 19,
+        "choices": [
+            "Selection",
+            "Sequence",
+            "Mutations Over Time",
+            "Genes"
+        ],
+        "passage": "The relationship between genes can be measured by comparing the sequence alignment of their DNA.:7.6 The degree of sequence similarity between homologous genes is called conserved sequence. Most changes to a gene's sequence do not affect its function and so genes accumulate mutations over time by neutral molecular evolution. Additionally, any selection on a gene will cause its sequence to diverge at a different rate. Genes under stabilizing selection are constrained and so change more slowly whereas genes under directional selection change sequence more rapidly. The sequence differences between genes can be used for phylogenetic analyses to study how those genes have evolved and how the organisms they come from are related.",
+        "passage_length": 733,
+        "difficulty": "easy",
+        "question": "What happens to mutations over time by neutral molecular evolution?",
+        "question_length": 67,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "British and american sealers",
+        "answer_length": 28,
+        "choices": [
+            "British And American Sealers",
+            "Grytviken",
+            "000",
+            "British"
+        ],
+        "passage": "The first semi-permanent inhabitants of regions near Antarctica (areas situated south of the Antarctic Convergence) were British and American sealers who used to spend a year or more on South Georgia, from 1786 onward. During the whaling era, which lasted until 1966, the population of that island varied from over 1,000 in the summer (over 2,000 in some years) to some 200 in the winter. Most of the whalers were Norwegian, with an increasing proportion of Britons. The settlements included Grytviken, Leith Harbour, King Edward Point, Stromness, Husvik, Prince Olav Harbour, Ocean Harbour and Godthul. Managers and other senior officers of the whaling stations often lived together with their families. Among them was the founder of Grytviken, Captain Carl Anton Larsen, a prominent Norwegian whaler and explorer who, along with his family, adopted British citizenship in 1910.",
+        "passage_length": 879,
+        "difficulty": "easy",
+        "question": "What was the name of the first permanent inhabitants of Antarctica?",
+        "question_length": 67,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Over 1,000",
+        "answer_length": 10,
+        "choices": [
+            "Harbour",
+            "Grytviken",
+            "British",
+            "Over 1,000"
+        ],
+        "passage": "The first semi-permanent inhabitants of regions near Antarctica (areas situated south of the Antarctic Convergence) were British and American sealers who used to spend a year or more on South Georgia, from 1786 onward. During the whaling era, which lasted until 1966, the population of that island varied from over 1,000 in the summer (over 2,000 in some years) to some 200 in the winter. Most of the whalers were Norwegian, with an increasing proportion of Britons. The settlements included Grytviken, Leith Harbour, King Edward Point, Stromness, Husvik, Prince Olav Harbour, Ocean Harbour and Godthul. Managers and other senior officers of the whaling stations often lived together with their families. Among them was the founder of Grytviken, Captain Carl Anton Larsen, a prominent Norwegian whaler and explorer who, along with his family, adopted British citizenship in 1910.",
+        "passage_length": 879,
+        "difficulty": "easy",
+        "question": "How many people lived on South Georgia during the summer?",
+        "question_length": 57,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "South of the antarctic convergence",
+        "answer_length": 34,
+        "choices": [
+            "Harbour",
+            "000",
+            "South Of The Antarctic Convergence",
+            "British"
+        ],
+        "passage": "The first semi-permanent inhabitants of regions near Antarctica (areas situated south of the Antarctic Convergence) were British and American sealers who used to spend a year or more on South Georgia, from 1786 onward. During the whaling era, which lasted until 1966, the population of that island varied from over 1,000 in the summer (over 2,000 in some years) to some 200 in the winter. Most of the whalers were Norwegian, with an increasing proportion of Britons. The settlements included Grytviken, Leith Harbour, King Edward Point, Stromness, Husvik, Prince Olav Harbour, Ocean Harbour and Godthul. Managers and other senior officers of the whaling stations often lived together with their families. Among them was the founder of Grytviken, Captain Carl Anton Larsen, a prominent Norwegian whaler and explorer who, along with his family, adopted British citizenship in 1910.",
+        "passage_length": 879,
+        "difficulty": "easy",
+        "question": "Where were the regions near Antarctica located?",
+        "question_length": 47,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "The whaling era",
+        "answer_length": 15,
+        "choices": [
+            "Harbour",
+            "000",
+            "British",
+            "The Whaling Era"
+        ],
+        "passage": "The first semi-permanent inhabitants of regions near Antarctica (areas situated south of the Antarctic Convergence) were British and American sealers who used to spend a year or more on South Georgia, from 1786 onward. During the whaling era, which lasted until 1966, the population of that island varied from over 1,000 in the summer (over 2,000 in some years) to some 200 in the winter. Most of the whalers were Norwegian, with an increasing proportion of Britons. The settlements included Grytviken, Leith Harbour, King Edward Point, Stromness, Husvik, Prince Olav Harbour, Ocean Harbour and Godthul. Managers and other senior officers of the whaling stations often lived together with their families. Among them was the founder of Grytviken, Captain Carl Anton Larsen, a prominent Norwegian whaler and explorer who, along with his family, adopted British citizenship in 1910.",
+        "passage_length": 879,
+        "difficulty": "easy",
+        "question": "What era lasted until 1966?",
+        "question_length": 27,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "1786",
+        "answer_length": 4,
+        "choices": [
+            "1288",
+            "1173",
+            "1786",
+            "1657"
+        ],
+        "passage": "The first semi-permanent inhabitants of regions near Antarctica (areas situated south of the Antarctic Convergence) were British and American sealers who used to spend a year or more on South Georgia, from 1786 onward. During the whaling era, which lasted until 1966, the population of that island varied from over 1,000 in the summer (over 2,000 in some years) to some 200 in the winter. Most of the whalers were Norwegian, with an increasing proportion of Britons. The settlements included Grytviken, Leith Harbour, King Edward Point, Stromness, Husvik, Prince Olav Harbour, Ocean Harbour and Godthul. Managers and other senior officers of the whaling stations often lived together with their families. Among them was the founder of Grytviken, Captain Carl Anton Larsen, a prominent Norwegian whaler and explorer who, along with his family, adopted British citizenship in 1910.",
+        "passage_length": 879,
+        "difficulty": "easy",
+        "question": "When did the first semi-permanent inhabitants of South Georgia begin?",
+        "question_length": 69,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "13,913",
+        "answer_length": 6,
+        "choices": [
+            "Veterans",
+            "Tucson",
+            "13,913",
+            "City"
+        ],
+        "passage": "By 1900, 7,531 people lived in the city. The population increased gradually to 13,913 in 1910. At about this time, the U.S. Veterans Administration had begun construction on the present Veterans Hospital. Many veterans who had been gassed in World War I and were in need of respiratory therapy began coming to Tucson after the war, due to the clean dry air. Over the following years the city continued to grow, with the population increasing to 20,292 in 1920 and 36,818 in 1940. In 2006 the population of Pima County, in which Tucson is located, passed one million while the City of Tucson's population was 535,000.",
+        "passage_length": 616,
+        "difficulty": "easy",
+        "question": "What was the population of Tucson in 1910?",
+        "question_length": 42,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Many veterans who had been gassed in world war i and were in need of respiratory therapy",
+        "answer_length": 88,
+        "choices": [
+            "Population",
+            "City",
+            "Many Veterans Who Had Been Gassed In World War I And Were In Need Of Respiratory Therapy",
+            "Tucson"
+        ],
+        "passage": "By 1900, 7,531 people lived in the city. The population increased gradually to 13,913 in 1910. At about this time, the U.S. Veterans Administration had begun construction on the present Veterans Hospital. Many veterans who had been gassed in World War I and were in need of respiratory therapy began coming to Tucson after the war, due to the clean dry air. Over the following years the city continued to grow, with the population increasing to 20,292 in 1920 and 36,818 in 1940. In 2006 the population of Pima County, in which Tucson is located, passed one million while the City of Tucson's population was 535,000.",
+        "passage_length": 616,
+        "difficulty": "easy",
+        "question": "Who was the Veterans Hospital for?",
+        "question_length": 34,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "World war i",
+        "answer_length": 11,
+        "choices": [
+            "American Civil War",
+            "Population",
+            "Second World War",
+            "World War I"
+        ],
+        "passage": "By 1900, 7,531 people lived in the city. The population increased gradually to 13,913 in 1910. At about this time, the U.S. Veterans Administration had begun construction on the present Veterans Hospital. Many veterans who had been gassed in World War I and were in need of respiratory therapy began coming to Tucson after the war, due to the clean dry air. Over the following years the city continued to grow, with the population increasing to 20,292 in 1920 and 36,818 in 1940. In 2006 the population of Pima County, in which Tucson is located, passed one million while the City of Tucson's population was 535,000.",
+        "passage_length": 616,
+        "difficulty": "easy",
+        "question": "After what event did many veterans come to Tucson?",
+        "question_length": 50,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "1960",
+        "answer_length": 4,
+        "choices": [
+            "1948",
+            "1974",
+            "1960",
+            "1957"
+        ],
+        "passage": "By 1900, 7,531 people lived in the city. The population increased gradually to 13,913 in 1910. At about this time, the U.S. Veterans Administration had begun construction on the present Veterans Hospital. Many veterans who had been gassed in World War I and were in need of respiratory therapy began coming to Tucson after the war, due to the clean dry air. Over the following years the city continued to grow, with the population increasing to 20,292 in 1920 and 36,818 in 1940. In 2006 the population of Pima County, in which Tucson is located, passed one million while the City of Tucson's population was 535,000.",
+        "passage_length": 616,
+        "difficulty": "easy",
+        "question": "When did Tucson begin to grow?",
+        "question_length": 30,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "1910",
+        "answer_length": 4,
+        "choices": [
+            "1801",
+            "1910",
+            "1880",
+            "1928"
+        ],
+        "passage": "By 1900, 7,531 people lived in the city. The population increased gradually to 13,913 in 1910. At about this time, the U.S. Veterans Administration had begun construction on the present Veterans Hospital. Many veterans who had been gassed in World War I and were in need of respiratory therapy began coming to Tucson after the war, due to the clean dry air. Over the following years the city continued to grow, with the population increasing to 20,292 in 1920 and 36,818 in 1940. In 2006 the population of Pima County, in which Tucson is located, passed one million while the City of Tucson's population was 535,000.",
+        "passage_length": 616,
+        "difficulty": "easy",
+        "question": "When did Tucson's population increase to 13,913?",
+        "question_length": 48,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Standard italian",
+        "answer_length": 16,
+        "choices": [
+            "Standard Italian",
+            "Standard",
+            "Languages",
+            "Italian"
+        ],
+        "passage": "Italians in different regions today may also speak regional varieties of standard Italian, or regional Italian dialects, which, unlike the majority of languages of Italy, are actually dialects of standard Italian rather than separate languages. A regional Italian dialect is generally standard Italian that has been heavily influenced or mixed with local or regional native languages and accents.",
+        "passage_length": 396,
+        "difficulty": "easy",
+        "question": "What type of Italian dialects are called?",
+        "question_length": 41,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Languages",
+        "answer_length": 9,
+        "choices": [
+            "Idioms",
+            "Alphabets",
+            "Writing Systems",
+            "Languages"
+        ],
+        "passage": "Italians in different regions today may also speak regional varieties of standard Italian, or regional Italian dialects, which, unlike the majority of languages of Italy, are actually dialects of standard Italian rather than separate languages. A regional Italian dialect is generally standard Italian that has been heavily influenced or mixed with local or regional native languages and accents.",
+        "passage_length": 396,
+        "difficulty": "easy",
+        "question": "What is the majority of in Italy?",
+        "question_length": 33,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Standard italian",
+        "answer_length": 16,
+        "choices": [
+            "Languages",
+            "Standard Italian",
+            "Italian",
+            "Regional"
+        ],
+        "passage": "Italians in different regions today may also speak regional varieties of standard Italian, or regional Italian dialects, which, unlike the majority of languages of Italy, are actually dialects of standard Italian rather than separate languages. A regional Italian dialect is generally standard Italian that has been heavily influenced or mixed with local or regional native languages and accents.",
+        "passage_length": 396,
+        "difficulty": "easy",
+        "question": "What is another term for a dialect that has been heavily influenced by native languages and local or regional native languages?",
+        "question_length": 127,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Shops and dwellings",
+        "answer_length": 19,
+        "choices": [
+            "Shops And Dwellings",
+            "Abbey",
+            "Westminster",
+            "Remained"
+        ],
+        "passage": "The proximity of the Palace of Westminster did not extend to providing monks or abbots with high royal connections; in social origin the Benedictines of Westminster were as modest as most of the order. The abbot remained Lord of the Manor of Westminster as a town of two to three thousand persons grew around it: as a consumer and employer on a grand scale the monastery helped fuel the town economy, and relations with the town remained unusually cordial, but no enfranchising charter was issued during the Middle Ages. The abbey built shops and dwellings on the west side, encroaching upon the sanctuary.[citation needed]",
+        "passage_length": 623,
+        "difficulty": "easy",
+        "question": "What was the name of the town that grew around the Manor of Westminster?",
+        "question_length": 72,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Lord of the manor of westminster",
+        "answer_length": 32,
+        "choices": [
+            "Lord Of The Manor Of Westminster",
+            "Abbey",
+            "Remained",
+            "Town"
+        ],
+        "passage": "The proximity of the Palace of Westminster did not extend to providing monks or abbots with high royal connections; in social origin the Benedictines of Westminster were as modest as most of the order. The abbot remained Lord of the Manor of Westminster as a town of two to three thousand persons grew around it: as a consumer and employer on a grand scale the monastery helped fuel the town economy, and relations with the town remained unusually cordial, but no enfranchising charter was issued during the Middle Ages. The abbey built shops and dwellings on the west side, encroaching upon the sanctuary.[citation needed]",
+        "passage_length": 623,
+        "difficulty": "easy",
+        "question": "What was the name of the abbey that was a part of the Benedictines Order?",
+        "question_length": 73,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "As a town of two to three thousand persons grew around it",
+        "answer_length": 57,
+        "choices": [
+            "Abbey",
+            "Town",
+            "As A Town Of Two To Three Thousand Persons Grew Around It",
+            "Westminster"
+        ],
+        "passage": "The proximity of the Palace of Westminster did not extend to providing monks or abbots with high royal connections; in social origin the Benedictines of Westminster were as modest as most of the order. The abbot remained Lord of the Manor of Westminster as a town of two to three thousand persons grew around it: as a consumer and employer on a grand scale the monastery helped fuel the town economy, and relations with the town remained unusually cordial, but no enfranchising charter was issued during the Middle Ages. The abbey built shops and dwellings on the west side, encroaching upon the sanctuary.[citation needed]",
+        "passage_length": 623,
+        "difficulty": "easy",
+        "question": "How did the abbot of the Manor of Westminster function as Lord of the Manor of Westminster?",
+        "question_length": 91,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "The abbey",
+        "answer_length": 9,
+        "choices": [
+            "Town",
+            "Remained",
+            "Westminster",
+            "The Abbey"
+        ],
+        "passage": "The proximity of the Palace of Westminster did not extend to providing monks or abbots with high royal connections; in social origin the Benedictines of Westminster were as modest as most of the order. The abbot remained Lord of the Manor of Westminster as a town of two to three thousand persons grew around it: as a consumer and employer on a grand scale the monastery helped fuel the town economy, and relations with the town remained unusually cordial, but no enfranchising charter was issued during the Middle Ages. The abbey built shops and dwellings on the west side, encroaching upon the sanctuary.[citation needed]",
+        "passage_length": 623,
+        "difficulty": "easy",
+        "question": "What built shops and dwellings on the west side of the sanctuary?",
+        "question_length": 65,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Abbots",
+        "answer_length": 6,
+        "choices": [
+            "Abbots",
+            "Laity",
+            "Popes",
+            "Royal Court"
+        ],
+        "passage": "The proximity of the Palace of Westminster did not extend to providing monks or abbots with high royal connections; in social origin the Benedictines of Westminster were as modest as most of the order. The abbot remained Lord of the Manor of Westminster as a town of two to three thousand persons grew around it: as a consumer and employer on a grand scale the monastery helped fuel the town economy, and relations with the town remained unusually cordial, but no enfranchising charter was issued during the Middle Ages. The abbey built shops and dwellings on the west side, encroaching upon the sanctuary.[citation needed]",
+        "passage_length": 623,
+        "difficulty": "easy",
+        "question": "Monks and what other group were not provided with high royal connections by the Palace of Westminster?",
+        "question_length": 102,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Brain",
+        "answer_length": 5,
+        "choices": [
+            "Brain",
+            "Nervous",
+            "Neuroscience",
+            "Fields"
+        ],
+        "passage": "The field of neuroscience encompasses all approaches that seek to understand the brain and the rest of the nervous system. Psychology seeks to understand mind and behavior, and neurology is the medical discipline that diagnoses and treats diseases of the nervous system. The brain is also the most important organ studied in psychiatry, the branch of medicine that works to study, prevent, and treat mental disorders. Cognitive science seeks to unify neuroscience and psychology with other fields that concern themselves with the brain, such as computer science (artificial intelligence and similar fields) and philosophy.",
+        "passage_length": 622,
+        "difficulty": "easy",
+        "question": "Neuroscience seeks to understand the rest of the nervous system, the rest of it, and what other organ?",
+        "question_length": 102,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Fields that concern themselves with the brain",
+        "answer_length": 45,
+        "choices": [
+            "Brain",
+            "Neuroscience",
+            "Nervous",
+            "Fields That Concern Themselves With The Brain"
+        ],
+        "passage": "The field of neuroscience encompasses all approaches that seek to understand the brain and the rest of the nervous system. Psychology seeks to understand mind and behavior, and neurology is the medical discipline that diagnoses and treats diseases of the nervous system. The brain is also the most important organ studied in psychiatry, the branch of medicine that works to study, prevent, and treat mental disorders. Cognitive science seeks to unify neuroscience and psychology with other fields that concern themselves with the brain, such as computer science (artificial intelligence and similar fields) and philosophy.",
+        "passage_length": 622,
+        "difficulty": "easy",
+        "question": "Cognitive science seeks to unify neuroscience and psychology with other what?",
+        "question_length": 77,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Neuroscience",
+        "answer_length": 12,
+        "choices": [
+            "Nervous",
+            "Brain",
+            "Fields",
+            "Neuroscience"
+        ],
+        "passage": "The field of neuroscience encompasses all approaches that seek to understand the brain and the rest of the nervous system. Psychology seeks to understand mind and behavior, and neurology is the medical discipline that diagnoses and treats diseases of the nervous system. The brain is also the most important organ studied in psychiatry, the branch of medicine that works to study, prevent, and treat mental disorders. Cognitive science seeks to unify neuroscience and psychology with other fields that concern themselves with the brain, such as computer science (artificial intelligence and similar fields) and philosophy.",
+        "passage_length": 622,
+        "difficulty": "easy",
+        "question": "What field encompasses all approaches that seek to understand the brain and the rest of the nervous system?",
+        "question_length": 107,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Cognitive science",
+        "answer_length": 17,
+        "choices": [
+            "Cognitive Science",
+            "Fields",
+            "Brain",
+            "Nervous"
+        ],
+        "passage": "The field of neuroscience encompasses all approaches that seek to understand the brain and the rest of the nervous system. Psychology seeks to understand mind and behavior, and neurology is the medical discipline that diagnoses and treats diseases of the nervous system. The brain is also the most important organ studied in psychiatry, the branch of medicine that works to study, prevent, and treat mental disorders. Cognitive science seeks to unify neuroscience and psychology with other fields that concern themselves with the brain, such as computer science (artificial intelligence and similar fields) and philosophy.",
+        "passage_length": 622,
+        "difficulty": "easy",
+        "question": "What does psychology do to understand mind and behavior?",
+        "question_length": 56,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Understand",
+        "answer_length": 10,
+        "choices": [
+            "Understand",
+            "Fields",
+            "Brain",
+            "Nervous"
+        ],
+        "passage": "The field of neuroscience encompasses all approaches that seek to understand the brain and the rest of the nervous system. Psychology seeks to understand mind and behavior, and neurology is the medical discipline that diagnoses and treats diseases of the nervous system. The brain is also the most important organ studied in psychiatry, the branch of medicine that works to study, prevent, and treat mental disorders. Cognitive science seeks to unify neuroscience and psychology with other fields that concern themselves with the brain, such as computer science (artificial intelligence and similar fields) and philosophy.",
+        "passage_length": 622,
+        "difficulty": "easy",
+        "question": "What does neuroscience seek to do with the brain?",
+        "question_length": 49,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "1997",
+        "answer_length": 4,
+        "choices": [
+            "Served",
+            "Producer",
+            "Executive",
+            "1997"
+        ],
+        "passage": "Spielberg served as an uncredited executive producer on The Haunting, The Prince of Egypt, Just Like Heaven, Shrek, Road to Perdition, and Evolution. He served as an executive producer for the 1997 film Men in Black, and its sequels, Men in Black II and Men in Black III. In 2005, he served as a producer of Memoirs of a Geisha, an adaptation of the novel by Arthur Golden, a film to which he was previously attached as director. In 2006, Spielberg co-executive produced with famed filmmaker Robert Zemeckis a CGI children's film called Monster House, marking their eighth collaboration since 1990's Back to the Future Part III. He also teamed with Clint Eastwood for the first time in their careers, co-producing Eastwood's Flags of Our Fathers and Letters from Iwo Jima with Robert Lorenz and Eastwood himself. He earned his twelfth Academy Award nomination for the latter film as it was nominated for Best Picture. Spielberg served as executive producer for Disturbia and the Transformers live action film with Brian Goldner, an employee of Hasbro. The film was directed by Michael Bay and written by Roberto Orci and Alex Kurtzman, and Spielberg continued to collaborate on the sequels, Transformers: Revenge of the Fallen and Transformers: Dark of the Moon. In 2011, he produced the J. J. Abrams science fiction thriller film Super 8 for Paramount Pictures.",
+        "passage_length": 1362,
+        "difficulty": "medium",
+        "question": "What was Men in Black?",
+        "question_length": 22,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "The prince of egypt",
+        "answer_length": 19,
+        "choices": [
+            "Film",
+            "The Prince Of Egypt",
+            "Producer",
+            "Served"
+        ],
+        "passage": "Spielberg served as an uncredited executive producer on The Haunting, The Prince of Egypt, Just Like Heaven, Shrek, Road to Perdition, and Evolution. He served as an executive producer for the 1997 film Men in Black, and its sequels, Men in Black II and Men in Black III. In 2005, he served as a producer of Memoirs of a Geisha, an adaptation of the novel by Arthur Golden, a film to which he was previously attached as director. In 2006, Spielberg co-executive produced with famed filmmaker Robert Zemeckis a CGI children's film called Monster House, marking their eighth collaboration since 1990's Back to the Future Part III. He also teamed with Clint Eastwood for the first time in their careers, co-producing Eastwood's Flags of Our Fathers and Letters from Iwo Jima with Robert Lorenz and Eastwood himself. He earned his twelfth Academy Award nomination for the latter film as it was nominated for Best Picture. Spielberg served as executive producer for Disturbia and the Transformers live action film with Brian Goldner, an employee of Hasbro. The film was directed by Michael Bay and written by Roberto Orci and Alex Kurtzman, and Spielberg continued to collaborate on the sequels, Transformers: Revenge of the Fallen and Transformers: Dark of the Moon. In 2011, he produced the J. J. Abrams science fiction thriller film Super 8 for Paramount Pictures.",
+        "passage_length": 1362,
+        "difficulty": "medium",
+        "question": "What was Spielberg's uncredited title as a producer on The Haunting?",
+        "question_length": 68,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Monster house",
+        "answer_length": 13,
+        "choices": [
+            "Film",
+            "Monster House",
+            "Producer",
+            "Executive"
+        ],
+        "passage": "Spielberg served as an uncredited executive producer on The Haunting, The Prince of Egypt, Just Like Heaven, Shrek, Road to Perdition, and Evolution. He served as an executive producer for the 1997 film Men in Black, and its sequels, Men in Black II and Men in Black III. In 2005, he served as a producer of Memoirs of a Geisha, an adaptation of the novel by Arthur Golden, a film to which he was previously attached as director. In 2006, Spielberg co-executive produced with famed filmmaker Robert Zemeckis a CGI children's film called Monster House, marking their eighth collaboration since 1990's Back to the Future Part III. He also teamed with Clint Eastwood for the first time in their careers, co-producing Eastwood's Flags of Our Fathers and Letters from Iwo Jima with Robert Lorenz and Eastwood himself. He earned his twelfth Academy Award nomination for the latter film as it was nominated for Best Picture. Spielberg served as executive producer for Disturbia and the Transformers live action film with Brian Goldner, an employee of Hasbro. The film was directed by Michael Bay and written by Roberto Orci and Alex Kurtzman, and Spielberg continued to collaborate on the sequels, Transformers: Revenge of the Fallen and Transformers: Dark of the Moon. In 2011, he produced the J. J. Abrams science fiction thriller film Super 8 for Paramount Pictures.",
+        "passage_length": 1362,
+        "difficulty": "medium",
+        "question": "What was the name of Spielberg's eighth film collaboration?",
+        "question_length": 59,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Men in black ii and men in black iii",
+        "answer_length": 36,
+        "choices": [
+            "Film",
+            "Men In Black Ii And Men In Black Iii",
+            "Executive",
+            "Producer"
+        ],
+        "passage": "Spielberg served as an uncredited executive producer on The Haunting, The Prince of Egypt, Just Like Heaven, Shrek, Road to Perdition, and Evolution. He served as an executive producer for the 1997 film Men in Black, and its sequels, Men in Black II and Men in Black III. In 2005, he served as a producer of Memoirs of a Geisha, an adaptation of the novel by Arthur Golden, a film to which he was previously attached as director. In 2006, Spielberg co-executive produced with famed filmmaker Robert Zemeckis a CGI children's film called Monster House, marking their eighth collaboration since 1990's Back to the Future Part III. He also teamed with Clint Eastwood for the first time in their careers, co-producing Eastwood's Flags of Our Fathers and Letters from Iwo Jima with Robert Lorenz and Eastwood himself. He earned his twelfth Academy Award nomination for the latter film as it was nominated for Best Picture. Spielberg served as executive producer for Disturbia and the Transformers live action film with Brian Goldner, an employee of Hasbro. The film was directed by Michael Bay and written by Roberto Orci and Alex Kurtzman, and Spielberg continued to collaborate on the sequels, Transformers: Revenge of the Fallen and Transformers: Dark of the Moon. In 2011, he produced the J. J. Abrams science fiction thriller film Super 8 for Paramount Pictures.",
+        "passage_length": 1362,
+        "difficulty": "medium",
+        "question": "What was the second film in the Men in Black series called?",
+        "question_length": 59,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "1990",
+        "answer_length": 4,
+        "choices": [
+            "Executive",
+            "1990",
+            "Film",
+            "Producer"
+        ],
+        "passage": "Spielberg served as an uncredited executive producer on The Haunting, The Prince of Egypt, Just Like Heaven, Shrek, Road to Perdition, and Evolution. He served as an executive producer for the 1997 film Men in Black, and its sequels, Men in Black II and Men in Black III. In 2005, he served as a producer of Memoirs of a Geisha, an adaptation of the novel by Arthur Golden, a film to which he was previously attached as director. In 2006, Spielberg co-executive produced with famed filmmaker Robert Zemeckis a CGI children's film called Monster House, marking their eighth collaboration since 1990's Back to the Future Part III. He also teamed with Clint Eastwood for the first time in their careers, co-producing Eastwood's Flags of Our Fathers and Letters from Iwo Jima with Robert Lorenz and Eastwood himself. He earned his twelfth Academy Award nomination for the latter film as it was nominated for Best Picture. Spielberg served as executive producer for Disturbia and the Transformers live action film with Brian Goldner, an employee of Hasbro. The film was directed by Michael Bay and written by Roberto Orci and Alex Kurtzman, and Spielberg continued to collaborate on the sequels, Transformers: Revenge of the Fallen and Transformers: Dark of the Moon. In 2011, he produced the J. J. Abrams science fiction thriller film Super 8 for Paramount Pictures.",
+        "passage_length": 1362,
+        "difficulty": "medium",
+        "question": "When did Spielberg and Zemeckis first collaborate?",
+        "question_length": 50,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "A law for the promotion and protection of the rights of indigenous peoples",
+        "answer_length": 74,
+        "choices": [
+            "Peoples",
+            "Law",
+            "Indigenous",
+            "A Law For The Promotion And Protection Of The Rights Of Indigenous Peoples"
+        ],
+        "passage": "Many Pygmies belong from birth to Bantus in a relationship many refer to as slavery. The Congolese Human Rights Observatory says that the Pygmies are treated as property the same way \"pets\" are. On December 30, 2010, the Congolese parliament adopted a law for the promotion and protection of the rights of indigenous peoples. This law is the first of its kind in Africa, and its adoption is a historic development for indigenous peoples on the continent.",
+        "passage_length": 454,
+        "difficulty": "easy",
+        "question": "What is the name of the law that was adopted by the Congolese parliament?",
+        "question_length": 73,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Indigenous",
+        "answer_length": 10,
+        "choices": [
+            "Indigenous",
+            "Peoples",
+            "Congolese",
+            "Law"
+        ],
+        "passage": "Many Pygmies belong from birth to Bantus in a relationship many refer to as slavery. The Congolese Human Rights Observatory says that the Pygmies are treated as property the same way \"pets\" are. On December 30, 2010, the Congolese parliament adopted a law for the promotion and protection of the rights of indigenous peoples. This law is the first of its kind in Africa, and its adoption is a historic development for indigenous peoples on the continent.",
+        "passage_length": 454,
+        "difficulty": "easy",
+        "question": "What type of peoples were the first to be protected by a law in Africa?",
+        "question_length": 71,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Promotion and protection of the rights of indigenous peoples",
+        "answer_length": 60,
+        "choices": [
+            "Congolese",
+            "Law",
+            "Indigenous",
+            "Promotion And Protection Of The Rights Of Indigenous Peoples"
+        ],
+        "passage": "Many Pygmies belong from birth to Bantus in a relationship many refer to as slavery. The Congolese Human Rights Observatory says that the Pygmies are treated as property the same way \"pets\" are. On December 30, 2010, the Congolese parliament adopted a law for the promotion and protection of the rights of indigenous peoples. This law is the first of its kind in Africa, and its adoption is a historic development for indigenous peoples on the continent.",
+        "passage_length": 454,
+        "difficulty": "easy",
+        "question": "What did the Congolese parliament adopt a law for the promotion and protection of indigenous peoples?",
+        "question_length": 101,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "December 30, 2010",
+        "answer_length": 17,
+        "choices": [
+            "December 30, 2010",
+            "Congolese",
+            "Law",
+            "Indigenous"
+        ],
+        "passage": "Many Pygmies belong from birth to Bantus in a relationship many refer to as slavery. The Congolese Human Rights Observatory says that the Pygmies are treated as property the same way \"pets\" are. On December 30, 2010, the Congolese parliament adopted a law for the promotion and protection of the rights of indigenous peoples. This law is the first of its kind in Africa, and its adoption is a historic development for indigenous peoples on the continent.",
+        "passage_length": 454,
+        "difficulty": "easy",
+        "question": "On what date was the law for the promotion and protection of indigenous peoples adopted?",
+        "question_length": 88,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Slavery",
+        "answer_length": 7,
+        "choices": [
+            "Law",
+            "Slavery",
+            "Congolese",
+            "Indigenous"
+        ],
+        "passage": "Many Pygmies belong from birth to Bantus in a relationship many refer to as slavery. The Congolese Human Rights Observatory says that the Pygmies are treated as property the same way \"pets\" are. On December 30, 2010, the Congolese parliament adopted a law for the promotion and protection of the rights of indigenous peoples. This law is the first of its kind in Africa, and its adoption is a historic development for indigenous peoples on the continent.",
+        "passage_length": 454,
+        "difficulty": "easy",
+        "question": "What do many Pygmies say they are from birth to Bantus?",
+        "question_length": 55,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "The art deco district",
+        "answer_length": 21,
+        "choices": [
+            "Beaches",
+            "Events",
+            "Beach",
+            "The Art Deco District"
+        ],
+        "passage": "Tourism is also an important industry in Miami. Along with finance and business, the beaches, conventions, festivals and events draw over 38 million visitors annually into the city, from across the country and around the world, spending $17.1 billion. The Art Deco District in South Beach, is reputed as one of the most glamorous in the world for its nightclubs, beaches, historical buildings, and shopping. Annual events such as the Sony Ericsson Open, Art Basel, Winter Music Conference, South Beach Wine & Food Festival, and Mercedes-Benz Fashion Week Miami attract millions to the metropolis every year.",
+        "passage_length": 607,
+        "difficulty": "easy",
+        "question": "What is the name of the major tourist attraction in Miami?",
+        "question_length": 58,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Beaches, conventions, festivals and events",
+        "answer_length": 42,
+        "choices": [
+            "Beaches",
+            "Art",
+            "Beaches, Conventions, Festivals And Events",
+            "Events"
+        ],
+        "passage": "Tourism is also an important industry in Miami. Along with finance and business, the beaches, conventions, festivals and events draw over 38 million visitors annually into the city, from across the country and around the world, spending $17.1 billion. The Art Deco District in South Beach, is reputed as one of the most glamorous in the world for its nightclubs, beaches, historical buildings, and shopping. Annual events such as the Sony Ericsson Open, Art Basel, Winter Music Conference, South Beach Wine & Food Festival, and Mercedes-Benz Fashion Week Miami attract millions to the metropolis every year.",
+        "passage_length": 607,
+        "difficulty": "easy",
+        "question": "Along with finance and business, what draws over 38 million visitors to Miami each year?",
+        "question_length": 88,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Across the country and around the world",
+        "answer_length": 39,
+        "choices": [
+            "Across The Country And Around The World",
+            "Beaches",
+            "Beach",
+            "Art"
+        ],
+        "passage": "Tourism is also an important industry in Miami. Along with finance and business, the beaches, conventions, festivals and events draw over 38 million visitors annually into the city, from across the country and around the world, spending $17.1 billion. The Art Deco District in South Beach, is reputed as one of the most glamorous in the world for its nightclubs, beaches, historical buildings, and shopping. Annual events such as the Sony Ericsson Open, Art Basel, Winter Music Conference, South Beach Wine & Food Festival, and Mercedes-Benz Fashion Week Miami attract millions to the metropolis every year.",
+        "passage_length": 607,
+        "difficulty": "easy",
+        "question": "From where do visitors come from?",
+        "question_length": 33,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "$17.1 billion",
+        "answer_length": 13,
+        "choices": [
+            "Beaches",
+            "$17.1 Billion",
+            "Art",
+            "Beach"
+        ],
+        "passage": "Tourism is also an important industry in Miami. Along with finance and business, the beaches, conventions, festivals and events draw over 38 million visitors annually into the city, from across the country and around the world, spending $17.1 billion. The Art Deco District in South Beach, is reputed as one of the most glamorous in the world for its nightclubs, beaches, historical buildings, and shopping. Annual events such as the Sony Ericsson Open, Art Basel, Winter Music Conference, South Beach Wine & Food Festival, and Mercedes-Benz Fashion Week Miami attract millions to the metropolis every year.",
+        "passage_length": 607,
+        "difficulty": "easy",
+        "question": "How much money does Miami spend on tourism?",
+        "question_length": 43,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Over 38 million",
+        "answer_length": 15,
+        "choices": [
+            "Beaches",
+            "Art",
+            "Beach",
+            "Over 38 Million"
+        ],
+        "passage": "Tourism is also an important industry in Miami. Along with finance and business, the beaches, conventions, festivals and events draw over 38 million visitors annually into the city, from across the country and around the world, spending $17.1 billion. The Art Deco District in South Beach, is reputed as one of the most glamorous in the world for its nightclubs, beaches, historical buildings, and shopping. Annual events such as the Sony Ericsson Open, Art Basel, Winter Music Conference, South Beach Wine & Food Festival, and Mercedes-Benz Fashion Week Miami attract millions to the metropolis every year.",
+        "passage_length": 607,
+        "difficulty": "easy",
+        "question": "How many million visitors come to Miami each year?",
+        "question_length": 50,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Legacy admissions",
+        "answer_length": 17,
+        "choices": [
+            "Education",
+            "Court",
+            "Race",
+            "Legacy Admissions"
+        ],
+        "passage": "In the US, a prominent form of racial preferences relates to access to education, particularly admission to universities and other forms of higher education. Race, ethnicity, native language, social class, geographical origin, parental attendance of the university in question (legacy admissions), and/or gender are sometimes taken into account when the university assesses an applicant's grades and test scores. Individuals can also be awarded scholarships and have fees paid on the basis of criteria listed above. In 1978, the Supreme Court ruled in Bakke v. Regents that public universities (and other government institutions) could not set specific numerical targets based on race for admissions or employment. The Court said that \"goals\" and \"timetables\" for diversity could be set instead.",
+        "passage_length": 795,
+        "difficulty": "easy",
+        "question": "What is the term for parental attendance at a university?",
+        "question_length": 57,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Bakke v. regents",
+        "answer_length": 16,
+        "choices": [
+            "Admissions",
+            "Race",
+            "Bakke V. Regents",
+            "Education"
+        ],
+        "passage": "In the US, a prominent form of racial preferences relates to access to education, particularly admission to universities and other forms of higher education. Race, ethnicity, native language, social class, geographical origin, parental attendance of the university in question (legacy admissions), and/or gender are sometimes taken into account when the university assesses an applicant's grades and test scores. Individuals can also be awarded scholarships and have fees paid on the basis of criteria listed above. In 1978, the Supreme Court ruled in Bakke v. Regents that public universities (and other government institutions) could not set specific numerical targets based on race for admissions or employment. The Court said that \"goals\" and \"timetables\" for diversity could be set instead.",
+        "passage_length": 795,
+        "difficulty": "easy",
+        "question": "In 1978, the Supreme Court ruled that universities could not set numerical targets based on race for admissions or employment.",
+        "question_length": 126,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Access to education",
+        "answer_length": 19,
+        "choices": [
+            "Admissions",
+            "Race",
+            "Access To Education",
+            "Court"
+        ],
+        "passage": "In the US, a prominent form of racial preferences relates to access to education, particularly admission to universities and other forms of higher education. Race, ethnicity, native language, social class, geographical origin, parental attendance of the university in question (legacy admissions), and/or gender are sometimes taken into account when the university assesses an applicant's grades and test scores. Individuals can also be awarded scholarships and have fees paid on the basis of criteria listed above. In 1978, the Supreme Court ruled in Bakke v. Regents that public universities (and other government institutions) could not set specific numerical targets based on race for admissions or employment. The Court said that \"goals\" and \"timetables\" for diversity could be set instead.",
+        "passage_length": 795,
+        "difficulty": "easy",
+        "question": "What is a prominent form of racial preferences in the US?",
+        "question_length": 57,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Specific numerical targets",
+        "answer_length": 26,
+        "choices": [
+            "Court",
+            "Admissions",
+            "Specific Numerical Targets",
+            "Education"
+        ],
+        "passage": "In the US, a prominent form of racial preferences relates to access to education, particularly admission to universities and other forms of higher education. Race, ethnicity, native language, social class, geographical origin, parental attendance of the university in question (legacy admissions), and/or gender are sometimes taken into account when the university assesses an applicant's grades and test scores. Individuals can also be awarded scholarships and have fees paid on the basis of criteria listed above. In 1978, the Supreme Court ruled in Bakke v. Regents that public universities (and other government institutions) could not set specific numerical targets based on race for admissions or employment. The Court said that \"goals\" and \"timetables\" for diversity could be set instead.",
+        "passage_length": 795,
+        "difficulty": "easy",
+        "question": "What could universities not do based on race?",
+        "question_length": 45,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "1978",
+        "answer_length": 4,
+        "choices": [
+            "Admissions",
+            "Education",
+            "1978",
+            "Court"
+        ],
+        "passage": "In the US, a prominent form of racial preferences relates to access to education, particularly admission to universities and other forms of higher education. Race, ethnicity, native language, social class, geographical origin, parental attendance of the university in question (legacy admissions), and/or gender are sometimes taken into account when the university assesses an applicant's grades and test scores. Individuals can also be awarded scholarships and have fees paid on the basis of criteria listed above. In 1978, the Supreme Court ruled in Bakke v. Regents that public universities (and other government institutions) could not set specific numerical targets based on race for admissions or employment. The Court said that \"goals\" and \"timetables\" for diversity could be set instead.",
+        "passage_length": 795,
+        "difficulty": "easy",
+        "question": "When did the Supreme Court rule that universities could not set numerical targets based on race for admissions or employment?",
+        "question_length": 125,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "At airports",
+        "answer_length": 11,
+        "choices": [
+            "At Airports",
+            "Atc",
+            "Caa",
+            "Program"
+        ],
+        "passage": "On the eve of America's entry into World War II, CAA began to extend its ATC responsibilities to takeoff and landing operations at airports. This expanded role eventually became permanent after the war. The application of radar to ATC helped controllers in their drive to keep abreast of the postwar boom in commercial air transportation. In 1946, meanwhile, Congress gave CAA the added task of administering the federal-aid airport program, the first peacetime program of financial assistance aimed exclusively at promoting development of the nation's civil airports.",
+        "passage_length": 568,
+        "difficulty": "easy",
+        "question": "Where did CAA extend its ATC responsibilities to takeoff and landing operations?",
+        "question_length": 80,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Federal-aid airport program",
+        "answer_length": 27,
+        "choices": [
+            "Airports",
+            "Caa",
+            "Program",
+            "Federal-Aid Airport Program"
+        ],
+        "passage": "On the eve of America's entry into World War II, CAA began to extend its ATC responsibilities to takeoff and landing operations at airports. This expanded role eventually became permanent after the war. The application of radar to ATC helped controllers in their drive to keep abreast of the postwar boom in commercial air transportation. In 1946, meanwhile, Congress gave CAA the added task of administering the federal-aid airport program, the first peacetime program of financial assistance aimed exclusively at promoting development of the nation's civil airports.",
+        "passage_length": 568,
+        "difficulty": "easy",
+        "question": "What was the first federal-aid airport program?",
+        "question_length": 47,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "World war ii",
+        "answer_length": 12,
+        "choices": [
+            "Airports",
+            "Atc",
+            "Caa",
+            "World War Ii"
+        ],
+        "passage": "On the eve of America's entry into World War II, CAA began to extend its ATC responsibilities to takeoff and landing operations at airports. This expanded role eventually became permanent after the war. The application of radar to ATC helped controllers in their drive to keep abreast of the postwar boom in commercial air transportation. In 1946, meanwhile, Congress gave CAA the added task of administering the federal-aid airport program, the first peacetime program of financial assistance aimed exclusively at promoting development of the nation's civil airports.",
+        "passage_length": 568,
+        "difficulty": "easy",
+        "question": "After what war did CAA's ATC role become permanent?",
+        "question_length": 51,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "1946",
+        "answer_length": 4,
+        "choices": [
+            "Caa",
+            "Airports",
+            "Atc",
+            "1946"
+        ],
+        "passage": "On the eve of America's entry into World War II, CAA began to extend its ATC responsibilities to takeoff and landing operations at airports. This expanded role eventually became permanent after the war. The application of radar to ATC helped controllers in their drive to keep abreast of the postwar boom in commercial air transportation. In 1946, meanwhile, Congress gave CAA the added task of administering the federal-aid airport program, the first peacetime program of financial assistance aimed exclusively at promoting development of the nation's civil airports.",
+        "passage_length": 568,
+        "difficulty": "easy",
+        "question": "In what year did Congress give CAA the task of administering the federal-aid airport program?",
+        "question_length": 93,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Administering the federal-aid airport program",
+        "answer_length": 45,
+        "choices": [
+            "Administering The Federal-Aid Airport Program",
+            "Airports",
+            "Caa",
+            "Atc"
+        ],
+        "passage": "On the eve of America's entry into World War II, CAA began to extend its ATC responsibilities to takeoff and landing operations at airports. This expanded role eventually became permanent after the war. The application of radar to ATC helped controllers in their drive to keep abreast of the postwar boom in commercial air transportation. In 1946, meanwhile, Congress gave CAA the added task of administering the federal-aid airport program, the first peacetime program of financial assistance aimed exclusively at promoting development of the nation's civil airports.",
+        "passage_length": 568,
+        "difficulty": "easy",
+        "question": "What was the CAA's new job in 1946?",
+        "question_length": 35,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "4",
+        "answer_length": 1,
+        "choices": [
+            "2011",
+            "Fourth",
+            "4",
+            "Beyonc\u00e9"
+        ],
+        "passage": "Her fourth studio album 4 was released on June 28, 2011 in the US. 4 sold 310,000 copies in its first week and debuted atop the Billboard 200 chart, giving Beyonc\u00e9 her fourth consecutive number-one album in the US. The album was preceded by two of its singles \"Run the World (Girls)\" and \"Best Thing I Never Had\", which both attained moderate success. The fourth single \"Love on Top\" was a commercial success in the US. 4 also produced four other singles; \"Party\", \"Countdown\", \"I Care\" and \"End of Time\". \"Eat, Play, Love\", a cover story written by Beyonc\u00e9 for Essence that detailed her 2010 career break, won her a writing award from the New York Association of Black Journalists. In late 2011, she took the stage at New York's Roseland Ballroom for four nights of special performances: the 4 Intimate Nights with Beyonc\u00e9 concerts saw the performance of her 4 album to a standing room only.",
+        "passage_length": 892,
+        "difficulty": "easy",
+        "question": "What was the name of Beyonce's fourth studio album?",
+        "question_length": 51,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Four",
+        "answer_length": 4,
+        "choices": [
+            "Beyonc\u00e9",
+            "Fourth",
+            "Album",
+            "Four"
+        ],
+        "passage": "Her fourth studio album 4 was released on June 28, 2011 in the US. 4 sold 310,000 copies in its first week and debuted atop the Billboard 200 chart, giving Beyonc\u00e9 her fourth consecutive number-one album in the US. The album was preceded by two of its singles \"Run the World (Girls)\" and \"Best Thing I Never Had\", which both attained moderate success. The fourth single \"Love on Top\" was a commercial success in the US. 4 also produced four other singles; \"Party\", \"Countdown\", \"I Care\" and \"End of Time\". \"Eat, Play, Love\", a cover story written by Beyonc\u00e9 for Essence that detailed her 2010 career break, won her a writing award from the New York Association of Black Journalists. In late 2011, she took the stage at New York's Roseland Ballroom for four nights of special performances: the 4 Intimate Nights with Beyonc\u00e9 concerts saw the performance of her 4 album to a standing room only.",
+        "passage_length": 892,
+        "difficulty": "easy",
+        "question": "How many nights did Beyonce perform at Roseland Ballroom?",
+        "question_length": 57,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Run the world (girls)",
+        "answer_length": 21,
+        "choices": [
+            "Beyonc\u00e9",
+            "Fourth",
+            "Run The World (Girls)",
+            "Album"
+        ],
+        "passage": "Her fourth studio album 4 was released on June 28, 2011 in the US. 4 sold 310,000 copies in its first week and debuted atop the Billboard 200 chart, giving Beyonc\u00e9 her fourth consecutive number-one album in the US. The album was preceded by two of its singles \"Run the World (Girls)\" and \"Best Thing I Never Had\", which both attained moderate success. The fourth single \"Love on Top\" was a commercial success in the US. 4 also produced four other singles; \"Party\", \"Countdown\", \"I Care\" and \"End of Time\". \"Eat, Play, Love\", a cover story written by Beyonc\u00e9 for Essence that detailed her 2010 career break, won her a writing award from the New York Association of Black Journalists. In late 2011, she took the stage at New York's Roseland Ballroom for four nights of special performances: the 4 Intimate Nights with Beyonc\u00e9 concerts saw the performance of her 4 album to a standing room only.",
+        "passage_length": 892,
+        "difficulty": "easy",
+        "question": "What was the title of the album that preceded the album?",
+        "question_length": 56,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Moderate success",
+        "answer_length": 16,
+        "choices": [
+            "Album",
+            "Moderate Success",
+            "Beyonc\u00e9",
+            "Fourth"
+        ],
+        "passage": "Her fourth studio album 4 was released on June 28, 2011 in the US. 4 sold 310,000 copies in its first week and debuted atop the Billboard 200 chart, giving Beyonc\u00e9 her fourth consecutive number-one album in the US. The album was preceded by two of its singles \"Run the World (Girls)\" and \"Best Thing I Never Had\", which both attained moderate success. The fourth single \"Love on Top\" was a commercial success in the US. 4 also produced four other singles; \"Party\", \"Countdown\", \"I Care\" and \"End of Time\". \"Eat, Play, Love\", a cover story written by Beyonc\u00e9 for Essence that detailed her 2010 career break, won her a writing award from the New York Association of Black Journalists. In late 2011, she took the stage at New York's Roseland Ballroom for four nights of special performances: the 4 Intimate Nights with Beyonc\u00e9 concerts saw the performance of her 4 album to a standing room only.",
+        "passage_length": 892,
+        "difficulty": "easy",
+        "question": "What was the result of the singles \"Run the World (Girls)\" and \"Best Thing I Never Had\"?",
+        "question_length": 88,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "310,000",
+        "answer_length": 7,
+        "choices": [
+            "310,000",
+            "Beyonc\u00e9",
+            "Album",
+            "Fourth"
+        ],
+        "passage": "Her fourth studio album 4 was released on June 28, 2011 in the US. 4 sold 310,000 copies in its first week and debuted atop the Billboard 200 chart, giving Beyonc\u00e9 her fourth consecutive number-one album in the US. The album was preceded by two of its singles \"Run the World (Girls)\" and \"Best Thing I Never Had\", which both attained moderate success. The fourth single \"Love on Top\" was a commercial success in the US. 4 also produced four other singles; \"Party\", \"Countdown\", \"I Care\" and \"End of Time\". \"Eat, Play, Love\", a cover story written by Beyonc\u00e9 for Essence that detailed her 2010 career break, won her a writing award from the New York Association of Black Journalists. In late 2011, she took the stage at New York's Roseland Ballroom for four nights of special performances: the 4 Intimate Nights with Beyonc\u00e9 concerts saw the performance of her 4 album to a standing room only.",
+        "passage_length": 892,
+        "difficulty": "easy",
+        "question": "How many copies did 4 sell in its first week?",
+        "question_length": 45,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "1953",
+        "answer_length": 4,
+        "choices": [
+            "Auriol",
+            "Venice",
+            "Roncalli",
+            "1953"
+        ],
+        "passage": "On 12 January 1953, he was appointed Patriarch of Venice and, accordingly, raised to the rank of Cardinal-Priest of Santa Prisca by Pope Pius XII. Roncalli left France for Venice on 23 February 1953 stopping briefly in Milan and then to Rome. On 15 March 1953, he took possession of his new diocese in Venice. As a sign of his esteem, the President of France, Vincent Auriol, claimed the ancient privilege possessed by French monarchs and bestowed the red biretta on Roncalli at a ceremony in the \u00c9lys\u00e9e Palace. It was around this time that he, with the aid of Monsignor Bruno Heim, formed his coat of arms with a lion of Saint Mark on a white ground. Auriol also awarded Roncalli three months later with the award of Commander of the Legion of Honour.",
+        "passage_length": 752,
+        "difficulty": "easy",
+        "question": "In what year was he appointed Patriarch of Venice?",
+        "question_length": 50,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Venice",
+        "answer_length": 6,
+        "choices": [
+            "Venice",
+            "Venice",
+            "Auriol",
+            "1953"
+        ],
+        "passage": "On 12 January 1953, he was appointed Patriarch of Venice and, accordingly, raised to the rank of Cardinal-Priest of Santa Prisca by Pope Pius XII. Roncalli left France for Venice on 23 February 1953 stopping briefly in Milan and then to Rome. On 15 March 1953, he took possession of his new diocese in Venice. As a sign of his esteem, the President of France, Vincent Auriol, claimed the ancient privilege possessed by French monarchs and bestowed the red biretta on Roncalli at a ceremony in the \u00c9lys\u00e9e Palace. It was around this time that he, with the aid of Monsignor Bruno Heim, formed his coat of arms with a lion of Saint Mark on a white ground. Auriol also awarded Roncalli three months later with the award of Commander of the Legion of Honour.",
+        "passage_length": 752,
+        "difficulty": "easy",
+        "question": "What was the name of the diocese in which he was diocese?",
+        "question_length": 57,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "15 march 1953",
+        "answer_length": 13,
+        "choices": [
+            "15 March 1953",
+            "Roncalli",
+            "1953",
+            "Venice"
+        ],
+        "passage": "On 12 January 1953, he was appointed Patriarch of Venice and, accordingly, raised to the rank of Cardinal-Priest of Santa Prisca by Pope Pius XII. Roncalli left France for Venice on 23 February 1953 stopping briefly in Milan and then to Rome. On 15 March 1953, he took possession of his new diocese in Venice. As a sign of his esteem, the President of France, Vincent Auriol, claimed the ancient privilege possessed by French monarchs and bestowed the red biretta on Roncalli at a ceremony in the \u00c9lys\u00e9e Palace. It was around this time that he, with the aid of Monsignor Bruno Heim, formed his coat of arms with a lion of Saint Mark on a white ground. Auriol also awarded Roncalli three months later with the award of Commander of the Legion of Honour.",
+        "passage_length": 752,
+        "difficulty": "easy",
+        "question": "When did he take possession of his new diocese in Venice?",
+        "question_length": 57,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Vincent auriol",
+        "answer_length": 14,
+        "choices": [
+            "Vincent Auriol",
+            "1953",
+            "Venice",
+            "Roncalli"
+        ],
+        "passage": "On 12 January 1953, he was appointed Patriarch of Venice and, accordingly, raised to the rank of Cardinal-Priest of Santa Prisca by Pope Pius XII. Roncalli left France for Venice on 23 February 1953 stopping briefly in Milan and then to Rome. On 15 March 1953, he took possession of his new diocese in Venice. As a sign of his esteem, the President of France, Vincent Auriol, claimed the ancient privilege possessed by French monarchs and bestowed the red biretta on Roncalli at a ceremony in the \u00c9lys\u00e9e Palace. It was around this time that he, with the aid of Monsignor Bruno Heim, formed his coat of arms with a lion of Saint Mark on a white ground. Auriol also awarded Roncalli three months later with the award of Commander of the Legion of Honour.",
+        "passage_length": 752,
+        "difficulty": "easy",
+        "question": "What did Monsignor Bruno Heim provide to Roncalli?",
+        "question_length": 50,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Ancient privilege",
+        "answer_length": 17,
+        "choices": [
+            "Venice",
+            "Ancient Privilege",
+            "Roncalli",
+            "1953"
+        ],
+        "passage": "On 12 January 1953, he was appointed Patriarch of Venice and, accordingly, raised to the rank of Cardinal-Priest of Santa Prisca by Pope Pius XII. Roncalli left France for Venice on 23 February 1953 stopping briefly in Milan and then to Rome. On 15 March 1953, he took possession of his new diocese in Venice. As a sign of his esteem, the President of France, Vincent Auriol, claimed the ancient privilege possessed by French monarchs and bestowed the red biretta on Roncalli at a ceremony in the \u00c9lys\u00e9e Palace. It was around this time that he, with the aid of Monsignor Bruno Heim, formed his coat of arms with a lion of Saint Mark on a white ground. Auriol also awarded Roncalli three months later with the award of Commander of the Legion of Honour.",
+        "passage_length": 752,
+        "difficulty": "easy",
+        "question": "What privilege did Auriol claim that French monarchs had?",
+        "question_length": 57,
         "question_type": "unknown"
     }
 ]
