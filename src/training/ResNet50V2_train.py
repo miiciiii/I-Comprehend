@@ -67,20 +67,18 @@ if __name__ == "__main__":
     
     # Load and preprocess images and labels
     print("Loading and processing images...")
-    images, labels = load_and_process_images(image_dir)
+    images, image_filenames = load_and_process_images(image_dir, max_folders=1, max_images_per_folder=2)
     print(f"Loaded {len(images)} images.")
     
     print("Loading labels...")
-    labels = load_labels(labels_dir)
-    print(f"Loaded labels for {len(labels)} tasks.")
+    labels_dict = load_labels(labels_dir)
+    print(f"Loaded labels dictionary: {labels_dict}")
+    print(f"Type of loaded labels dictionary: {type(labels_dict)}")
     
     # Process images and labels
     print("Processing images and labels...")
-    processed_images, processed_labels = process_images_and_labels(images, labels, is_multi_label=True)
-    
-    # Verify the processed data
-    print(f"Processed images shape: {processed_images.shape}")
-    print(f"Processed labels shape: {processed_labels.shape}")
+
+    processed_images, processed_labels = process_images_and_labels(images, labels_dict, is_multi_label=True)
     
     # Check a few examples of processed data
     print(f"Sample processed image data (first image): {processed_images[0]}")

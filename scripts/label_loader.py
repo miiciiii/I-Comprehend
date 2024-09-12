@@ -10,6 +10,7 @@ def get_txt_files(directory):
     
     txt_files = [f for f in os.listdir(directory) if f.endswith('.txt')]
     print(f"Found {len(txt_files)} .txt files: {txt_files}")
+    print("List of .txt files:", txt_files)  # Debugging statement
     return txt_files
 
 def load_labels_from_file(file_path):
@@ -22,6 +23,7 @@ def load_labels_from_file(file_path):
     try:
         df = pd.read_csv(file_path, header=None, names=['task', 'label'])
         print(f"Loaded DataFrame with {len(df)} rows from {file_path}")
+        print("DataFrame head:", df.head())  # Debugging statement
     except Exception as e:
         print(f"Error reading {file_path}: {e}")
         raise
@@ -63,4 +65,5 @@ def load_labels(ground_truths_path="datasets/raw/ground_truths"):
             print(f"Current state of labels for task {task}: {all_labels[task]}")
     
     print(f"All labels loaded: {all_labels}")
+    print("Final labels:", all_labels)  # Debugging statement
     return all_labels

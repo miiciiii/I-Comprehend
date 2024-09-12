@@ -54,11 +54,13 @@ def load_images_and_labels(image_dir, labels_dict, max_folders=None, max_images_
                     images.append(image)
                     # Retrieve all labels for the task
                     labels.append(labels_dict[task_name])
+                    print(f"Image loaded: {image.size}")  # Debugging statement
                 except Exception as e:
                     print(f"Error loading image {image_path}: {e}")
     
     print(f"Total images loaded: {len(images)}")
     print(f"Total labels loaded: {len(labels)}")
+    print("Images and labels:", list(zip(images, labels)))  # Debugging statement
     return images, labels
 
 def load_and_process_images(image_dir=DEFAULT_IMAGE_DIR, max_folders=None, max_images_per_folder=None):
@@ -79,7 +81,9 @@ def load_and_process_images(image_dir=DEFAULT_IMAGE_DIR, max_folders=None, max_i
         labels_dict = load_labels("datasets/raw/ground_truths")
         print(f"Labels loaded: {labels_dict.keys()}")
         print(f"Loading images from directory: {image_dir}")
-        return load_images_and_labels(image_dir, labels_dict, max_folders=max_folders, max_images_per_folder=max_images_per_folder)
+        images, labels = load_images_and_labels(image_dir, labels_dict, max_folders=max_folders, max_images_per_folder=max_images_per_folder)
+        print(f"Images and labels loaded: {len(images)} images, {len(labels)} labels")  # Debugging statement
+        return images, labels
     except Exception as e:
         print(f"Error loading and processing images: {e}")
         return [], []
