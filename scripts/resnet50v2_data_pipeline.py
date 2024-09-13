@@ -1,6 +1,6 @@
 from PIL import Image
 import numpy as np
-import os
+import gc
 from sklearn.preprocessing import MultiLabelBinarizer, LabelBinarizer
 from tqdm import tqdm
 from .image_loader import load_and_process_images
@@ -19,7 +19,7 @@ def preprocess_image(image, target_size=(224, 224)):
     """
     image = image.resize(target_size)
     image_array = np.array(image)
-    image_array = image_array / 255.0
+    image_array = image_array.astype(np.float32) / 255.0
     return image_array
 
 def multi_label_binarize(labels_list):
@@ -72,15 +72,27 @@ def process_images_and_labels(images, labels, is_multi_label=False, max_images=N
     print("Number of images:", len(images))  # Debugging statement
     print("Number of labels:", len(labels))  # Debugging statement
     
-    # Preprocess images
-    processed_images = np.array([preprocess_image(image) for image in images])
+    # Check for mismatched lengths
+    if len(images) != len(labels):
+        raise ValueError(f"Number of images ({len(images)}) and labels ({len(labels)}) must be the same.")
     
+    # Preprocess images
+    processed_images = []
+    for image in images:
+        processed_images.append(preprocess_image(image))
+        gc.collect()  # Free memory after each image is processed
+
+    processed_images = np.array(processed_images, dtype=np.float32)  # Ensuring dtype is float32
+
     # Process labels
     if is_multi_label:
         processed_labels = multi_label_binarize(labels)
     else:
         processed_labels = one_hot_encode_labels(labels)
     
+    # Garbage collection to manage memory usage
+    gc.collect()
+
     return processed_images, processed_labels
 
 # Example usage

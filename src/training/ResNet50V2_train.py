@@ -67,7 +67,7 @@ if __name__ == "__main__":
     
     # Load and preprocess images and labels
     print("Loading and processing images...")
-    images, image_filenames = load_and_process_images(image_dir, max_folders=1, max_images_per_folder=2)
+    images, image_filenames = load_and_process_images(image_dir)
     print(f"Loaded {len(images)} images.")
     
     print("Loading labels...")
@@ -79,10 +79,6 @@ if __name__ == "__main__":
     print("Processing images and labels...")
 
     processed_images, processed_labels = process_images_and_labels(images, labels_dict, is_multi_label=True)
-    
-    # Check a few examples of processed data
-    print(f"Sample processed image data (first image): {processed_images[0]}")
-    print(f"Sample processed label data (first label): {processed_labels[0]}")
     
     # Convert to training and validation datasets
     print("Creating training and validation data generators...")
