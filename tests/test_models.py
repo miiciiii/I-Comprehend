@@ -49,15 +49,22 @@ random_passage = get_random_passage()
 
 
 def answer_question(question, context):
-    """Generate an answer for a given question and context."""
+    """Generate a single-word answer for a given question and context."""
     input_text = f"question: {question} context: {context}"
     input_ids = t5ag_tokenizer.encode(input_text, return_tensors="pt", max_length=512, truncation=True)
     
     with torch.no_grad():
-        output = t5ag_model.generate(input_ids, max_length=512, num_return_sequences=1, max_new_tokens=200)
+        # Adjust generation parameters to limit the output to one word
+        output = t5ag_model.generate(
+            input_ids, 
+            max_length=2,            # Restrict the total length to 2 tokens
+            max_new_tokens=1,        # Generate only one new token
+            num_return_sequences=1,
+            early_stopping=True,     # Stop generation early if a complete output is formed
+            no_repeat_ngram_size=1   # Prevent repetition in the generated output
+        )
 
     return t5ag_tokenizer.decode(output[0], skip_special_tokens=True).capitalize()
-
 
 def get_nouns_multipartite(content):
     """Extract keywords from content using MultipartiteRank algorithm."""

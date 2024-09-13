@@ -1181,5 +1181,990 @@
         "question": "What privilege did Auriol claim that French monarchs had?",
         "question_length": 57,
         "question_type": "unknown"
+    },
+    {
+        "answer": "Two",
+        "answer_length": 3,
+        "choices": [
+            "Four",
+            "Two",
+            "Ten",
+            "Three"
+        ],
+        "passage": "In 2005 two city council members, Ralph Inzunza and Deputy Mayor Michael Zucchet \u2013 who briefly took over as acting mayor when Murphy resigned \u2013 were convicted of extortion, wire fraud, and conspiracy to commit wire fraud for taking campaign contributions from a strip club owner and his associates, allegedly in exchange for trying to repeal the city's \"no touch\" laws at strip clubs. Both subsequently resigned. Inzunza was sentenced to 21 months in prison. In 2009, a judge acquitted Zucchet on seven out of the nine counts against him, and granted his petition for a new trial on the other two charges; the remaining charges were eventually dropped.",
+        "passage_length": 652,
+        "difficulty": "easy",
+        "question": "What other charges did Zucchet have to face a new trial on?",
+        "question_length": 59,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Ralph inzunza",
+        "answer_length": 13,
+        "choices": [
+            "Fraud",
+            "Inzunza",
+            "Charges",
+            "Ralph Inzunza"
+        ],
+        "passage": "In 2005 two city council members, Ralph Inzunza and Deputy Mayor Michael Zucchet \u2013 who briefly took over as acting mayor when Murphy resigned \u2013 were convicted of extortion, wire fraud, and conspiracy to commit wire fraud for taking campaign contributions from a strip club owner and his associates, allegedly in exchange for trying to repeal the city's \"no touch\" laws at strip clubs. Both subsequently resigned. Inzunza was sentenced to 21 months in prison. In 2009, a judge acquitted Zucchet on seven out of the nine counts against him, and granted his petition for a new trial on the other two charges; the remaining charges were eventually dropped.",
+        "passage_length": 652,
+        "difficulty": "easy",
+        "question": "What was the name of the city council that was convicted of extortion in 2005?",
+        "question_length": 78,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Acquitted zucchet",
+        "answer_length": 17,
+        "choices": [
+            "Charges",
+            "Inzunza",
+            "City",
+            "Acquitted Zucchet"
+        ],
+        "passage": "In 2005 two city council members, Ralph Inzunza and Deputy Mayor Michael Zucchet \u2013 who briefly took over as acting mayor when Murphy resigned \u2013 were convicted of extortion, wire fraud, and conspiracy to commit wire fraud for taking campaign contributions from a strip club owner and his associates, allegedly in exchange for trying to repeal the city's \"no touch\" laws at strip clubs. Both subsequently resigned. Inzunza was sentenced to 21 months in prison. In 2009, a judge acquitted Zucchet on seven out of the nine counts against him, and granted his petition for a new trial on the other two charges; the remaining charges were eventually dropped.",
+        "passage_length": 652,
+        "difficulty": "easy",
+        "question": "What was the other charge against Inzunza and Zucchet?",
+        "question_length": 54,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "In exchange for trying to repeal the city's \"no touch\" laws at strip clubs",
+        "answer_length": 74,
+        "choices": [
+            "Fraud",
+            "Charges",
+            "In Exchange For Trying To Repeal The City'S \"No Touch\" Laws At Strip Clubs",
+            "City"
+        ],
+        "passage": "In 2005 two city council members, Ralph Inzunza and Deputy Mayor Michael Zucchet \u2013 who briefly took over as acting mayor when Murphy resigned \u2013 were convicted of extortion, wire fraud, and conspiracy to commit wire fraud for taking campaign contributions from a strip club owner and his associates, allegedly in exchange for trying to repeal the city's \"no touch\" laws at strip clubs. Both subsequently resigned. Inzunza was sentenced to 21 months in prison. In 2009, a judge acquitted Zucchet on seven out of the nine counts against him, and granted his petition for a new trial on the other two charges; the remaining charges were eventually dropped.",
+        "passage_length": 652,
+        "difficulty": "easy",
+        "question": "In 2005, Ralph Inzunza and Michael Zucchet were convicted of extortion, wire fraud, and conspiracy to commit wire fraud for taking campaign contributions from a strip club owner and his associates.",
+        "question_length": 197,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Deputy mayor",
+        "answer_length": 12,
+        "choices": [
+            "New Chief",
+            "Defense Minister",
+            "Council Members",
+            "Deputy Mayor"
+        ],
+        "passage": "In 2005 two city council members, Ralph Inzunza and Deputy Mayor Michael Zucchet \u2013 who briefly took over as acting mayor when Murphy resigned \u2013 were convicted of extortion, wire fraud, and conspiracy to commit wire fraud for taking campaign contributions from a strip club owner and his associates, allegedly in exchange for trying to repeal the city's \"no touch\" laws at strip clubs. Both subsequently resigned. Inzunza was sentenced to 21 months in prison. In 2009, a judge acquitted Zucchet on seven out of the nine counts against him, and granted his petition for a new trial on the other two charges; the remaining charges were eventually dropped.",
+        "passage_length": 652,
+        "difficulty": "easy",
+        "question": "What position did Zucchet hold when Murphy resigned?",
+        "question_length": 52,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Potential",
+        "answer_length": 9,
+        "choices": [
+            "Massive Impact",
+            "Talent",
+            "Serious Potential",
+            "Potential"
+        ],
+        "passage": "Long distance migrants are believed to disperse as young birds and form attachments to potential breeding sites and to favourite wintering sites. Once the site attachment is made they show high site-fidelity, visiting the same wintering sites year after year.",
+        "passage_length": 259,
+        "difficulty": "easy",
+        "question": "What do young birds form attachments to?",
+        "question_length": 40,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Potential",
+        "answer_length": 9,
+        "choices": [
+            "Potential",
+            "Highest Potential",
+            "Big Impact",
+            "Talent"
+        ],
+        "passage": "Long distance migrants are believed to disperse as young birds and form attachments to potential breeding sites and to favourite wintering sites. Once the site attachment is made they show high site-fidelity, visiting the same wintering sites year after year.",
+        "passage_length": 259,
+        "difficulty": "easy",
+        "question": "What type of sites do long distance migrants form attachments to?",
+        "question_length": 65,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Year",
+        "answer_length": 4,
+        "choices": [
+            "Year**.",
+            "Year",
+            "Month",
+            "Decade"
+        ],
+        "passage": "Long distance migrants are believed to disperse as young birds and form attachments to potential breeding sites and to favourite wintering sites. Once the site attachment is made they show high site-fidelity, visiting the same wintering sites year after year.",
+        "passage_length": 259,
+        "difficulty": "easy",
+        "question": "How many years do long distance migrants visit the same wintering sites?",
+        "question_length": 72,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Attachment",
+        "answer_length": 10,
+        "choices": [
+            "Other Thought",
+            "Attachment",
+            "Physical Interaction",
+            "Negative Emotion"
+        ],
+        "passage": "Long distance migrants are believed to disperse as young birds and form attachments to potential breeding sites and to favourite wintering sites. Once the site attachment is made they show high site-fidelity, visiting the same wintering sites year after year.",
+        "passage_length": 259,
+        "difficulty": "easy",
+        "question": "What do young birds form to potential breeding sites and to favourite wintering sites?",
+        "question_length": 86,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "As",
+        "answer_length": 2,
+        "choices": [
+            "Xerath",
+            "Tanky",
+            "Leona",
+            "As"
+        ],
+        "passage": "Long distance migrants are believed to disperse as young birds and form attachments to potential breeding sites and to favourite wintering sites. Once the site attachment is made they show high site-fidelity, visiting the same wintering sites year after year.",
+        "passage_length": 259,
+        "difficulty": "easy",
+        "question": "How are long distance migrants thought to disperse as young birds?",
+        "question_length": 66,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Rebecca",
+        "answer_length": 7,
+        "choices": [
+            "Itv",
+            "Live",
+            "Rebecca",
+            "Final"
+        ],
+        "passage": "From 1988 to 1997, the BBC and Sky Sports had coverage of the FA Cup, the BBC had highlights on Match of the Day and usually one match per round while Sky had the same deal. From 1997 to 2001, ITV and Sky shared live coverage with both having two matches per round and BBC continuing with highlights on Match of the Day. From 2002 to 2008, BBC and Sky again shared coverage with BBC having two or three matches per round and Sky having one or two. From 2008\u201309 to 2013\u201314, FA Cup matches are shown live by ITV across England and Wales, with UTV broadcasting to Northern Ireland but STV refusing to show them. ITV shows 16 FA Cup games per season, including the first pick of live matches from each of the first to sixth rounds of the competition, plus one semi-final exclusively live. The final is also shown live on ITV. Under the same 2008 contract, Setanta Sports showed three games and one replay in each round from round three to five, two quarter-finals, one semi-final and the final. The channel also broadcast ITV's matches exclusively to Scotland, after the ITV franchise holder in Scotland, STV, decided not to broadcast FA Cup games. Setanta entered administration in June 2009 and as a result the FA terminated Setanta's deal to broadcast FA-sanctioned competitions and England internationals. As a result of Setanta going out of business ITV showed the competition exclusively in the 2009\u201310 season with between three and four matches per round, all quarter finals, semi-finals and final live as the FA could not find a pay TV broadcaster in time. ESPN bought the competition for the 2010\u201311 to 2012\u201313 season and during this time Rebecca Lowe became the first woman to host the FA Cup Final in the UK.",
+        "passage_length": 1715,
+        "question": "What was the first live match shown on ITV?",
+        "question_length": 43,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Live",
+        "answer_length": 4,
+        "choices": [
+            "Fa",
+            "Itv",
+            "Live",
+            "Final"
+        ],
+        "passage": "From 1988 to 1997, the BBC and Sky Sports had coverage of the FA Cup, the BBC had highlights on Match of the Day and usually one match per round while Sky had the same deal. From 1997 to 2001, ITV and Sky shared live coverage with both having two matches per round and BBC continuing with highlights on Match of the Day. From 2002 to 2008, BBC and Sky again shared coverage with BBC having two or three matches per round and Sky having one or two. From 2008\u201309 to 2013\u201314, FA Cup matches are shown live by ITV across England and Wales, with UTV broadcasting to Northern Ireland but STV refusing to show them. ITV shows 16 FA Cup games per season, including the first pick of live matches from each of the first to sixth rounds of the competition, plus one semi-final exclusively live. The final is also shown live on ITV. Under the same 2008 contract, Setanta Sports showed three games and one replay in each round from round three to five, two quarter-finals, one semi-final and the final. The channel also broadcast ITV's matches exclusively to Scotland, after the ITV franchise holder in Scotland, STV, decided not to broadcast FA Cup games. Setanta entered administration in June 2009 and as a result the FA terminated Setanta's deal to broadcast FA-sanctioned competitions and England internationals. As a result of Setanta going out of business ITV showed the competition exclusively in the 2009\u201310 season with between three and four matches per round, all quarter finals, semi-finals and final live as the FA could not find a pay TV broadcaster in time. ESPN bought the competition for the 2010\u201311 to 2012\u201313 season and during this time Rebecca Lowe became the first woman to host the FA Cup Final in the UK.",
+        "passage_length": 1715,
+        "question": "What type of coverage did ITV and Sky share from 1997 to 2001?",
+        "question_length": 62,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Two",
+        "answer_length": 3,
+        "choices": [
+            "Two",
+            "Itv",
+            "Fa",
+            "Final"
+        ],
+        "passage": "From 1988 to 1997, the BBC and Sky Sports had coverage of the FA Cup, the BBC had highlights on Match of the Day and usually one match per round while Sky had the same deal. From 1997 to 2001, ITV and Sky shared live coverage with both having two matches per round and BBC continuing with highlights on Match of the Day. From 2002 to 2008, BBC and Sky again shared coverage with BBC having two or three matches per round and Sky having one or two. From 2008\u201309 to 2013\u201314, FA Cup matches are shown live by ITV across England and Wales, with UTV broadcasting to Northern Ireland but STV refusing to show them. ITV shows 16 FA Cup games per season, including the first pick of live matches from each of the first to sixth rounds of the competition, plus one semi-final exclusively live. The final is also shown live on ITV. Under the same 2008 contract, Setanta Sports showed three games and one replay in each round from round three to five, two quarter-finals, one semi-final and the final. The channel also broadcast ITV's matches exclusively to Scotland, after the ITV franchise holder in Scotland, STV, decided not to broadcast FA Cup games. Setanta entered administration in June 2009 and as a result the FA terminated Setanta's deal to broadcast FA-sanctioned competitions and England internationals. As a result of Setanta going out of business ITV showed the competition exclusively in the 2009\u201310 season with between three and four matches per round, all quarter finals, semi-finals and final live as the FA could not find a pay TV broadcaster in time. ESPN bought the competition for the 2010\u201311 to 2012\u201313 season and during this time Rebecca Lowe became the first woman to host the FA Cup Final in the UK.",
+        "passage_length": 1715,
+        "question": "How many matches did ITV and Sky have per round?",
+        "question_length": 48,
+        "question_type": "literal"
+    },
+    {
+        "answer": "One",
+        "answer_length": 3,
+        "choices": [
+            "Fa",
+            "One",
+            "Final",
+            "Itv"
+        ],
+        "passage": "From 1988 to 1997, the BBC and Sky Sports had coverage of the FA Cup, the BBC had highlights on Match of the Day and usually one match per round while Sky had the same deal. From 1997 to 2001, ITV and Sky shared live coverage with both having two matches per round and BBC continuing with highlights on Match of the Day. From 2002 to 2008, BBC and Sky again shared coverage with BBC having two or three matches per round and Sky having one or two. From 2008\u201309 to 2013\u201314, FA Cup matches are shown live by ITV across England and Wales, with UTV broadcasting to Northern Ireland but STV refusing to show them. ITV shows 16 FA Cup games per season, including the first pick of live matches from each of the first to sixth rounds of the competition, plus one semi-final exclusively live. The final is also shown live on ITV. Under the same 2008 contract, Setanta Sports showed three games and one replay in each round from round three to five, two quarter-finals, one semi-final and the final. The channel also broadcast ITV's matches exclusively to Scotland, after the ITV franchise holder in Scotland, STV, decided not to broadcast FA Cup games. Setanta entered administration in June 2009 and as a result the FA terminated Setanta's deal to broadcast FA-sanctioned competitions and England internationals. As a result of Setanta going out of business ITV showed the competition exclusively in the 2009\u201310 season with between three and four matches per round, all quarter finals, semi-finals and final live as the FA could not find a pay TV broadcaster in time. ESPN bought the competition for the 2010\u201311 to 2012\u201313 season and during this time Rebecca Lowe became the first woman to host the FA Cup Final in the UK.",
+        "passage_length": 1715,
+        "question": "How many matches does the BBC have per round?",
+        "question_length": 45,
+        "question_type": "literal"
+    },
+    {
+        "answer": "From",
+        "answer_length": 4,
+        "choices": [
+            "From",
+            "Itv",
+            "Final",
+            "Fa"
+        ],
+        "passage": "From 1988 to 1997, the BBC and Sky Sports had coverage of the FA Cup, the BBC had highlights on Match of the Day and usually one match per round while Sky had the same deal. From 1997 to 2001, ITV and Sky shared live coverage with both having two matches per round and BBC continuing with highlights on Match of the Day. From 2002 to 2008, BBC and Sky again shared coverage with BBC having two or three matches per round and Sky having one or two. From 2008\u201309 to 2013\u201314, FA Cup matches are shown live by ITV across England and Wales, with UTV broadcasting to Northern Ireland but STV refusing to show them. ITV shows 16 FA Cup games per season, including the first pick of live matches from each of the first to sixth rounds of the competition, plus one semi-final exclusively live. The final is also shown live on ITV. Under the same 2008 contract, Setanta Sports showed three games and one replay in each round from round three to five, two quarter-finals, one semi-final and the final. The channel also broadcast ITV's matches exclusively to Scotland, after the ITV franchise holder in Scotland, STV, decided not to broadcast FA Cup games. Setanta entered administration in June 2009 and as a result the FA terminated Setanta's deal to broadcast FA-sanctioned competitions and England internationals. As a result of Setanta going out of business ITV showed the competition exclusively in the 2009\u201310 season with between three and four matches per round, all quarter finals, semi-finals and final live as the FA could not find a pay TV broadcaster in time. ESPN bought the competition for the 2010\u201311 to 2012\u201313 season and during this time Rebecca Lowe became the first woman to host the FA Cup Final in the UK.",
+        "passage_length": 1715,
+        "question": "When did ITV and Sky share coverage of the FA Cup?",
+        "question_length": 50,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Millennialis",
+        "answer_length": 12,
+        "choices": [
+            "Later",
+            "Millennialis",
+            "Particularly",
+            "England"
+        ],
+        "passage": "Puritans were blocked from changing the established church from within, and were severely restricted in England by laws controlling the practice of religion. Their beliefs, however, were transported by the emigration of congregations to the Netherlands (and later to New England), and by evangelical clergy to Ireland (and later into Wales), and were spread into lay society and parts of the educational system, particularly certain colleges of the University of Cambridge. They took on distinctive beliefs about clerical dress and in opposition to the episcopal system, particularly after the 1619 conclusions of the Synod of Dort they were resisted by the English bishops. They largely adopted Sabbatarianism in the 17th century, and were influenced by millennialism.",
+        "passage_length": 769,
+        "question": "What was transported by the emigration of congregations to the Netherlands and by evangelical clergy to Ireland?",
+        "question_length": 112,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Cler",
+        "answer_length": 4,
+        "choices": [
+            "England",
+            "Cler",
+            "Later",
+            "Beliefs"
+        ],
+        "passage": "Puritans were blocked from changing the established church from within, and were severely restricted in England by laws controlling the practice of religion. Their beliefs, however, were transported by the emigration of congregations to the Netherlands (and later to New England), and by evangelical clergy to Ireland (and later into Wales), and were spread into lay society and parts of the educational system, particularly certain colleges of the University of Cambridge. They took on distinctive beliefs about clerical dress and in opposition to the episcopal system, particularly after the 1619 conclusions of the Synod of Dort they were resisted by the English bishops. They largely adopted Sabbatarianism in the 17th century, and were influenced by millennialism.",
+        "passage_length": 769,
+        "question": "What colleges of the University of Cambridge were Puritans particularly known for?",
+        "question_length": 82,
+        "question_type": "literal"
+    },
+    {
+        "answer": "1619",
+        "answer_length": 4,
+        "choices": [
+            "Later",
+            "Beliefs",
+            "England",
+            "1619"
+        ],
+        "passage": "Puritans were blocked from changing the established church from within, and were severely restricted in England by laws controlling the practice of religion. Their beliefs, however, were transported by the emigration of congregations to the Netherlands (and later to New England), and by evangelical clergy to Ireland (and later into Wales), and were spread into lay society and parts of the educational system, particularly certain colleges of the University of Cambridge. They took on distinctive beliefs about clerical dress and in opposition to the episcopal system, particularly after the 1619 conclusions of the Synod of Dort they were resisted by the English bishops. They largely adopted Sabbatarianism in the 17th century, and were influenced by millennialism.",
+        "passage_length": 769,
+        "question": "In what year did the Synod of Dort conclude?",
+        "question_length": 44,
+        "question_type": "literal"
+    },
+    {
+        "answer": "17th century",
+        "answer_length": 12,
+        "choices": [
+            "Beliefs",
+            "17Th Century",
+            "England",
+            "Later"
+        ],
+        "passage": "Puritans were blocked from changing the established church from within, and were severely restricted in England by laws controlling the practice of religion. Their beliefs, however, were transported by the emigration of congregations to the Netherlands (and later to New England), and by evangelical clergy to Ireland (and later into Wales), and were spread into lay society and parts of the educational system, particularly certain colleges of the University of Cambridge. They took on distinctive beliefs about clerical dress and in opposition to the episcopal system, particularly after the 1619 conclusions of the Synod of Dort they were resisted by the English bishops. They largely adopted Sabbatarianism in the 17th century, and were influenced by millennialism.",
+        "passage_length": 769,
+        "question": "In what century did Puritans adopt Sabbatarianism?",
+        "question_length": 50,
+        "question_type": "literal"
+    },
+    {
+        "answer": "English bishops",
+        "answer_length": 15,
+        "choices": [
+            "Beliefs",
+            "England",
+            "English Bishops",
+            "Later"
+        ],
+        "passage": "Puritans were blocked from changing the established church from within, and were severely restricted in England by laws controlling the practice of religion. Their beliefs, however, were transported by the emigration of congregations to the Netherlands (and later to New England), and by evangelical clergy to Ireland (and later into Wales), and were spread into lay society and parts of the educational system, particularly certain colleges of the University of Cambridge. They took on distinctive beliefs about clerical dress and in opposition to the episcopal system, particularly after the 1619 conclusions of the Synod of Dort they were resisted by the English bishops. They largely adopted Sabbatarianism in the 17th century, and were influenced by millennialism.",
+        "passage_length": 769,
+        "question": "Who resisted the Puritans' beliefs?",
+        "question_length": 35,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Hunter-gatherers",
+        "answer_length": 16,
+        "choices": [
+            "Cases",
+            "Hunter-Gatherers",
+            "Citation",
+            "Hunter"
+        ],
+        "passage": "In the early 1980s, a small but vocal segment of anthropologists and archaeologists attempted to demonstrate that contemporary groups usually identified as hunter-gatherers do not, in most cases, have a continuous history of hunting and gathering, and that in many cases their ancestors were agriculturalists and/or pastoralists[citation needed] who were pushed into marginal areas as a result of migrations, economic exploitation, and/or violent conflict (see, for example, the Kalahari Debate). The result of their effort has been the general acknowledgement that there has been complex interaction between hunter-gatherers and non-hunter-gatherers for millennia.[citation needed]",
+        "passage_length": 682,
+        "question": "What are the groups that are often identified as hunter-gatherers or what?",
+        "question_length": 74,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Anthropologists and archaeologists",
+        "answer_length": 34,
+        "choices": [
+            "Gatherers",
+            "Cases",
+            "Anthropologists And Archaeologists",
+            "Hunter"
+        ],
+        "passage": "In the early 1980s, a small but vocal segment of anthropologists and archaeologists attempted to demonstrate that contemporary groups usually identified as hunter-gatherers do not, in most cases, have a continuous history of hunting and gathering, and that in many cases their ancestors were agriculturalists and/or pastoralists[citation needed] who were pushed into marginal areas as a result of migrations, economic exploitation, and/or violent conflict (see, for example, the Kalahari Debate). The result of their effort has been the general acknowledgement that there has been complex interaction between hunter-gatherers and non-hunter-gatherers for millennia.[citation needed]",
+        "passage_length": 682,
+        "question": "What is needed to demonstrate that hunter-gatherers were not a continuous history of hunting and gathering?",
+        "question_length": 107,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Early 1980s",
+        "answer_length": 11,
+        "choices": [
+            "Cases",
+            "Gatherers",
+            "Early 1980S",
+            "Hunter"
+        ],
+        "passage": "In the early 1980s, a small but vocal segment of anthropologists and archaeologists attempted to demonstrate that contemporary groups usually identified as hunter-gatherers do not, in most cases, have a continuous history of hunting and gathering, and that in many cases their ancestors were agriculturalists and/or pastoralists[citation needed] who were pushed into marginal areas as a result of migrations, economic exploitation, and/or violent conflict (see, for example, the Kalahari Debate). The result of their effort has been the general acknowledgement that there has been complex interaction between hunter-gatherers and non-hunter-gatherers for millennia.[citation needed]",
+        "passage_length": 682,
+        "question": "When did a small but vocal segment of anthropologists and archaeologists attempt to demonstrate that contemporary groups usually identified as hunter-gatherers do not have a continuous history of hunting and gathering?",
+        "question_length": 218,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Kalahari debate",
+        "answer_length": 15,
+        "choices": [
+            "Gatherers",
+            "Kalahari Debate",
+            "Hunter",
+            "Cases"
+        ],
+        "passage": "In the early 1980s, a small but vocal segment of anthropologists and archaeologists attempted to demonstrate that contemporary groups usually identified as hunter-gatherers do not, in most cases, have a continuous history of hunting and gathering, and that in many cases their ancestors were agriculturalists and/or pastoralists[citation needed] who were pushed into marginal areas as a result of migrations, economic exploitation, and/or violent conflict (see, for example, the Kalahari Debate). The result of their effort has been the general acknowledgement that there has been complex interaction between hunter-gatherers and non-hunter-gatherers for millennia.[citation needed]",
+        "passage_length": 682,
+        "question": "What were the ancestors of the Kalahari?",
+        "question_length": 40,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Anthropologists",
+        "answer_length": 15,
+        "choices": [
+            "Anthropologists",
+            "Hunter",
+            "Cases",
+            "Gatherers"
+        ],
+        "passage": "In the early 1980s, a small but vocal segment of anthropologists and archaeologists attempted to demonstrate that contemporary groups usually identified as hunter-gatherers do not, in most cases, have a continuous history of hunting and gathering, and that in many cases their ancestors were agriculturalists and/or pastoralists[citation needed] who were pushed into marginal areas as a result of migrations, economic exploitation, and/or violent conflict (see, for example, the Kalahari Debate). The result of their effort has been the general acknowledgement that there has been complex interaction between hunter-gatherers and non-hunter-gatherers for millennia.[citation needed]",
+        "passage_length": 682,
+        "question": "Along with archaeologists, what group attempted to demonstrate that hunter-gatherers do not have a continuous history of hunting and gathering?",
+        "question_length": 143,
+        "question_type": "literal"
+    },
+    {
+        "answer": "In the ground",
+        "answer_length": 13,
+        "choices": [
+            "In The Ground",
+            "Grave",
+            "Ground",
+            "Ornate"
+        ],
+        "passage": "From his bed he participated in Sunday Mass at 18:00. After communion, the pope suffered a massive heart attack, after which he continued to live for three hours. On 6 August 1978 at 21:41 Paul VI died in Castel Gandolfo. According to his will, he was buried in the grottos of the Vatican not in an ornate tomb, but in a grave in the ground. He is buried beneath the floor of Saint Peter's Basilica with other popes. In his will, he requested to be buried in the \"true earth\" and therefore, he does not have an ornate sarcophagus but an in-ground grave.",
+        "passage_length": 553,
+        "question": "How was Paul VI buried?",
+        "question_length": 23,
+        "question_type": "inferential"
+    },
+    {
+        "answer": "18:00",
+        "answer_length": 5,
+        "choices": [
+            "Buried",
+            "Ground",
+            "18:00",
+            "Grave"
+        ],
+        "passage": "From his bed he participated in Sunday Mass at 18:00. After communion, the pope suffered a massive heart attack, after which he continued to live for three hours. On 6 August 1978 at 21:41 Paul VI died in Castel Gandolfo. According to his will, he was buried in the grottos of the Vatican not in an ornate tomb, but in a grave in the ground. He is buried beneath the floor of Saint Peter's Basilica with other popes. In his will, he requested to be buried in the \"true earth\" and therefore, he does not have an ornate sarcophagus but an in-ground grave.",
+        "passage_length": 553,
+        "question": "At what time did Paul VI participate in Sunday Mass?",
+        "question_length": 52,
+        "question_type": "literal"
+    },
+    {
+        "answer": "1978",
+        "answer_length": 4,
+        "choices": [
+            "Buried",
+            "Ground",
+            "Grave",
+            "1978"
+        ],
+        "passage": "From his bed he participated in Sunday Mass at 18:00. After communion, the pope suffered a massive heart attack, after which he continued to live for three hours. On 6 August 1978 at 21:41 Paul VI died in Castel Gandolfo. According to his will, he was buried in the grottos of the Vatican not in an ornate tomb, but in a grave in the ground. He is buried beneath the floor of Saint Peter's Basilica with other popes. In his will, he requested to be buried in the \"true earth\" and therefore, he does not have an ornate sarcophagus but an in-ground grave.",
+        "passage_length": 553,
+        "question": "In what year did Paul VI die?",
+        "question_length": 29,
+        "question_type": "literal"
+    },
+    {
+        "answer": "True earth",
+        "answer_length": 10,
+        "choices": [
+            "Ground",
+            "Grave",
+            "True Earth",
+            "Buried"
+        ],
+        "passage": "From his bed he participated in Sunday Mass at 18:00. After communion, the pope suffered a massive heart attack, after which he continued to live for three hours. On 6 August 1978 at 21:41 Paul VI died in Castel Gandolfo. According to his will, he was buried in the grottos of the Vatican not in an ornate tomb, but in a grave in the ground. He is buried beneath the floor of Saint Peter's Basilica with other popes. In his will, he requested to be buried in the \"true earth\" and therefore, he does not have an ornate sarcophagus but an in-ground grave.",
+        "passage_length": 553,
+        "question": "Paul VI requested to be buried in the ground, not an ornate tomb, in his will.",
+        "question_length": 78,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Heart attack",
+        "answer_length": 12,
+        "choices": [
+            "Ground",
+            "Grave",
+            "Buried",
+            "Heart Attack"
+        ],
+        "passage": "From his bed he participated in Sunday Mass at 18:00. After communion, the pope suffered a massive heart attack, after which he continued to live for three hours. On 6 August 1978 at 21:41 Paul VI died in Castel Gandolfo. According to his will, he was buried in the grottos of the Vatican not in an ornate tomb, but in a grave in the ground. He is buried beneath the floor of Saint Peter's Basilica with other popes. In his will, he requested to be buried in the \"true earth\" and therefore, he does not have an ornate sarcophagus but an in-ground grave.",
+        "passage_length": 553,
+        "question": "What was the name of the heart attack that caused Paul VI to die?",
+        "question_length": 65,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Soda-lime glass",
+        "answer_length": 15,
+        "choices": [
+            "Soda-Lime Glass",
+            "Color",
+            "Used",
+            "Iron"
+        ],
+        "passage": "Color in glass may be obtained by addition of electrically charged ions (or color centers) that are homogeneously distributed, and by precipitation of finely dispersed particles (such as in photochromic glasses). Ordinary soda-lime glass appears colorless to the naked eye when it is thin, although iron(II) oxide (FeO) impurities of up to 0.1 wt% produce a green tint, which can be viewed in thick pieces or with the aid of scientific instruments. Further FeO and Cr2O3 additions may be used for the production of green bottles. Sulfur, together with carbon and iron salts, is used to form iron polysulfides and produce amber glass ranging from yellowish to almost black. A glass melt can also acquire an amber color from a reducing combustion atmosphere. Manganese dioxide can be added in small amounts to remove the green tint given by iron(II) oxide. When used in art glass or studio glass is colored using closely guarded recipes that involve specific combinations of metal oxides, melting temperatures and 'cook' times. Most colored glass used in the art market is manufactured in volume by vendors who serve this market although there are some glassmakers with the ability to make their own color from raw materials.",
+        "passage_length": 1223,
+        "question": "What is colored by adding electrically charged ions?",
+        "question_length": 52,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Color centers",
+        "answer_length": 13,
+        "choices": [
+            "Glass",
+            "Iron",
+            "Used",
+            "Color Centers"
+        ],
+        "passage": "Color in glass may be obtained by addition of electrically charged ions (or color centers) that are homogeneously distributed, and by precipitation of finely dispersed particles (such as in photochromic glasses). Ordinary soda-lime glass appears colorless to the naked eye when it is thin, although iron(II) oxide (FeO) impurities of up to 0.1 wt% produce a green tint, which can be viewed in thick pieces or with the aid of scientific instruments. Further FeO and Cr2O3 additions may be used for the production of green bottles. Sulfur, together with carbon and iron salts, is used to form iron polysulfides and produce amber glass ranging from yellowish to almost black. A glass melt can also acquire an amber color from a reducing combustion atmosphere. Manganese dioxide can be added in small amounts to remove the green tint given by iron(II) oxide. When used in art glass or studio glass is colored using closely guarded recipes that involve specific combinations of metal oxides, melting temperatures and 'cook' times. Most colored glass used in the art market is manufactured in volume by vendors who serve this market although there are some glassmakers with the ability to make their own color from raw materials.",
+        "passage_length": 1223,
+        "question": "What is the term for electrically charged ions in glass?",
+        "question_length": 56,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Feo and cr2o3",
+        "answer_length": 13,
+        "choices": [
+            "Glass",
+            "Color",
+            "Feo And Cr2O3",
+            "Used"
+        ],
+        "passage": "Color in glass may be obtained by addition of electrically charged ions (or color centers) that are homogeneously distributed, and by precipitation of finely dispersed particles (such as in photochromic glasses). Ordinary soda-lime glass appears colorless to the naked eye when it is thin, although iron(II) oxide (FeO) impurities of up to 0.1 wt% produce a green tint, which can be viewed in thick pieces or with the aid of scientific instruments. Further FeO and Cr2O3 additions may be used for the production of green bottles. Sulfur, together with carbon and iron salts, is used to form iron polysulfides and produce amber glass ranging from yellowish to almost black. A glass melt can also acquire an amber color from a reducing combustion atmosphere. Manganese dioxide can be added in small amounts to remove the green tint given by iron(II) oxide. When used in art glass or studio glass is colored using closely guarded recipes that involve specific combinations of metal oxides, melting temperatures and 'cook' times. Most colored glass used in the art market is manufactured in volume by vendors who serve this market although there are some glassmakers with the ability to make their own color from raw materials.",
+        "passage_length": 1223,
+        "question": "What is the name of the impurities that produce green tint in glass?",
+        "question_length": 68,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Sulfur",
+        "answer_length": 6,
+        "choices": [
+            "Iron",
+            "Glass",
+            "Sulfur",
+            "Color"
+        ],
+        "passage": "Color in glass may be obtained by addition of electrically charged ions (or color centers) that are homogeneously distributed, and by precipitation of finely dispersed particles (such as in photochromic glasses). Ordinary soda-lime glass appears colorless to the naked eye when it is thin, although iron(II) oxide (FeO) impurities of up to 0.1 wt% produce a green tint, which can be viewed in thick pieces or with the aid of scientific instruments. Further FeO and Cr2O3 additions may be used for the production of green bottles. Sulfur, together with carbon and iron salts, is used to form iron polysulfides and produce amber glass ranging from yellowish to almost black. A glass melt can also acquire an amber color from a reducing combustion atmosphere. Manganese dioxide can be added in small amounts to remove the green tint given by iron(II) oxide. When used in art glass or studio glass is colored using closely guarded recipes that involve specific combinations of metal oxides, melting temperatures and 'cook' times. Most colored glass used in the art market is manufactured in volume by vendors who serve this market although there are some glassmakers with the ability to make their own color from raw materials.",
+        "passage_length": 1223,
+        "question": "What can further FeO and Cr2O3 additions be used for the production of green bottles?",
+        "question_length": 85,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Green",
+        "answer_length": 5,
+        "choices": [
+            "Iron",
+            "Color",
+            "Glass",
+            "Green"
+        ],
+        "passage": "Color in glass may be obtained by addition of electrically charged ions (or color centers) that are homogeneously distributed, and by precipitation of finely dispersed particles (such as in photochromic glasses). Ordinary soda-lime glass appears colorless to the naked eye when it is thin, although iron(II) oxide (FeO) impurities of up to 0.1 wt% produce a green tint, which can be viewed in thick pieces or with the aid of scientific instruments. Further FeO and Cr2O3 additions may be used for the production of green bottles. Sulfur, together with carbon and iron salts, is used to form iron polysulfides and produce amber glass ranging from yellowish to almost black. A glass melt can also acquire an amber color from a reducing combustion atmosphere. Manganese dioxide can be added in small amounts to remove the green tint given by iron(II) oxide. When used in art glass or studio glass is colored using closely guarded recipes that involve specific combinations of metal oxides, melting temperatures and 'cook' times. Most colored glass used in the art market is manufactured in volume by vendors who serve this market although there are some glassmakers with the ability to make their own color from raw materials.",
+        "passage_length": 1223,
+        "question": "What tint does iron oxide produce?",
+        "question_length": 34,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Cdmon",
+        "answer_length": 5,
+        "choices": [
+            "C\u00e6dmon",
+            "Cdmon",
+            "Early",
+            "Works"
+        ],
+        "passage": "Some of the most important surviving works of Old English literature are Beowulf, an epic poem; the Anglo-Saxon Chronicle, a record of early English history; the Franks Casket, an inscribed early whalebone artefact; and C\u00e6dmon's Hymn, a Christian religious poem. There are also a number of extant prose works, such as sermons and saints' lives, biblical translations, and translated Latin works of the early Church Fathers, legal documents, such as laws and wills, and practical works on grammar, medicine, and geography. Still, poetry is considered the heart of Old English literature. Nearly all Anglo-Saxon authors are anonymous, with a few exceptions, such as Bede and C\u00e6dmon. C\u00e6dmon, the earliest English poet we know by name, served as a lay brother in the monastery at Whitby.",
+        "passage_length": 783,
+        "question": "What is the name of the earliest English poet?",
+        "question_length": 46,
+        "question_type": "literal"
+    },
+    {
+        "answer": "An epic poem",
+        "answer_length": 12,
+        "choices": [
+            "An Epic Poem",
+            "Early",
+            "English",
+            "C\u00e6dmon"
+        ],
+        "passage": "Some of the most important surviving works of Old English literature are Beowulf, an epic poem; the Anglo-Saxon Chronicle, a record of early English history; the Franks Casket, an inscribed early whalebone artefact; and C\u00e6dmon's Hymn, a Christian religious poem. There are also a number of extant prose works, such as sermons and saints' lives, biblical translations, and translated Latin works of the early Church Fathers, legal documents, such as laws and wills, and practical works on grammar, medicine, and geography. Still, poetry is considered the heart of Old English literature. Nearly all Anglo-Saxon authors are anonymous, with a few exceptions, such as Bede and C\u00e6dmon. C\u00e6dmon, the earliest English poet we know by name, served as a lay brother in the monastery at Whitby.",
+        "passage_length": 783,
+        "question": "What is Beowulf considered to be the most important surviving Old English literature?",
+        "question_length": 85,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Early",
+        "answer_length": 5,
+        "choices": [
+            "Works",
+            "Early",
+            "English",
+            "C\u00e6dmon"
+        ],
+        "passage": "Some of the most important surviving works of Old English literature are Beowulf, an epic poem; the Anglo-Saxon Chronicle, a record of early English history; the Franks Casket, an inscribed early whalebone artefact; and C\u00e6dmon's Hymn, a Christian religious poem. There are also a number of extant prose works, such as sermons and saints' lives, biblical translations, and translated Latin works of the early Church Fathers, legal documents, such as laws and wills, and practical works on grammar, medicine, and geography. Still, poetry is considered the heart of Old English literature. Nearly all Anglo-Saxon authors are anonymous, with a few exceptions, such as Bede and C\u00e6dmon. C\u00e6dmon, the earliest English poet we know by name, served as a lay brother in the monastery at Whitby.",
+        "passage_length": 783,
+        "question": "The Anglo-Saxon Chronicle is a record of what period of English history?",
+        "question_length": 72,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Anonymous",
+        "answer_length": 9,
+        "choices": [
+            "C\u00e6dmon",
+            "Anonymous",
+            "Works",
+            "English"
+        ],
+        "passage": "Some of the most important surviving works of Old English literature are Beowulf, an epic poem; the Anglo-Saxon Chronicle, a record of early English history; the Franks Casket, an inscribed early whalebone artefact; and C\u00e6dmon's Hymn, a Christian religious poem. There are also a number of extant prose works, such as sermons and saints' lives, biblical translations, and translated Latin works of the early Church Fathers, legal documents, such as laws and wills, and practical works on grammar, medicine, and geography. Still, poetry is considered the heart of Old English literature. Nearly all Anglo-Saxon authors are anonymous, with a few exceptions, such as Bede and C\u00e6dmon. C\u00e6dmon, the earliest English poet we know by name, served as a lay brother in the monastery at Whitby.",
+        "passage_length": 783,
+        "question": "What is the name of most Anglo-Saxon authors?",
+        "question_length": 45,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Biblical translations",
+        "answer_length": 21,
+        "choices": [
+            "Works",
+            "English",
+            "Biblical Translations",
+            "C\u00e6dmon"
+        ],
+        "passage": "Some of the most important surviving works of Old English literature are Beowulf, an epic poem; the Anglo-Saxon Chronicle, a record of early English history; the Franks Casket, an inscribed early whalebone artefact; and C\u00e6dmon's Hymn, a Christian religious poem. There are also a number of extant prose works, such as sermons and saints' lives, biblical translations, and translated Latin works of the early Church Fathers, legal documents, such as laws and wills, and practical works on grammar, medicine, and geography. Still, poetry is considered the heart of Old English literature. Nearly all Anglo-Saxon authors are anonymous, with a few exceptions, such as Bede and C\u00e6dmon. C\u00e6dmon, the earliest English poet we know by name, served as a lay brother in the monastery at Whitby.",
+        "passage_length": 783,
+        "question": "What type of translations of Old English literature are there?",
+        "question_length": 62,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Pandeism",
+        "answer_length": 8,
+        "choices": [
+            "God",
+            "Humanity",
+            "Pandeism",
+            "Create"
+        ],
+        "passage": "Deism holds that God is wholly transcendent: God exists, but does not intervene in the world beyond what was necessary to create it. In this view, God is not anthropomorphic, and neither answers prayers nor produces miracles. Common in Deism is a belief that God has no interest in humanity and may not even be aware of humanity. Pandeism and Panendeism, respectively, combine Deism with the Pantheistic or Panentheistic beliefs. Pandeism is proposed to explain as to Deism why God would create a universe and then abandon it, and as to Pantheism, the origin and purpose of the universe.",
+        "passage_length": 587,
+        "question": "What is the name of the group that combines Deism with Pantheism?",
+        "question_length": 65,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Humanity",
+        "answer_length": 8,
+        "choices": [
+            "Humanity",
+            "Deism",
+            "God",
+            "Create"
+        ],
+        "passage": "Deism holds that God is wholly transcendent: God exists, but does not intervene in the world beyond what was necessary to create it. In this view, God is not anthropomorphic, and neither answers prayers nor produces miracles. Common in Deism is a belief that God has no interest in humanity and may not even be aware of humanity. Pandeism and Panendeism, respectively, combine Deism with the Pantheistic or Panentheistic beliefs. Pandeism is proposed to explain as to Deism why God would create a universe and then abandon it, and as to Pantheism, the origin and purpose of the universe.",
+        "passage_length": 587,
+        "question": "What does Deism believe God has no interest in?",
+        "question_length": 47,
+        "question_type": "literal"
+    },
+    {
+        "answer": "A universe",
+        "answer_length": 10,
+        "choices": [
+            "Deism",
+            "A Universe",
+            "Create",
+            "God"
+        ],
+        "passage": "Deism holds that God is wholly transcendent: God exists, but does not intervene in the world beyond what was necessary to create it. In this view, God is not anthropomorphic, and neither answers prayers nor produces miracles. Common in Deism is a belief that God has no interest in humanity and may not even be aware of humanity. Pandeism and Panendeism, respectively, combine Deism with the Pantheistic or Panentheistic beliefs. Pandeism is proposed to explain as to Deism why God would create a universe and then abandon it, and as to Pantheism, the origin and purpose of the universe.",
+        "passage_length": 587,
+        "question": "What does Pandeism believe God created and then abandoned?",
+        "question_length": 58,
+        "question_type": "literal"
+    },
+    {
+        "answer": "God exists",
+        "answer_length": 10,
+        "choices": [
+            "God Exists",
+            "Deism",
+            "God",
+            "Create"
+        ],
+        "passage": "Deism holds that God is wholly transcendent: God exists, but does not intervene in the world beyond what was necessary to create it. In this view, God is not anthropomorphic, and neither answers prayers nor produces miracles. Common in Deism is a belief that God has no interest in humanity and may not even be aware of humanity. Pandeism and Panendeism, respectively, combine Deism with the Pantheistic or Panentheistic beliefs. Pandeism is proposed to explain as to Deism why God would create a universe and then abandon it, and as to Pantheism, the origin and purpose of the universe.",
+        "passage_length": 587,
+        "question": "What type of God is God?",
+        "question_length": 24,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Explain",
+        "answer_length": 7,
+        "choices": [
+            "Deism",
+            "God",
+            "Explain",
+            "Create"
+        ],
+        "passage": "Deism holds that God is wholly transcendent: God exists, but does not intervene in the world beyond what was necessary to create it. In this view, God is not anthropomorphic, and neither answers prayers nor produces miracles. Common in Deism is a belief that God has no interest in humanity and may not even be aware of humanity. Pandeism and Panendeism, respectively, combine Deism with the Pantheistic or Panentheistic beliefs. Pandeism is proposed to explain as to Deism why God would create a universe and then abandon it, and as to Pantheism, the origin and purpose of the universe.",
+        "passage_length": 587,
+        "question": "What is Pandeism proposed to do as to Deism why God would create a universe and then abandon it?",
+        "question_length": 96,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Keep yourself alive",
+        "answer_length": 19,
+        "choices": [
+            "Album",
+            "Keep Yourself Alive",
+            "Alive",
+            "Rolling"
+        ],
+        "passage": "In July 1973, Queen finally under a Trident/EMI deal released their eponymous debut album, an effort influenced by the heavy metal and progressive rock of the day. The album was received well by critics; Gordon Fletcher of Rolling Stone said \"their debut album is superb\", and Chicago's Daily Herald called it an \"above average debut\". It drew little mainstream attention, and the lead single \"Keep Yourself Alive\", a Brian May composition, sold poorly. Retrospectively, \"Keep Yourself Alive\" is cited as the highlight of the album, and in 2008 Rolling Stone ranked it 31st in the \"100 Greatest Guitar Songs of All Time\", describing it as \"an entire album's worth of riffs crammed into a single song\". The album was certified gold in the UK and the US.",
+        "passage_length": 752,
+        "question": "What was Queen's first album called?",
+        "question_length": 36,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Chicago's daily herald",
+        "answer_length": 22,
+        "choices": [
+            "Debut",
+            "Rolling",
+            "Chicago'S Daily Herald",
+            "Album"
+        ],
+        "passage": "In July 1973, Queen finally under a Trident/EMI deal released their eponymous debut album, an effort influenced by the heavy metal and progressive rock of the day. The album was received well by critics; Gordon Fletcher of Rolling Stone said \"their debut album is superb\", and Chicago's Daily Herald called it an \"above average debut\". It drew little mainstream attention, and the lead single \"Keep Yourself Alive\", a Brian May composition, sold poorly. Retrospectively, \"Keep Yourself Alive\" is cited as the highlight of the album, and in 2008 Rolling Stone ranked it 31st in the \"100 Greatest Guitar Songs of All Time\", describing it as \"an entire album's worth of riffs crammed into a single song\". The album was certified gold in the UK and the US.",
+        "passage_length": 752,
+        "question": "Queen's debut album was rated as \"above average\" by Rolling Stone and EMI.",
+        "question_length": 74,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "31st",
+        "answer_length": 4,
+        "choices": [
+            "31St",
+            "Debut",
+            "Album",
+            "Alive"
+        ],
+        "passage": "In July 1973, Queen finally under a Trident/EMI deal released their eponymous debut album, an effort influenced by the heavy metal and progressive rock of the day. The album was received well by critics; Gordon Fletcher of Rolling Stone said \"their debut album is superb\", and Chicago's Daily Herald called it an \"above average debut\". It drew little mainstream attention, and the lead single \"Keep Yourself Alive\", a Brian May composition, sold poorly. Retrospectively, \"Keep Yourself Alive\" is cited as the highlight of the album, and in 2008 Rolling Stone ranked it 31st in the \"100 Greatest Guitar Songs of All Time\", describing it as \"an entire album's worth of riffs crammed into a single song\". The album was certified gold in the UK and the US.",
+        "passage_length": 752,
+        "question": "What was Queen's 2008 ranking in the \"Greatest Guitar Songs of All Time?\"",
+        "question_length": 73,
+        "question_type": "literal"
+    },
+    {
+        "answer": "2008",
+        "answer_length": 4,
+        "choices": [
+            "Debut",
+            "2008",
+            "Alive",
+            "Album"
+        ],
+        "passage": "In July 1973, Queen finally under a Trident/EMI deal released their eponymous debut album, an effort influenced by the heavy metal and progressive rock of the day. The album was received well by critics; Gordon Fletcher of Rolling Stone said \"their debut album is superb\", and Chicago's Daily Herald called it an \"above average debut\". It drew little mainstream attention, and the lead single \"Keep Yourself Alive\", a Brian May composition, sold poorly. Retrospectively, \"Keep Yourself Alive\" is cited as the highlight of the album, and in 2008 Rolling Stone ranked it 31st in the \"100 Greatest Guitar Songs of All Time\", describing it as \"an entire album's worth of riffs crammed into a single song\". The album was certified gold in the UK and the US.",
+        "passage_length": 752,
+        "question": "In what year did Rolling Stone rank Queen 31st in the \"100 Greatest Guitar Songs of All Time\"?",
+        "question_length": 94,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Above average debut",
+        "answer_length": 19,
+        "choices": [
+            "Alive",
+            "Debut",
+            "Album",
+            "Above Average Debut"
+        ],
+        "passage": "In July 1973, Queen finally under a Trident/EMI deal released their eponymous debut album, an effort influenced by the heavy metal and progressive rock of the day. The album was received well by critics; Gordon Fletcher of Rolling Stone said \"their debut album is superb\", and Chicago's Daily Herald called it an \"above average debut\". It drew little mainstream attention, and the lead single \"Keep Yourself Alive\", a Brian May composition, sold poorly. Retrospectively, \"Keep Yourself Alive\" is cited as the highlight of the album, and in 2008 Rolling Stone ranked it 31st in the \"100 Greatest Guitar Songs of All Time\", describing it as \"an entire album's worth of riffs crammed into a single song\". The album was certified gold in the UK and the US.",
+        "passage_length": 752,
+        "question": "What did the Chicago Daily Herald call Queen's debut album?",
+        "question_length": 59,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Utf-32",
+        "answer_length": 6,
+        "choices": [
+            "Representation",
+            "Utf",
+            "32",
+            "Utf-32"
+        ],
+        "passage": "In UTF-32 and UCS-4, one 32-bit code value serves as a fairly direct representation of any character's code point (although the endianness, which varies across different platforms, affects how the code value manifests as an octet sequence). In the other encodings, each code point may be represented by a variable number of code values. UTF-32 is widely used as an internal representation of text in programs (as opposed to stored or transmitted text), since every Unix operating system that uses the gcc compilers to generate software uses it as the standard \"wide character\" encoding. Some programming languages, such as Seed7, use UTF-32 as internal representation for strings and characters. Recent versions of the Python programming language (beginning with 2.2) may also be configured to use UTF-32 as the representation for Unicode strings, effectively disseminating such encoding in high-level coded software.",
+        "passage_length": 917,
+        "question": "What is the 32-bit value that represents a character's code point?",
+        "question_length": 66,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Internal representation",
+        "answer_length": 23,
+        "choices": [
+            "Code",
+            "Internal Representation",
+            "32",
+            "Representation"
+        ],
+        "passage": "In UTF-32 and UCS-4, one 32-bit code value serves as a fairly direct representation of any character's code point (although the endianness, which varies across different platforms, affects how the code value manifests as an octet sequence). In the other encodings, each code point may be represented by a variable number of code values. UTF-32 is widely used as an internal representation of text in programs (as opposed to stored or transmitted text), since every Unix operating system that uses the gcc compilers to generate software uses it as the standard \"wide character\" encoding. Some programming languages, such as Seed7, use UTF-32 as internal representation for strings and characters. Recent versions of the Python programming language (beginning with 2.2) may also be configured to use UTF-32 as the representation for Unicode strings, effectively disseminating such encoding in high-level coded software.",
+        "passage_length": 917,
+        "question": "What type of representation of text is UTF-32 widely used for?",
+        "question_length": 62,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Python programming language",
+        "answer_length": 27,
+        "choices": [
+            "Representation",
+            "Code",
+            "Python Programming Language",
+            "32"
+        ],
+        "passage": "In UTF-32 and UCS-4, one 32-bit code value serves as a fairly direct representation of any character's code point (although the endianness, which varies across different platforms, affects how the code value manifests as an octet sequence). In the other encodings, each code point may be represented by a variable number of code values. UTF-32 is widely used as an internal representation of text in programs (as opposed to stored or transmitted text), since every Unix operating system that uses the gcc compilers to generate software uses it as the standard \"wide character\" encoding. Some programming languages, such as Seed7, use UTF-32 as internal representation for strings and characters. Recent versions of the Python programming language (beginning with 2.2) may also be configured to use UTF-32 as the representation for Unicode strings, effectively disseminating such encoding in high-level coded software.",
+        "passage_length": 917,
+        "question": "Seed7 is a language that uses UTF-32 as internal representation for strings and characters. Seed7 is a what?",
+        "question_length": 108,
+        "question_type": "literal"
+    },
+    {
+        "answer": "To generate software",
+        "answer_length": 20,
+        "choices": [
+            "Code",
+            "32",
+            "Representation",
+            "To Generate Software"
+        ],
+        "passage": "In UTF-32 and UCS-4, one 32-bit code value serves as a fairly direct representation of any character's code point (although the endianness, which varies across different platforms, affects how the code value manifests as an octet sequence). In the other encodings, each code point may be represented by a variable number of code values. UTF-32 is widely used as an internal representation of text in programs (as opposed to stored or transmitted text), since every Unix operating system that uses the gcc compilers to generate software uses it as the standard \"wide character\" encoding. Some programming languages, such as Seed7, use UTF-32 as internal representation for strings and characters. Recent versions of the Python programming language (beginning with 2.2) may also be configured to use UTF-32 as the representation for Unicode strings, effectively disseminating such encoding in high-level coded software.",
+        "passage_length": 917,
+        "question": "What does every Unix operating system do with the gcc compilers?",
+        "question_length": 64,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Affects",
+        "answer_length": 7,
+        "choices": [
+            "Code",
+            "Representation",
+            "32",
+            "Affects"
+        ],
+        "passage": "In UTF-32 and UCS-4, one 32-bit code value serves as a fairly direct representation of any character's code point (although the endianness, which varies across different platforms, affects how the code value manifests as an octet sequence). In the other encodings, each code point may be represented by a variable number of code values. UTF-32 is widely used as an internal representation of text in programs (as opposed to stored or transmitted text), since every Unix operating system that uses the gcc compilers to generate software uses it as the standard \"wide character\" encoding. Some programming languages, such as Seed7, use UTF-32 as internal representation for strings and characters. Recent versions of the Python programming language (beginning with 2.2) may also be configured to use UTF-32 as the representation for Unicode strings, effectively disseminating such encoding in high-level coded software.",
+        "passage_length": 917,
+        "question": "What does endianness do to how a code value manifests as an octet sequence?",
+        "question_length": 75,
+        "question_type": "literal"
+    },
+    {
+        "answer": "1,648,195 km2",
+        "answer_length": 13,
+        "choices": [
+            "Km",
+            "Azerbaijan",
+            "North",
+            "1,648,195 Km2"
+        ],
+        "passage": "Iran has an area of 1,648,195 km2 (636,372 sq mi). Iran lies between latitudes 24\u00b0 and 40\u00b0 N, and longitudes 44\u00b0 and 64\u00b0 E. Its borders are with Azerbaijan (611 km or 380 mi, with Azerbaijan-Naxcivan exclave, 179 km or 111 mi) and Armenia (35 km or 22 mi) to the north-west; the Caspian Sea to the north; Turkmenistan (992 km or 616 mi) to the north-east; Pakistan (909 km or 565 mi) and Afghanistan (936 km or 582 mi) to the east; Turkey (499 km or 310 mi) and Iraq (1,458 km or 906 mi) to the west; and finally the waters of the Persian Gulf and the Gulf of Oman to the south.",
+        "passage_length": 578,
+        "question": "How large is Iran?",
+        "question_length": 18,
+        "question_type": "inferential"
+    },
+    {
+        "answer": "North-west",
+        "answer_length": 10,
+        "choices": [
+            "Azerbaijan",
+            "North-West",
+            "Km",
+            "Mi"
+        ],
+        "passage": "Iran has an area of 1,648,195 km2 (636,372 sq mi). Iran lies between latitudes 24\u00b0 and 40\u00b0 N, and longitudes 44\u00b0 and 64\u00b0 E. Its borders are with Azerbaijan (611 km or 380 mi, with Azerbaijan-Naxcivan exclave, 179 km or 111 mi) and Armenia (35 km or 22 mi) to the north-west; the Caspian Sea to the north; Turkmenistan (992 km or 616 mi) to the north-east; Pakistan (909 km or 565 mi) and Afghanistan (936 km or 582 mi) to the east; Turkey (499 km or 310 mi) and Iraq (1,458 km or 906 mi) to the west; and finally the waters of the Persian Gulf and the Gulf of Oman to the south.",
+        "passage_length": 578,
+        "question": "What direction is Armenia from Iran?",
+        "question_length": 36,
+        "question_type": "literal"
+    },
+    {
+        "answer": "North-east",
+        "answer_length": 10,
+        "choices": [
+            "Mi",
+            "Km",
+            "North-East",
+            "North"
+        ],
+        "passage": "Iran has an area of 1,648,195 km2 (636,372 sq mi). Iran lies between latitudes 24\u00b0 and 40\u00b0 N, and longitudes 44\u00b0 and 64\u00b0 E. Its borders are with Azerbaijan (611 km or 380 mi, with Azerbaijan-Naxcivan exclave, 179 km or 111 mi) and Armenia (35 km or 22 mi) to the north-west; the Caspian Sea to the north; Turkmenistan (992 km or 616 mi) to the north-east; Pakistan (909 km or 565 mi) and Afghanistan (936 km or 582 mi) to the east; Turkey (499 km or 310 mi) and Iraq (1,458 km or 906 mi) to the west; and finally the waters of the Persian Gulf and the Gulf of Oman to the south.",
+        "passage_length": 578,
+        "question": "What direction is Turkmenistan to the north?",
+        "question_length": 44,
+        "question_type": "literal"
+    },
+    {
+        "answer": "111 mi",
+        "answer_length": 6,
+        "choices": [
+            "North",
+            "Km",
+            "111 Mi",
+            "Mi"
+        ],
+        "passage": "Iran has an area of 1,648,195 km2 (636,372 sq mi). Iran lies between latitudes 24\u00b0 and 40\u00b0 N, and longitudes 44\u00b0 and 64\u00b0 E. Its borders are with Azerbaijan (611 km or 380 mi, with Azerbaijan-Naxcivan exclave, 179 km or 111 mi) and Armenia (35 km or 22 mi) to the north-west; the Caspian Sea to the north; Turkmenistan (992 km or 616 mi) to the north-east; Pakistan (909 km or 565 mi) and Afghanistan (936 km or 582 mi) to the east; Turkey (499 km or 310 mi) and Iraq (1,458 km or 906 mi) to the west; and finally the waters of the Persian Gulf and the Gulf of Oman to the south.",
+        "passage_length": 578,
+        "question": "How many miles is the Azerbaijan-Naxcivan exclave?",
+        "question_length": 50,
+        "question_type": "literal"
+    },
+    {
+        "answer": "1,648,195",
+        "answer_length": 9,
+        "choices": [
+            "Km",
+            "Mi",
+            "North",
+            "1,648,195"
+        ],
+        "passage": "Iran has an area of 1,648,195 km2 (636,372 sq mi). Iran lies between latitudes 24\u00b0 and 40\u00b0 N, and longitudes 44\u00b0 and 64\u00b0 E. Its borders are with Azerbaijan (611 km or 380 mi, with Azerbaijan-Naxcivan exclave, 179 km or 111 mi) and Armenia (35 km or 22 mi) to the north-west; the Caspian Sea to the north; Turkmenistan (992 km or 616 mi) to the north-east; Pakistan (909 km or 565 mi) and Afghanistan (936 km or 582 mi) to the east; Turkey (499 km or 310 mi) and Iraq (1,458 km or 906 mi) to the west; and finally the waters of the Persian Gulf and the Gulf of Oman to the south.",
+        "passage_length": 578,
+        "question": "How many kilometers of land does Iran have?",
+        "question_length": 43,
+        "question_type": "literal"
+    },
+    {
+        "answer": "1821",
+        "answer_length": 4,
+        "choices": [
+            "Centres",
+            "Greek",
+            "Commerce",
+            "1821"
+        ],
+        "passage": "The roots of Greek success in the Ottoman Empire can be traced to the Greek tradition of education and commerce. It was the wealth of the extensive merchant class that provided the material basis for the intellectual revival that was the prominent feature of Greek life in the half century and more leading to the outbreak of the Greek War of Independence in 1821. Not coincidentally, on the eve of 1821, the three most important centres of Greek learning were situated in Chios, Smyrna and Aivali, all three major centres of Greek commerce. Greek success was also favoured by Greek domination of the Christian Orthodox church.",
+        "passage_length": 627,
+        "question": "When did the Greek War of Independence begin?",
+        "question_length": 45,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Commerce",
+        "answer_length": 8,
+        "choices": [
+            "1821",
+            "Commerce",
+            "Centres",
+            "Greek"
+        ],
+        "passage": "The roots of Greek success in the Ottoman Empire can be traced to the Greek tradition of education and commerce. It was the wealth of the extensive merchant class that provided the material basis for the intellectual revival that was the prominent feature of Greek life in the half century and more leading to the outbreak of the Greek War of Independence in 1821. Not coincidentally, on the eve of 1821, the three most important centres of Greek learning were situated in Chios, Smyrna and Aivali, all three major centres of Greek commerce. Greek success was also favoured by Greek domination of the Christian Orthodox church.",
+        "passage_length": 627,
+        "question": "The roots of Greek success in the Ottoman Empire can be traced to the Greek tradition of education and what?",
+        "question_length": 108,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Greek domination",
+        "answer_length": 16,
+        "choices": [
+            "Greek",
+            "Centres",
+            "1821",
+            "Greek Domination"
+        ],
+        "passage": "The roots of Greek success in the Ottoman Empire can be traced to the Greek tradition of education and commerce. It was the wealth of the extensive merchant class that provided the material basis for the intellectual revival that was the prominent feature of Greek life in the half century and more leading to the outbreak of the Greek War of Independence in 1821. Not coincidentally, on the eve of 1821, the three most important centres of Greek learning were situated in Chios, Smyrna and Aivali, all three major centres of Greek commerce. Greek success was also favoured by Greek domination of the Christian Orthodox church.",
+        "passage_length": 627,
+        "question": "What was the Greeks' favor of the Christian Orthodox church?",
+        "question_length": 60,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Extensive merchant class",
+        "answer_length": 24,
+        "choices": [
+            "Greek",
+            "Extensive Merchant Class",
+            "Centres",
+            "1821"
+        ],
+        "passage": "The roots of Greek success in the Ottoman Empire can be traced to the Greek tradition of education and commerce. It was the wealth of the extensive merchant class that provided the material basis for the intellectual revival that was the prominent feature of Greek life in the half century and more leading to the outbreak of the Greek War of Independence in 1821. Not coincidentally, on the eve of 1821, the three most important centres of Greek learning were situated in Chios, Smyrna and Aivali, all three major centres of Greek commerce. Greek success was also favoured by Greek domination of the Christian Orthodox church.",
+        "passage_length": 627,
+        "question": "What type of merchant class provided the material basis for the intellectual revival?",
+        "question_length": 85,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Greek success",
+        "answer_length": 13,
+        "choices": [
+            "Centres",
+            "Greek",
+            "1821",
+            "Greek Success"
+        ],
+        "passage": "The roots of Greek success in the Ottoman Empire can be traced to the Greek tradition of education and commerce. It was the wealth of the extensive merchant class that provided the material basis for the intellectual revival that was the prominent feature of Greek life in the half century and more leading to the outbreak of the Greek War of Independence in 1821. Not coincidentally, on the eve of 1821, the three most important centres of Greek learning were situated in Chios, Smyrna and Aivali, all three major centres of Greek commerce. Greek success was also favoured by Greek domination of the Christian Orthodox church.",
+        "passage_length": 627,
+        "question": "Greek success was also what by Greek domination of the Christian Orthodox church?",
+        "question_length": 81,
+        "question_type": "literal"
     }
 ]
