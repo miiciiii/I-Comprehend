@@ -33,6 +33,7 @@ future==1.0.0
 gast==0.6.0
 gensim @ git+https://github.com/RaRe-Technologies/gensim@24684175a8b49a55ced4a6bb24ef096c3d2fdc3e
 google-pasta==0.2.0
+graphviz==0.20.3
 grpcio==1.66.1
 h5py==3.11.0
 huggingface-hub==0.24.6
@@ -127,6 +128,7 @@ threadpoolctl==3.5.0
 tokenizers==0.19.1
 torch==2.4.1
 torchaudio==2.3.0
+torchview==0.2.6
 torchvision==0.18.0
 tornado==6.4
 tqdm==4.66.2
