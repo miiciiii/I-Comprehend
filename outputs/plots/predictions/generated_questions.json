@@ -2560,5 +2560,380 @@
         "question": "What was the name of the political movement that covered most South Slavs in the 20th century?",
         "question_length": 94,
         "question_type": "literal"
+    },
+    {
+        "answer": "2008",
+        "answer_length": 4,
+        "choices": [
+            "^2008",
+            "2004-2008",
+            "2008/09",
+            "2008"
+        ],
+        "passage": "At its press conference at the 2007 Tokyo Game Show, Sony announced DualShock 3 (trademarked DUALSHOCK 3), a PlayStation 3 controller with the same function and design as Sixaxis, but with vibration capability included. Hands-on accounts describe the controller as being noticeably heavier than the standard Sixaxis controller and capable of vibration forces comparable to DualShock 2. It was released in Japan on November 11, 2007; in North America on April 5, 2008; in Australia on April 24, 2008; in New Zealand on May 9, 2008; in mainland Europe on July 2, 2008, and in the United Kingdom and Ireland on July 4, 2008.",
+        "passage_length": 621,
+        "question": "In what year was the DualShock 3 released in North America?",
+        "question_length": 59,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Dualshock 3",
+        "answer_length": 11,
+        "choices": [
+            "Halo 3",
+            "Mid 30'S",
+            "Included",
+            "Dualshock 3"
+        ],
+        "passage": "At its press conference at the 2007 Tokyo Game Show, Sony announced DualShock 3 (trademarked DUALSHOCK 3), a PlayStation 3 controller with the same function and design as Sixaxis, but with vibration capability included. Hands-on accounts describe the controller as being noticeably heavier than the standard Sixaxis controller and capable of vibration forces comparable to DualShock 2. It was released in Japan on November 11, 2007; in North America on April 5, 2008; in Australia on April 24, 2008; in New Zealand on May 9, 2008; in mainland Europe on July 2, 2008, and in the United Kingdom and Ireland on July 4, 2008.",
+        "passage_length": 621,
+        "question": "What was the name of the DualShock 3 controller?",
+        "question_length": 48,
+        "question_type": "literal"
+    },
+    {
+        "answer": "2007",
+        "answer_length": 4,
+        "choices": [
+            "2007/08",
+            "/R/2007Scape",
+            "2007",
+            "2007Scape"
+        ],
+        "passage": "At its press conference at the 2007 Tokyo Game Show, Sony announced DualShock 3 (trademarked DUALSHOCK 3), a PlayStation 3 controller with the same function and design as Sixaxis, but with vibration capability included. Hands-on accounts describe the controller as being noticeably heavier than the standard Sixaxis controller and capable of vibration forces comparable to DualShock 2. It was released in Japan on November 11, 2007; in North America on April 5, 2008; in Australia on April 24, 2008; in New Zealand on May 9, 2008; in mainland Europe on July 2, 2008, and in the United Kingdom and Ireland on July 4, 2008.",
+        "passage_length": 621,
+        "question": "When was the DualShock 3 announced?",
+        "question_length": 35,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Vibration capability",
+        "answer_length": 20,
+        "choices": [
+            "Destructive Capability",
+            "Vibration Capability",
+            "Limited Capability",
+            "Own Capability"
+        ],
+        "passage": "At its press conference at the 2007 Tokyo Game Show, Sony announced DualShock 3 (trademarked DUALSHOCK 3), a PlayStation 3 controller with the same function and design as Sixaxis, but with vibration capability included. Hands-on accounts describe the controller as being noticeably heavier than the standard Sixaxis controller and capable of vibration forces comparable to DualShock 2. It was released in Japan on November 11, 2007; in North America on April 5, 2008; in Australia on April 24, 2008; in New Zealand on May 9, 2008; in mainland Europe on July 2, 2008, and in the United Kingdom and Ireland on July 4, 2008.",
+        "passage_length": 621,
+        "question": "What capability did DualShock 3 have?",
+        "question_length": 37,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Hands-on accounts",
+        "answer_length": 17,
+        "choices": [
+            "Expense Accounts",
+            "Regular Accounts",
+            "Game Accounts/Codes",
+            "Hands-On Accounts"
+        ],
+        "passage": "At its press conference at the 2007 Tokyo Game Show, Sony announced DualShock 3 (trademarked DUALSHOCK 3), a PlayStation 3 controller with the same function and design as Sixaxis, but with vibration capability included. Hands-on accounts describe the controller as being noticeably heavier than the standard Sixaxis controller and capable of vibration forces comparable to DualShock 2. It was released in Japan on November 11, 2007; in North America on April 5, 2008; in Australia on April 24, 2008; in New Zealand on May 9, 2008; in mainland Europe on July 2, 2008, and in the United Kingdom and Ireland on July 4, 2008.",
+        "passage_length": 621,
+        "question": "What type of user described the DualShock 3 as being heavier than the Sixaxis?",
+        "question_length": 78,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Annual events",
+        "answer_length": 13,
+        "choices": [
+            "Normal Events",
+            "Esl Events",
+            "Trigger Events",
+            "Annual Events"
+        ],
+        "passage": "Several annual events\u2014many of them centered on performing and visual arts\u2014draw visitors to Ann Arbor. One such event is the Ann Arbor Art Fairs, a set of four concurrent juried fairs held on downtown streets. Scheduled on Wednesday through Saturday of the third week of July, the fairs draw upward of half a million visitors. Another is the Ann Arbor Film Festival, held during the third week of March, which receives more than 2,500 submissions annually from more than 40 countries and serves as one of a handful of Academy Award\u2013qualifying festivals in the United States.",
+        "passage_length": 573,
+        "question": "What kind of events draw people to Ann Arbor?",
+        "question_length": 45,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Downtown streets",
+        "answer_length": 16,
+        "choices": [
+            "Cobbled Streets",
+            "American Streets",
+            "High Streets",
+            "Downtown Streets"
+        ],
+        "passage": "Several annual events\u2014many of them centered on performing and visual arts\u2014draw visitors to Ann Arbor. One such event is the Ann Arbor Art Fairs, a set of four concurrent juried fairs held on downtown streets. Scheduled on Wednesday through Saturday of the third week of July, the fairs draw upward of half a million visitors. Another is the Ann Arbor Film Festival, held during the third week of March, which receives more than 2,500 submissions annually from more than 40 countries and serves as one of a handful of Academy Award\u2013qualifying festivals in the United States.",
+        "passage_length": 573,
+        "question": "Where are the Art Fairs held?",
+        "question_length": 29,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Third",
+        "answer_length": 5,
+        "choices": [
+            "Streets",
+            "Third",
+            "Scheduled",
+            "Performing"
+        ],
+        "passage": "Several annual events\u2014many of them centered on performing and visual arts\u2014draw visitors to Ann Arbor. One such event is the Ann Arbor Art Fairs, a set of four concurrent juried fairs held on downtown streets. Scheduled on Wednesday through Saturday of the third week of July, the fairs draw upward of half a million visitors. Another is the Ann Arbor Film Festival, held during the third week of March, which receives more than 2,500 submissions annually from more than 40 countries and serves as one of a handful of Academy Award\u2013qualifying festivals in the United States.",
+        "passage_length": 573,
+        "question": "What week of July are the Ann Arbor Art Fairs held?",
+        "question_length": 51,
+        "question_type": "literal"
+    },
+    {
+        "answer": "40",
+        "answer_length": 2,
+        "choices": [
+            "40",
+            "25-40%",
+            "409.99",
+            "40A"
+        ],
+        "passage": "Several annual events\u2014many of them centered on performing and visual arts\u2014draw visitors to Ann Arbor. One such event is the Ann Arbor Art Fairs, a set of four concurrent juried fairs held on downtown streets. Scheduled on Wednesday through Saturday of the third week of July, the fairs draw upward of half a million visitors. Another is the Ann Arbor Film Festival, held during the third week of March, which receives more than 2,500 submissions annually from more than 40 countries and serves as one of a handful of Academy Award\u2013qualifying festivals in the United States.",
+        "passage_length": 573,
+        "question": "How many countries submit films to the Ann Arbor Film Festival each year?",
+        "question_length": 73,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Academy award\u2013qualifying festivals",
+        "answer_length": 34,
+        "choices": [
+            "Million",
+            "Countries",
+            "Annually",
+            "Academy Award\u2013Qualifying Festivals"
+        ],
+        "passage": "Several annual events\u2014many of them centered on performing and visual arts\u2014draw visitors to Ann Arbor. One such event is the Ann Arbor Art Fairs, a set of four concurrent juried fairs held on downtown streets. Scheduled on Wednesday through Saturday of the third week of July, the fairs draw upward of half a million visitors. Another is the Ann Arbor Film Festival, held during the third week of March, which receives more than 2,500 submissions annually from more than 40 countries and serves as one of a handful of Academy Award\u2013qualifying festivals in the United States.",
+        "passage_length": 573,
+        "question": "What type of festival is the Ann Arbor Film Festival?",
+        "question_length": 53,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Oklahoma constitution",
+        "answer_length": 21,
+        "choices": [
+            "Entire Constitution",
+            "Oklahoma Constitution",
+            "Constitutional Duty",
+            "Constitutional Laws"
+        ],
+        "passage": "State law codifies Oklahoma's state emblems and honorary positions; the Oklahoma Senate or House of Representatives may adopt resolutions designating others for special events and to benefit organizations. Currently the State Senate is waiting to vote on a change to the state's motto. The House passed HCR 1024, which will change the state motto from \"Labor Omnia Vincit\" to \"Oklahoma-In God We Trust!\" The author of the resolution stated that a constituent researched the Oklahoma Constitution and found no \"official\" vote regarding \"Labor Omnia Vincit\", therefore opening the door for an entirely new motto.",
+        "passage_length": 610,
+        "question": "What does Oklahoma's state law codify?",
+        "question_length": 38,
+        "question_type": "literal"
+    },
+    {
+        "answer": "A change",
+        "answer_length": 8,
+        "choices": [
+            "Positions",
+            "A Change",
+            "Door",
+            "Many Things"
+        ],
+        "passage": "State law codifies Oklahoma's state emblems and honorary positions; the Oklahoma Senate or House of Representatives may adopt resolutions designating others for special events and to benefit organizations. Currently the State Senate is waiting to vote on a change to the state's motto. The House passed HCR 1024, which will change the state motto from \"Labor Omnia Vincit\" to \"Oklahoma-In God We Trust!\" The author of the resolution stated that a constituent researched the Oklahoma Constitution and found no \"official\" vote regarding \"Labor Omnia Vincit\", therefore opening the door for an entirely new motto.",
+        "passage_length": 610,
+        "question": "What is the state Senate waiting to vote on to the state motto?",
+        "question_length": 63,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Hcr 1024",
+        "answer_length": 8,
+        "choices": [
+            "Stated",
+            "Resolution",
+            "Special",
+            "Hcr 1024"
+        ],
+        "passage": "State law codifies Oklahoma's state emblems and honorary positions; the Oklahoma Senate or House of Representatives may adopt resolutions designating others for special events and to benefit organizations. Currently the State Senate is waiting to vote on a change to the state's motto. The House passed HCR 1024, which will change the state motto from \"Labor Omnia Vincit\" to \"Oklahoma-In God We Trust!\" The author of the resolution stated that a constituent researched the Oklahoma Constitution and found no \"official\" vote regarding \"Labor Omnia Vincit\", therefore opening the door for an entirely new motto.",
+        "passage_length": 610,
+        "question": "What is the name of the bill that will change Oklahoma's motto?",
+        "question_length": 63,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Adopt",
+        "answer_length": 5,
+        "choices": [
+            "Adopt",
+            "Constituent",
+            "Events",
+            "Codifies"
+        ],
+        "passage": "State law codifies Oklahoma's state emblems and honorary positions; the Oklahoma Senate or House of Representatives may adopt resolutions designating others for special events and to benefit organizations. Currently the State Senate is waiting to vote on a change to the state's motto. The House passed HCR 1024, which will change the state motto from \"Labor Omnia Vincit\" to \"Oklahoma-In God We Trust!\" The author of the resolution stated that a constituent researched the Oklahoma Constitution and found no \"official\" vote regarding \"Labor Omnia Vincit\", therefore opening the door for an entirely new motto.",
+        "passage_length": 610,
+        "question": "What may the Oklahoma Senate or House of Representatives do with resolutions designating others for special events and to benefit organizations?",
+        "question_length": 144,
+        "question_type": "literal"
+    },
+    {
+        "answer": "A constituent",
+        "answer_length": 13,
+        "choices": [
+            "Many Things",
+            "Labor",
+            "A Constituent",
+            "Events"
+        ],
+        "passage": "State law codifies Oklahoma's state emblems and honorary positions; the Oklahoma Senate or House of Representatives may adopt resolutions designating others for special events and to benefit organizations. Currently the State Senate is waiting to vote on a change to the state's motto. The House passed HCR 1024, which will change the state motto from \"Labor Omnia Vincit\" to \"Oklahoma-In God We Trust!\" The author of the resolution stated that a constituent researched the Oklahoma Constitution and found no \"official\" vote regarding \"Labor Omnia Vincit\", therefore opening the door for an entirely new motto.",
+        "passage_length": 610,
+        "question": "Who researched the Oklahoma Constitution?",
+        "question_length": 41,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Heresy",
+        "answer_length": 6,
+        "choices": [
+            "Heretics",
+            "Heresy",
+            "Daily",
+            "Possessed"
+        ],
+        "passage": "In his work \"On the Jews and Their Lies\" (1543), German Reformation leader Martin Luther claims that Jewish history was \"assailed by much heresy\", and that Christ the logos swept away the Jewish heresy and goes on to do so, \"as it still does daily before our eyes.\" He stigmatizes Jewish Prayer as being \"blasphemous\" (sic) and a lie, and vilifies Jews in general as being spiritually \"blind\" and \"surely possessed by all devils.\" Luther calls the members of the Orthodox Catholic Church \"papists\" and heretics, and has a special spiritual problem with Jewish circumcision.",
+        "passage_length": 573,
+        "question": "What did Martin Luther claim Jewish history was assailed by?",
+        "question_length": 60,
+        "question_type": "literal"
+    },
+    {
+        "answer": "1543",
+        "answer_length": 4,
+        "choices": [
+            "History",
+            "Claims",
+            "Lie",
+            "1543"
+        ],
+        "passage": "In his work \"On the Jews and Their Lies\" (1543), German Reformation leader Martin Luther claims that Jewish history was \"assailed by much heresy\", and that Christ the logos swept away the Jewish heresy and goes on to do so, \"as it still does daily before our eyes.\" He stigmatizes Jewish Prayer as being \"blasphemous\" (sic) and a lie, and vilifies Jews in general as being spiritually \"blind\" and \"surely possessed by all devils.\" Luther calls the members of the Orthodox Catholic Church \"papists\" and heretics, and has a special spiritual problem with Jewish circumcision.",
+        "passage_length": 573,
+        "question": "When was Martin Luther's book published?",
+        "question_length": 40,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Jewish circumcision",
+        "answer_length": 19,
+        "choices": [
+            "Jewish Circumcision",
+            "Goes",
+            "Jewish History",
+            "Vilifies"
+        ],
+        "passage": "In his work \"On the Jews and Their Lies\" (1543), German Reformation leader Martin Luther claims that Jewish history was \"assailed by much heresy\", and that Christ the logos swept away the Jewish heresy and goes on to do so, \"as it still does daily before our eyes.\" He stigmatizes Jewish Prayer as being \"blasphemous\" (sic) and a lie, and vilifies Jews in general as being spiritually \"blind\" and \"surely possessed by all devils.\" Luther calls the members of the Orthodox Catholic Church \"papists\" and heretics, and has a special spiritual problem with Jewish circumcision.",
+        "passage_length": 573,
+        "question": "What did Luther claim Christ the Logos swept Jewish heresy?",
+        "question_length": 59,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Blasphemous",
+        "answer_length": 11,
+        "choices": [
+            "Church",
+            "Blasphemous",
+            "Logos",
+            "Orthodox"
+        ],
+        "passage": "In his work \"On the Jews and Their Lies\" (1543), German Reformation leader Martin Luther claims that Jewish history was \"assailed by much heresy\", and that Christ the logos swept away the Jewish heresy and goes on to do so, \"as it still does daily before our eyes.\" He stigmatizes Jewish Prayer as being \"blasphemous\" (sic) and a lie, and vilifies Jews in general as being spiritually \"blind\" and \"surely possessed by all devils.\" Luther calls the members of the Orthodox Catholic Church \"papists\" and heretics, and has a special spiritual problem with Jewish circumcision.",
+        "passage_length": 573,
+        "question": "What does Martin Luther label Jewish Prayer?",
+        "question_length": 44,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Blind",
+        "answer_length": 5,
+        "choices": [
+            "Lies",
+            "Sic",
+            "Luther",
+            "Blind"
+        ],
+        "passage": "In his work \"On the Jews and Their Lies\" (1543), German Reformation leader Martin Luther claims that Jewish history was \"assailed by much heresy\", and that Christ the logos swept away the Jewish heresy and goes on to do so, \"as it still does daily before our eyes.\" He stigmatizes Jewish Prayer as being \"blasphemous\" (sic) and a lie, and vilifies Jews in general as being spiritually \"blind\" and \"surely possessed by all devils.\" Luther calls the members of the Orthodox Catholic Church \"papists\" and heretics, and has a special spiritual problem with Jewish circumcision.",
+        "passage_length": 573,
+        "question": "What is the spiritual status of Jews?",
+        "question_length": 37,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Highly erratic rainfall",
+        "answer_length": 23,
+        "choices": [
+            "Overcome",
+            "Highly Erratic Rainfall",
+            "Sahara",
+            "Highly Effective People"
+        ],
+        "passage": "The primary source of rain in the Sahara is the equatorial low a continuous belt of low-pressure systems near the equator which bring the brief, short and irregular rainy season to the Sahel and the southern Sahara. The Sahara doesn't lack precipitation because of a lack of moisture, but due to the lack of a precipitation-generating mechanism. Rainfall in this giant desert has to overcome the physical and atmospheric barriers that normally prevent the production of precipitation. The harsh climate of the Sahara is characterized by extremely low, unreliable, highly erratic rainfall; extremely high sunshine duration values; high temperatures year-round; negligible rates of relative humidity, a significant diurnal temperature variation and extremely high levels of potential evaporation which are the highest recorded worldwide.",
+        "passage_length": 835,
+        "question": "The Sahara is characterized by low rainfall, unreliable rainfall, high temperatures, and a high degree of potential evaporation.",
+        "question_length": 128,
+        "question_type": "unknown"
+    },
+    {
+        "answer": "Extremely low",
+        "answer_length": 13,
+        "choices": [
+            "Extremely Low",
+            "Fellow Nerds",
+            "Next Blow",
+            "Fellow Creatures"
+        ],
+        "passage": "The primary source of rain in the Sahara is the equatorial low a continuous belt of low-pressure systems near the equator which bring the brief, short and irregular rainy season to the Sahel and the southern Sahara. The Sahara doesn't lack precipitation because of a lack of moisture, but due to the lack of a precipitation-generating mechanism. Rainfall in this giant desert has to overcome the physical and atmospheric barriers that normally prevent the production of precipitation. The harsh climate of the Sahara is characterized by extremely low, unreliable, highly erratic rainfall; extremely high sunshine duration values; high temperatures year-round; negligible rates of relative humidity, a significant diurnal temperature variation and extremely high levels of potential evaporation which are the highest recorded worldwide.",
+        "passage_length": 835,
+        "question": "How low is the rainfall in the Sahara?",
+        "question_length": 38,
+        "question_type": "inferential"
+    },
+    {
+        "answer": "The equatorial low",
+        "answer_length": 18,
+        "choices": [
+            "The Equatorial Low",
+            "Humidity",
+            "Year",
+            "The Washington Post"
+        ],
+        "passage": "The primary source of rain in the Sahara is the equatorial low a continuous belt of low-pressure systems near the equator which bring the brief, short and irregular rainy season to the Sahel and the southern Sahara. The Sahara doesn't lack precipitation because of a lack of moisture, but due to the lack of a precipitation-generating mechanism. Rainfall in this giant desert has to overcome the physical and atmospheric barriers that normally prevent the production of precipitation. The harsh climate of the Sahara is characterized by extremely low, unreliable, highly erratic rainfall; extremely high sunshine duration values; high temperatures year-round; negligible rates of relative humidity, a significant diurnal temperature variation and extremely high levels of potential evaporation which are the highest recorded worldwide.",
+        "passage_length": 835,
+        "question": "What is the primary source of rain in the Sahara?",
+        "question_length": 49,
+        "question_type": "literal"
+    },
+    {
+        "answer": "A precipitation-generating mechanism",
+        "answer_length": 36,
+        "choices": [
+            "Irregular",
+            "Negligible",
+            "A Precipitation-Generating Mechanism",
+            "Round"
+        ],
+        "passage": "The primary source of rain in the Sahara is the equatorial low a continuous belt of low-pressure systems near the equator which bring the brief, short and irregular rainy season to the Sahel and the southern Sahara. The Sahara doesn't lack precipitation because of a lack of moisture, but due to the lack of a precipitation-generating mechanism. Rainfall in this giant desert has to overcome the physical and atmospheric barriers that normally prevent the production of precipitation. The harsh climate of the Sahara is characterized by extremely low, unreliable, highly erratic rainfall; extremely high sunshine duration values; high temperatures year-round; negligible rates of relative humidity, a significant diurnal temperature variation and extremely high levels of potential evaporation which are the highest recorded worldwide.",
+        "passage_length": 835,
+        "question": "What does the Sahara lack?",
+        "question_length": 26,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Climate",
+        "answer_length": 7,
+        "choices": [
+            "Climate",
+            "Variation",
+            "Harsh",
+            "Climategate"
+        ],
+        "passage": "The primary source of rain in the Sahara is the equatorial low a continuous belt of low-pressure systems near the equator which bring the brief, short and irregular rainy season to the Sahel and the southern Sahara. The Sahara doesn't lack precipitation because of a lack of moisture, but due to the lack of a precipitation-generating mechanism. Rainfall in this giant desert has to overcome the physical and atmospheric barriers that normally prevent the production of precipitation. The harsh climate of the Sahara is characterized by extremely low, unreliable, highly erratic rainfall; extremely high sunshine duration values; high temperatures year-round; negligible rates of relative humidity, a significant diurnal temperature variation and extremely high levels of potential evaporation which are the highest recorded worldwide.",
+        "passage_length": 835,
+        "question": "What is the harshest feature of the Sahara?",
+        "question_length": 43,
+        "question_type": "literal"
     }
 ]
