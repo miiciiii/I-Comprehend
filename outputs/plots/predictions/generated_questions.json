@@ -2166,5 +2166,399 @@
         "question": "Greek success was also what by Greek domination of the Christian Orthodox church?",
         "question_length": 81,
         "question_type": "literal"
+    },
+    {
+        "answer": "Western",
+        "answer_length": 7,
+        "choices": [
+            "Western Conference Teams",
+            "Western",
+            "Western Interference",
+            "Western",
+            "Western Bulldogs",
+            "Western Conference"
+        ],
+        "passage": "In a small minority of Muslim countries, the law requires women to cover either just legs, shoulders and head or the whole body apart from the face. In strictest forms, the face as well must be covered leaving just a mesh to see through. These rules for dressing cause tensions, concerning particularly Muslims living in Western countries, where restrictions are considered both sexist and oppressive. Some Muslims oppose this charge, and instead declare that the media in these countries presses on women to reveal too much in order to be deemed attractive, and that this is itself sexist and oppressive.",
+        "passage_length": 605,
+        "question": "In what Muslim country does the law require women to cover their entire body?",
+        "question_length": 77,
+        "question_type": "literal"
+    },
+    {
+        "answer": "The whole body",
+        "answer_length": 14,
+        "choices": [
+            "The Whole Body",
+            "The Washington Post",
+            "Body Washes",
+            "^^(*These",
+            "Female Body Parts",
+            "Enough Body Fat"
+        ],
+        "passage": "In a small minority of Muslim countries, the law requires women to cover either just legs, shoulders and head or the whole body apart from the face. In strictest forms, the face as well must be covered leaving just a mesh to see through. These rules for dressing cause tensions, concerning particularly Muslims living in Western countries, where restrictions are considered both sexist and oppressive. Some Muslims oppose this charge, and instead declare that the media in these countries presses on women to reveal too much in order to be deemed attractive, and that this is itself sexist and oppressive.",
+        "passage_length": 605,
+        "question": "What part of the body must a woman cover in order to be considered attractive?",
+        "question_length": 78,
+        "question_type": "literal"
+    },
+    {
+        "answer": "A mesh",
+        "answer_length": 6,
+        "choices": [
+            "Aap",
+            "16.67",
+            "Many Things",
+            "Alright",
+            "Basicallly",
+            "A Mesh"
+        ],
+        "passage": "In a small minority of Muslim countries, the law requires women to cover either just legs, shoulders and head or the whole body apart from the face. In strictest forms, the face as well must be covered leaving just a mesh to see through. These rules for dressing cause tensions, concerning particularly Muslims living in Western countries, where restrictions are considered both sexist and oppressive. Some Muslims oppose this charge, and instead declare that the media in these countries presses on women to reveal too much in order to be deemed attractive, and that this is itself sexist and oppressive.",
+        "passage_length": 605,
+        "question": "In most Muslim countries, women must cover the whole body apart from the face.",
+        "question_length": 78,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Sexist and oppressive",
+        "answer_length": 21,
+        "choices": [
+            "Oppressive Shitlord",
+            "Oppressive Culture",
+            "Oppressive Rule",
+            "Oppressive Nature",
+            "Sexist",
+            "Sexist And Oppressive"
+        ],
+        "passage": "In a small minority of Muslim countries, the law requires women to cover either just legs, shoulders and head or the whole body apart from the face. In strictest forms, the face as well must be covered leaving just a mesh to see through. These rules for dressing cause tensions, concerning particularly Muslims living in Western countries, where restrictions are considered both sexist and oppressive. Some Muslims oppose this charge, and instead declare that the media in these countries presses on women to reveal too much in order to be deemed attractive, and that this is itself sexist and oppressive.",
+        "passage_length": 605,
+        "question": "What are the restrictions on women in Western countries considered to be?",
+        "question_length": 73,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Women",
+        "answer_length": 5,
+        "choices": [
+            "Women",
+            "International Women'S Day",
+            "&Gt;\"Women",
+            "Women",
+            "National Organization Of Women",
+            "/R/Askwomen"
+        ],
+        "passage": "In a small minority of Muslim countries, the law requires women to cover either just legs, shoulders and head or the whole body apart from the face. In strictest forms, the face as well must be covered leaving just a mesh to see through. These rules for dressing cause tensions, concerning particularly Muslims living in Western countries, where restrictions are considered both sexist and oppressive. Some Muslims oppose this charge, and instead declare that the media in these countries presses on women to reveal too much in order to be deemed attractive, and that this is itself sexist and oppressive.",
+        "passage_length": 605,
+        "question": "Who is required to cover the entire body in Muslim countries?",
+        "question_length": 61,
+        "question_type": "literal"
+    },
+    {
+        "answer": "The boy's housemaster",
+        "answer_length": 21,
+        "choices": [
+            "The Book Of Mormon",
+            "The Center For",
+            "The Elephant Man",
+            "The Washington Post",
+            "The Boy'S Housemaster",
+            "^^(*These"
+        ],
+        "passage": "The opposite of a Show Up is a \"Rip\". This is for sub-standard work, which is sometimes torn at the top of the page/sheet and must be submitted to the boy's housemaster for signature. Boys who accumulate rips are liable to be given a \"White Ticket\", which must be signed by all his teachers and may be accompanied by other punishments, usually involving doing domestic chores or writing lines. In recent times,[when?] a milder form of the rip, 'sign for information', colloquially known as an \"info\", has been introduced, which must also be signed by the boy's housemaster and tutor.",
+        "passage_length": 583,
+        "question": "Who must sign the \"Rip\"?",
+        "question_length": 24,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Rips",
+        "answer_length": 4,
+        "choices": [
+            "Ripster",
+            "Rips",
+            "Ripster",
+            "Rips",
+            "Rips"
+        ],
+        "passage": "The opposite of a Show Up is a \"Rip\". This is for sub-standard work, which is sometimes torn at the top of the page/sheet and must be submitted to the boy's housemaster for signature. Boys who accumulate rips are liable to be given a \"White Ticket\", which must be signed by all his teachers and may be accompanied by other punishments, usually involving doing domestic chores or writing lines. In recent times,[when?] a milder form of the rip, 'sign for information', colloquially known as an \"info\", has been introduced, which must also be signed by the boy's housemaster and tutor.",
+        "passage_length": 583,
+        "question": "What is a term for a boy who accumulates substandard work called?",
+        "question_length": 65,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Sign for information",
+        "answer_length": 20,
+        "choices": [
+            "Signet](Http://Gatherer.Wizards.Com/Handlers/Image.Ashx?Name=Golgari",
+            "Quality Information",
+            "Cool Information",
+            "Sign For Information",
+            "Light Information",
+            "Information Technology"
+        ],
+        "passage": "The opposite of a Show Up is a \"Rip\". This is for sub-standard work, which is sometimes torn at the top of the page/sheet and must be submitted to the boy's housemaster for signature. Boys who accumulate rips are liable to be given a \"White Ticket\", which must be signed by all his teachers and may be accompanied by other punishments, usually involving doing domestic chores or writing lines. In recent times,[when?] a milder form of the rip, 'sign for information', colloquially known as an \"info\", has been introduced, which must also be signed by the boy's housemaster and tutor.",
+        "passage_length": 583,
+        "question": "What must a \"White Ticket\" be done by all his teachers?",
+        "question_length": 55,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Sub-standard work",
+        "answer_length": 17,
+        "choices": [
+            "Work Drinks",
+            "#Cancelwwenetwork",
+            "Much Extra Work",
+            "Sub-Standard Work",
+            "Network Layer",
+            "Childcare Workers"
+        ],
+        "passage": "The opposite of a Show Up is a \"Rip\". This is for sub-standard work, which is sometimes torn at the top of the page/sheet and must be submitted to the boy's housemaster for signature. Boys who accumulate rips are liable to be given a \"White Ticket\", which must be signed by all his teachers and may be accompanied by other punishments, usually involving doing domestic chores or writing lines. In recent times,[when?] a milder form of the rip, 'sign for information', colloquially known as an \"info\", has been introduced, which must also be signed by the boy's housemaster and tutor.",
+        "passage_length": 583,
+        "question": "What is a rip?",
+        "question_length": 14,
+        "question_type": "literal"
+    },
+    {
+        "answer": "White ticket",
+        "answer_length": 12,
+        "choices": [
+            "White",
+            "Ticket Lol",
+            "Floor Tickets",
+            "Hot Ticket",
+            "Ticket Office",
+            "White Ticket"
+        ],
+        "passage": "The opposite of a Show Up is a \"Rip\". This is for sub-standard work, which is sometimes torn at the top of the page/sheet and must be submitted to the boy's housemaster for signature. Boys who accumulate rips are liable to be given a \"White Ticket\", which must be signed by all his teachers and may be accompanied by other punishments, usually involving doing domestic chores or writing lines. In recent times,[when?] a milder form of the rip, 'sign for information', colloquially known as an \"info\", has been introduced, which must also be signed by the boy's housemaster and tutor.",
+        "passage_length": 583,
+        "question": "What is a punishment for a rip?",
+        "question_length": 31,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Avian myologists",
+        "answer_length": 16,
+        "choices": [
+            "Avian",
+            "Avian",
+            "Aviana",
+            "Avian Myologists"
+        ],
+        "passage": "Dark meat, which avian myologists refer to as \"red muscle\", is used for sustained activity\u2014chiefly walking, in the case of a chicken. The dark colour comes from the protein myoglobin, which plays a key role in oxygen uptake and storage within cells. White muscle, in contrast, is suitable only for short bursts of activity such as, for chickens, flying. Thus, the chicken's leg and thigh meat are dark, while its breast meat (which makes up the primary flight muscles) is white. Other birds with breast muscle more suitable for sustained flight, such as ducks and geese, have red muscle (and therefore dark meat) throughout. Some cuts of meat including poultry expose the microscopic regular structure of intracellular muscle fibrils which can diffract light and produce iridescent colours, an optical phenomenon sometimes called structural colouration.",
+        "passage_length": 853,
+        "question": "What is red muscle?",
+        "question_length": 19,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Red muscle",
+        "answer_length": 10,
+        "choices": [
+            "Redline](Http://Myanimelist.Net/Anime/6675/Redline",
+            "Certain Muscles",
+            "Redline",
+            "Red Muscle"
+        ],
+        "passage": "Dark meat, which avian myologists refer to as \"red muscle\", is used for sustained activity\u2014chiefly walking, in the case of a chicken. The dark colour comes from the protein myoglobin, which plays a key role in oxygen uptake and storage within cells. White muscle, in contrast, is suitable only for short bursts of activity such as, for chickens, flying. Thus, the chicken's leg and thigh meat are dark, while its breast meat (which makes up the primary flight muscles) is white. Other birds with breast muscle more suitable for sustained flight, such as ducks and geese, have red muscle (and therefore dark meat) throughout. Some cuts of meat including poultry expose the microscopic regular structure of intracellular muscle fibrils which can diffract light and produce iridescent colours, an optical phenomenon sometimes called structural colouration.",
+        "passage_length": 853,
+        "question": "What is the meat of a chicken called?",
+        "question_length": 37,
+        "question_type": "literal"
+    },
+    {
+        "answer": "The dark colour",
+        "answer_length": 15,
+        "choices": [
+            "Recolours",
+            "The Dark Colour",
+            "The Washington Post",
+            "^^(*These"
+        ],
+        "passage": "Dark meat, which avian myologists refer to as \"red muscle\", is used for sustained activity\u2014chiefly walking, in the case of a chicken. The dark colour comes from the protein myoglobin, which plays a key role in oxygen uptake and storage within cells. White muscle, in contrast, is suitable only for short bursts of activity such as, for chickens, flying. Thus, the chicken's leg and thigh meat are dark, while its breast meat (which makes up the primary flight muscles) is white. Other birds with breast muscle more suitable for sustained flight, such as ducks and geese, have red muscle (and therefore dark meat) throughout. Some cuts of meat including poultry expose the microscopic regular structure of intracellular muscle fibrils which can diffract light and produce iridescent colours, an optical phenomenon sometimes called structural colouration.",
+        "passage_length": 853,
+        "question": "What color comes from the protein myoglobin?",
+        "question_length": 44,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Walking",
+        "answer_length": 7,
+        "choices": [
+            "Walking",
+            "Walking Dead And",
+            "Walking Dead*",
+            "Red"
+        ],
+        "passage": "Dark meat, which avian myologists refer to as \"red muscle\", is used for sustained activity\u2014chiefly walking, in the case of a chicken. The dark colour comes from the protein myoglobin, which plays a key role in oxygen uptake and storage within cells. White muscle, in contrast, is suitable only for short bursts of activity such as, for chickens, flying. Thus, the chicken's leg and thigh meat are dark, while its breast meat (which makes up the primary flight muscles) is white. Other birds with breast muscle more suitable for sustained flight, such as ducks and geese, have red muscle (and therefore dark meat) throughout. Some cuts of meat including poultry expose the microscopic regular structure of intracellular muscle fibrils which can diffract light and produce iridescent colours, an optical phenomenon sometimes called structural colouration.",
+        "passage_length": 853,
+        "question": "What is the main purpose of red muscle in a chicken?",
+        "question_length": 52,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Breast meat",
+        "answer_length": 11,
+        "choices": [
+            "Meat Commerce",
+            "Meat Slicer",
+            "Dark Meat",
+            "Breast Meat"
+        ],
+        "passage": "Dark meat, which avian myologists refer to as \"red muscle\", is used for sustained activity\u2014chiefly walking, in the case of a chicken. The dark colour comes from the protein myoglobin, which plays a key role in oxygen uptake and storage within cells. White muscle, in contrast, is suitable only for short bursts of activity such as, for chickens, flying. Thus, the chicken's leg and thigh meat are dark, while its breast meat (which makes up the primary flight muscles) is white. Other birds with breast muscle more suitable for sustained flight, such as ducks and geese, have red muscle (and therefore dark meat) throughout. Some cuts of meat including poultry expose the microscopic regular structure of intracellular muscle fibrils which can diffract light and produce iridescent colours, an optical phenomenon sometimes called structural colouration.",
+        "passage_length": 853,
+        "question": "What part of a chicken's body is white?",
+        "question_length": 39,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Joseph k. toole",
+        "answer_length": 15,
+        "choices": [
+            "Produced",
+            "Capital",
+            "Joseph K. Toole",
+            "Citizens"
+        ],
+        "passage": "Under Territorial Governor Thomas Meagher, Montanans held a constitutional convention in 1866 in a failed bid for statehood. A second constitutional convention was held in Helena in 1884 that produced a constitution ratified 3:1 by Montana citizens in November 1884. For political reasons, Congress did not approve Montana statehood until 1889. Congress approved Montana statehood in February 1889 and President Grover Cleveland signed an omnibus bill granting statehood to Montana, North Dakota, South Dakota and Washington once the appropriate state constitutions were crafted. In July 1889, Montanans convened their third constitutional convention and produced a constitution acceptable by the people and the federal government. On November 8, 1889 President Benjamin Harrison proclaimed Montana the forty-first state in the union. The first state governor was Joseph K. Toole. In the 1880s, Helena (the current state capital) had more millionaires per capita than any other United States city.",
+        "passage_length": 997,
+        "question": "What was the first constitution ratified by the people of Montana?",
+        "question_length": 66,
+        "question_type": "literal"
+    },
+    {
+        "answer": "February 1889",
+        "answer_length": 13,
+        "choices": [
+            "February 9Th",
+            "February 2",
+            "February 3",
+            "February 1889"
+        ],
+        "passage": "Under Territorial Governor Thomas Meagher, Montanans held a constitutional convention in 1866 in a failed bid for statehood. A second constitutional convention was held in Helena in 1884 that produced a constitution ratified 3:1 by Montana citizens in November 1884. For political reasons, Congress did not approve Montana statehood until 1889. Congress approved Montana statehood in February 1889 and President Grover Cleveland signed an omnibus bill granting statehood to Montana, North Dakota, South Dakota and Washington once the appropriate state constitutions were crafted. In July 1889, Montanans convened their third constitutional convention and produced a constitution acceptable by the people and the federal government. On November 8, 1889 President Benjamin Harrison proclaimed Montana the forty-first state in the union. The first state governor was Joseph K. Toole. In the 1880s, Helena (the current state capital) had more millionaires per capita than any other United States city.",
+        "passage_length": 997,
+        "question": "When did Congress approve Montana statehood?",
+        "question_length": 44,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Statehood",
+        "answer_length": 9,
+        "choices": [
+            "Governor",
+            "Current",
+            "North",
+            "Statehood"
+        ],
+        "passage": "Under Territorial Governor Thomas Meagher, Montanans held a constitutional convention in 1866 in a failed bid for statehood. A second constitutional convention was held in Helena in 1884 that produced a constitution ratified 3:1 by Montana citizens in November 1884. For political reasons, Congress did not approve Montana statehood until 1889. Congress approved Montana statehood in February 1889 and President Grover Cleveland signed an omnibus bill granting statehood to Montana, North Dakota, South Dakota and Washington once the appropriate state constitutions were crafted. In July 1889, Montanans convened their third constitutional convention and produced a constitution acceptable by the people and the federal government. On November 8, 1889 President Benjamin Harrison proclaimed Montana the forty-first state in the union. The first state governor was Joseph K. Toole. In the 1880s, Helena (the current state capital) had more millionaires per capita than any other United States city.",
+        "passage_length": 997,
+        "question": "What did the Montanans attempt to gain in 1866?",
+        "question_length": 47,
+        "question_type": "literal"
+    },
+    {
+        "answer": "1884",
+        "answer_length": 4,
+        "choices": [
+            "M8771884",
+            "1884",
+            "Harrison",
+            "Government"
+        ],
+        "passage": "Under Territorial Governor Thomas Meagher, Montanans held a constitutional convention in 1866 in a failed bid for statehood. A second constitutional convention was held in Helena in 1884 that produced a constitution ratified 3:1 by Montana citizens in November 1884. For political reasons, Congress did not approve Montana statehood until 1889. Congress approved Montana statehood in February 1889 and President Grover Cleveland signed an omnibus bill granting statehood to Montana, North Dakota, South Dakota and Washington once the appropriate state constitutions were crafted. In July 1889, Montanans convened their third constitutional convention and produced a constitution acceptable by the people and the federal government. On November 8, 1889 President Benjamin Harrison proclaimed Montana the forty-first state in the union. The first state governor was Joseph K. Toole. In the 1880s, Helena (the current state capital) had more millionaires per capita than any other United States city.",
+        "passage_length": 997,
+        "question": "When was the second constitutional convention held in Helena?",
+        "question_length": 61,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Grover cleveland",
+        "answer_length": 16,
+        "choices": [
+            "Harrison",
+            "Grover Norquist",
+            "Grover Cleveland",
+            "Constitutional"
+        ],
+        "passage": "Under Territorial Governor Thomas Meagher, Montanans held a constitutional convention in 1866 in a failed bid for statehood. A second constitutional convention was held in Helena in 1884 that produced a constitution ratified 3:1 by Montana citizens in November 1884. For political reasons, Congress did not approve Montana statehood until 1889. Congress approved Montana statehood in February 1889 and President Grover Cleveland signed an omnibus bill granting statehood to Montana, North Dakota, South Dakota and Washington once the appropriate state constitutions were crafted. In July 1889, Montanans convened their third constitutional convention and produced a constitution acceptable by the people and the federal government. On November 8, 1889 President Benjamin Harrison proclaimed Montana the forty-first state in the union. The first state governor was Joseph K. Toole. In the 1880s, Helena (the current state capital) had more millionaires per capita than any other United States city.",
+        "passage_length": 997,
+        "question": "What position did Joseph K. Toole hold?",
+        "question_length": 39,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Practical politics",
+        "answer_length": 18,
+        "choices": [
+            "Practical Politics",
+            "Pure Politics",
+            "Less Politics",
+            "Russian Politics"
+        ],
+        "passage": "Because of the vastness and diversity of the territory occupied by Slavic people, there were several centers of Slavic consolidation. In the 19th century, Pan-Slavism developed as a movement among intellectuals, scholars, and poets, but it rarely influenced practical politics and did not find support in some nations that had Slavic origins. Pan-Slavism became compromised when the Russian Empire started to use it as an ideology justifying its territorial conquests in Central Europe as well as subjugation of other ethnic groups of Slavic origins such as Poles and Ukrainians, and the ideology became associated with Russian imperialism. The common Slavic experience of communism combined with the repeated usage of the ideology by Soviet propaganda after World War II within the Eastern bloc (Warsaw Pact) was a forced high-level political and economic hegemony of the USSR dominated by Russians. A notable political union of the 20th century that covered most South Slavs was Yugoslavia, but it ultimately broke apart in the 1990s along with the Soviet Union.",
+        "passage_length": 1064,
+        "question": "What was the name of the Slav movement that was influenced by Pan-Slavism?",
+        "question_length": 74,
+        "question_type": "literal"
+    },
+    {
+        "answer": "An ideology",
+        "answer_length": 11,
+        "choices": [
+            "Particular Ideology",
+            "Anne Hathaway",
+            "An Ideology",
+            "Android Experience"
+        ],
+        "passage": "Because of the vastness and diversity of the territory occupied by Slavic people, there were several centers of Slavic consolidation. In the 19th century, Pan-Slavism developed as a movement among intellectuals, scholars, and poets, but it rarely influenced practical politics and did not find support in some nations that had Slavic origins. Pan-Slavism became compromised when the Russian Empire started to use it as an ideology justifying its territorial conquests in Central Europe as well as subjugation of other ethnic groups of Slavic origins such as Poles and Ukrainians, and the ideology became associated with Russian imperialism. The common Slavic experience of communism combined with the repeated usage of the ideology by Soviet propaganda after World War II within the Eastern bloc (Warsaw Pact) was a forced high-level political and economic hegemony of the USSR dominated by Russians. A notable political union of the 20th century that covered most South Slavs was Yugoslavia, but it ultimately broke apart in the 1990s along with the Soviet Union.",
+        "passage_length": 1064,
+        "question": "What did the Russian Empire use Pan-Slavism as?",
+        "question_length": 47,
+        "question_type": "literal"
+    },
+    {
+        "answer": "19th century",
+        "answer_length": 12,
+        "choices": [
+            "19Th Century",
+            "31St Century",
+            "Last Century",
+            "June 19Th"
+        ],
+        "passage": "Because of the vastness and diversity of the territory occupied by Slavic people, there were several centers of Slavic consolidation. In the 19th century, Pan-Slavism developed as a movement among intellectuals, scholars, and poets, but it rarely influenced practical politics and did not find support in some nations that had Slavic origins. Pan-Slavism became compromised when the Russian Empire started to use it as an ideology justifying its territorial conquests in Central Europe as well as subjugation of other ethnic groups of Slavic origins such as Poles and Ukrainians, and the ideology became associated with Russian imperialism. The common Slavic experience of communism combined with the repeated usage of the ideology by Soviet propaganda after World War II within the Eastern bloc (Warsaw Pact) was a forced high-level political and economic hegemony of the USSR dominated by Russians. A notable political union of the 20th century that covered most South Slavs was Yugoslavia, but it ultimately broke apart in the 1990s along with the Soviet Union.",
+        "passage_length": 1064,
+        "question": "In what century did Pan-Slavism develop as a movement among intellectuals, scholars, and poets?",
+        "question_length": 95,
+        "question_type": "literal"
+    },
+    {
+        "answer": "The russian empire",
+        "answer_length": 18,
+        "choices": [
+            "The Center For",
+            "The Washington Post",
+            "The Elephant Man",
+            "The Russian Empire"
+        ],
+        "passage": "Because of the vastness and diversity of the territory occupied by Slavic people, there were several centers of Slavic consolidation. In the 19th century, Pan-Slavism developed as a movement among intellectuals, scholars, and poets, but it rarely influenced practical politics and did not find support in some nations that had Slavic origins. Pan-Slavism became compromised when the Russian Empire started to use it as an ideology justifying its territorial conquests in Central Europe as well as subjugation of other ethnic groups of Slavic origins such as Poles and Ukrainians, and the ideology became associated with Russian imperialism. The common Slavic experience of communism combined with the repeated usage of the ideology by Soviet propaganda after World War II within the Eastern bloc (Warsaw Pact) was a forced high-level political and economic hegemony of the USSR dominated by Russians. A notable political union of the 20th century that covered most South Slavs was Yugoslavia, but it ultimately broke apart in the 1990s along with the Soviet Union.",
+        "passage_length": 1064,
+        "question": "What did Pan-Slavism not find support in some nations that had Slavic?",
+        "question_length": 70,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Yugoslavia",
+        "answer_length": 10,
+        "choices": [
+            "Political",
+            "Yugoslavians",
+            "Yugoslavia",
+            "Yugoslavian"
+        ],
+        "passage": "Because of the vastness and diversity of the territory occupied by Slavic people, there were several centers of Slavic consolidation. In the 19th century, Pan-Slavism developed as a movement among intellectuals, scholars, and poets, but it rarely influenced practical politics and did not find support in some nations that had Slavic origins. Pan-Slavism became compromised when the Russian Empire started to use it as an ideology justifying its territorial conquests in Central Europe as well as subjugation of other ethnic groups of Slavic origins such as Poles and Ukrainians, and the ideology became associated with Russian imperialism. The common Slavic experience of communism combined with the repeated usage of the ideology by Soviet propaganda after World War II within the Eastern bloc (Warsaw Pact) was a forced high-level political and economic hegemony of the USSR dominated by Russians. A notable political union of the 20th century that covered most South Slavs was Yugoslavia, but it ultimately broke apart in the 1990s along with the Soviet Union.",
+        "passage_length": 1064,
+        "question": "What was the name of the political movement that covered most South Slavs in the 20th century?",
+        "question_length": 94,
+        "question_type": "literal"
     }
 ]
