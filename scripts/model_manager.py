@@ -15,9 +15,9 @@ S2V_MODEL_PATH = os.path.join('..', 'src', 'models', 's2v_old')
 # Load data and models
 random_passage = pd.read_csv(RANDOM_PASSAGE_PATH)
 t5ag_model = T5ForConditionalGeneration.from_pretrained(T5AG_MODEL_DIR)
-t5ag_tokenizer = T5Tokenizer.from_pretrained(T5AG_TOKENIZER_DIR)
+t5ag_tokenizer = T5Tokenizer.from_pretrained(T5AG_TOKENIZER_DIR, legacy=False)
 t5qg_model = T5ForConditionalGeneration.from_pretrained(T5QG_MODEL_DIR)
-t5qg_tokenizer = T5Tokenizer.from_pretrained(T5QG_TOKENIZER_DIR)
+t5qg_tokenizer = T5Tokenizer.from_pretrained(T5QG_TOKENIZER_DIR, legacy=False)
 s2v = Sense2Vec().from_disk(S2V_MODEL_PATH)
 sentence_transformer_model = SentenceTransformer("sentence-transformers/LaBSE")
 
