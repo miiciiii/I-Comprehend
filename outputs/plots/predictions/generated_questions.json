@@ -2935,5 +2935,155 @@
         "question": "What is the harshest feature of the Sahara?",
         "question_length": 43,
         "question_type": "literal"
+    },
+    {
+        "answer": "Lissauer's tract",
+        "answer_length": 16,
+        "choices": [
+            "More Contracts",
+            "Expiring Contract",
+            "Lissauer'S Tract",
+            "Other Distraction"
+        ],
+        "passage": "The pain signal travels from the periphery to the spinal cord along an A-delta or C fiber. Because the A-delta fiber is thicker than the C fiber, and is thinly sheathed in an electrically insulating material (myelin), it carries its signal faster (5\u201330 m/s) than the unmyelinated C fiber (0.5\u20132 m/s). Pain evoked by the (faster) A-delta fibers is described as sharp and is felt first. This is followed by a duller pain, often described as burning, carried by the C fibers. These first order neurons enter the spinal cord via Lissauer's tract.",
+        "passage_length": 542,
+        "question": "What is another name for the C fiber?",
+        "question_length": 37,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Pain",
+        "answer_length": 4,
+        "choices": [
+            "Unmyelinated",
+            "Painkillers",
+            "Painting",
+            "Pain"
+        ],
+        "passage": "The pain signal travels from the periphery to the spinal cord along an A-delta or C fiber. Because the A-delta fiber is thicker than the C fiber, and is thinly sheathed in an electrically insulating material (myelin), it carries its signal faster (5\u201330 m/s) than the unmyelinated C fiber (0.5\u20132 m/s). Pain evoked by the (faster) A-delta fibers is described as sharp and is felt first. This is followed by a duller pain, often described as burning, carried by the C fibers. These first order neurons enter the spinal cord via Lissauer's tract.",
+        "passage_length": 542,
+        "question": "What signal travels from the periphery to the spinal cord along an A-delta or C fiber?",
+        "question_length": 86,
+        "question_type": "literal"
+    },
+    {
+        "answer": "The spinal cord",
+        "answer_length": 15,
+        "choices": [
+            "The Elephant Man",
+            "The Center For",
+            "The Spinal Cord",
+            "The Washington Post"
+        ],
+        "passage": "The pain signal travels from the periphery to the spinal cord along an A-delta or C fiber. Because the A-delta fiber is thicker than the C fiber, and is thinly sheathed in an electrically insulating material (myelin), it carries its signal faster (5\u201330 m/s) than the unmyelinated C fiber (0.5\u20132 m/s). Pain evoked by the (faster) A-delta fibers is described as sharp and is felt first. This is followed by a duller pain, often described as burning, carried by the C fibers. These first order neurons enter the spinal cord via Lissauer's tract.",
+        "passage_length": 542,
+        "question": "Where does the pain signal travel from the periphery to?",
+        "question_length": 56,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Sharp",
+        "answer_length": 5,
+        "choices": [
+            "Electrically",
+            "Sharpshooter",
+            "Sharp",
+            "Sharper"
+        ],
+        "passage": "The pain signal travels from the periphery to the spinal cord along an A-delta or C fiber. Because the A-delta fiber is thicker than the C fiber, and is thinly sheathed in an electrically insulating material (myelin), it carries its signal faster (5\u201330 m/s) than the unmyelinated C fiber (0.5\u20132 m/s). Pain evoked by the (faster) A-delta fibers is described as sharp and is felt first. This is followed by a duller pain, often described as burning, carried by the C fibers. These first order neurons enter the spinal cord via Lissauer's tract.",
+        "passage_length": 542,
+        "question": "How is pain evoked by the faster A-delta fibers described?",
+        "question_length": 58,
+        "question_type": "literal"
+    },
+    {
+        "answer": "5\u201330 m/s",
+        "answer_length": 8,
+        "choices": [
+            "Felt",
+            "5\u201330 M/S",
+            "Thinly",
+            "Sharp"
+        ],
+        "passage": "The pain signal travels from the periphery to the spinal cord along an A-delta or C fiber. Because the A-delta fiber is thicker than the C fiber, and is thinly sheathed in an electrically insulating material (myelin), it carries its signal faster (5\u201330 m/s) than the unmyelinated C fiber (0.5\u20132 m/s). Pain evoked by the (faster) A-delta fibers is described as sharp and is felt first. This is followed by a duller pain, often described as burning, carried by the C fibers. These first order neurons enter the spinal cord via Lissauer's tract.",
+        "passage_length": 542,
+        "question": "How fast does the A-delta fiber carry its signal than the unmyelinated C fiber?",
+        "question_length": 79,
+        "question_type": "inferential"
+    },
+    {
+        "answer": "Delhi suburban railway",
+        "answer_length": 22,
+        "choices": [
+            "August",
+            "Cities",
+            "Gurgaon",
+            "Delhi Suburban Railway"
+        ],
+        "passage": "New Delhi is a major junction in the Indian railway network and is the headquarters of the Northern Railway. The five main railway stations are New Delhi railway station, Old Delhi, Nizamuddin Railway Station, Anand Vihar Railway Terminal and Sarai Rohilla. The Delhi Metro, a mass rapid transit system built and operated by Delhi Metro Rail Corporation (DMRC), serves many parts of Delhi and the neighbouring cities Faridabad, Gurgaon, Noida and Ghaziabad. As of August 2011, the metro consists of six operational lines with a total length of 189 km (117 mi) and 146 stations, and several other lines are under construction. It carries millions of passengers every day. In addition to the Delhi Metro, a suburban railway, the Delhi Suburban Railway exists.",
+        "passage_length": 757,
+        "question": "What is the name of the Delhi Suburban Railway?",
+        "question_length": 47,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Railway",
+        "answer_length": 7,
+        "choices": [
+            "Serves",
+            "Railway",
+            "Headquarters",
+            "Exists"
+        ],
+        "passage": "New Delhi is a major junction in the Indian railway network and is the headquarters of the Northern Railway. The five main railway stations are New Delhi railway station, Old Delhi, Nizamuddin Railway Station, Anand Vihar Railway Terminal and Sarai Rohilla. The Delhi Metro, a mass rapid transit system built and operated by Delhi Metro Rail Corporation (DMRC), serves many parts of Delhi and the neighbouring cities Faridabad, Gurgaon, Noida and Ghaziabad. As of August 2011, the metro consists of six operational lines with a total length of 189 km (117 mi) and 146 stations, and several other lines are under construction. It carries millions of passengers every day. In addition to the Delhi Metro, a suburban railway, the Delhi Suburban Railway exists.",
+        "passage_length": 757,
+        "question": "New Delhi is a major junction in the Indian what network?",
+        "question_length": 57,
+        "question_type": "literal"
+    },
+    {
+        "answer": "The delhi metro",
+        "answer_length": 15,
+        "choices": [
+            "The Washington Post",
+            "The Elephant Man",
+            "The Center For",
+            "The Delhi Metro"
+        ],
+        "passage": "New Delhi is a major junction in the Indian railway network and is the headquarters of the Northern Railway. The five main railway stations are New Delhi railway station, Old Delhi, Nizamuddin Railway Station, Anand Vihar Railway Terminal and Sarai Rohilla. The Delhi Metro, a mass rapid transit system built and operated by Delhi Metro Rail Corporation (DMRC), serves many parts of Delhi and the neighbouring cities Faridabad, Gurgaon, Noida and Ghaziabad. As of August 2011, the metro consists of six operational lines with a total length of 189 km (117 mi) and 146 stations, and several other lines are under construction. It carries millions of passengers every day. In addition to the Delhi Metro, a suburban railway, the Delhi Suburban Railway exists.",
+        "passage_length": 757,
+        "question": "What is the name of the mass rapid transit system in New Delhi?",
+        "question_length": 63,
+        "question_type": "literal"
+    },
+    {
+        "answer": "Six",
+        "answer_length": 3,
+        "choices": [
+            "Six",
+            "Sixense",
+            "Sixers",
+            "Ghaziabad"
+        ],
+        "passage": "New Delhi is a major junction in the Indian railway network and is the headquarters of the Northern Railway. The five main railway stations are New Delhi railway station, Old Delhi, Nizamuddin Railway Station, Anand Vihar Railway Terminal and Sarai Rohilla. The Delhi Metro, a mass rapid transit system built and operated by Delhi Metro Rail Corporation (DMRC), serves many parts of Delhi and the neighbouring cities Faridabad, Gurgaon, Noida and Ghaziabad. As of August 2011, the metro consists of six operational lines with a total length of 189 km (117 mi) and 146 stations, and several other lines are under construction. It carries millions of passengers every day. In addition to the Delhi Metro, a suburban railway, the Delhi Suburban Railway exists.",
+        "passage_length": 757,
+        "question": "How many lines does the Delhi Metro consist of?",
+        "question_length": 47,
+        "question_type": "literal"
+    },
+    {
+        "answer": "2011",
+        "answer_length": 4,
+        "choices": [
+            "2011",
+            "Gurgaon",
+            "Junction",
+            "Delhi"
+        ],
+        "passage": "New Delhi is a major junction in the Indian railway network and is the headquarters of the Northern Railway. The five main railway stations are New Delhi railway station, Old Delhi, Nizamuddin Railway Station, Anand Vihar Railway Terminal and Sarai Rohilla. The Delhi Metro, a mass rapid transit system built and operated by Delhi Metro Rail Corporation (DMRC), serves many parts of Delhi and the neighbouring cities Faridabad, Gurgaon, Noida and Ghaziabad. As of August 2011, the metro consists of six operational lines with a total length of 189 km (117 mi) and 146 stations, and several other lines are under construction. It carries millions of passengers every day. In addition to the Delhi Metro, a suburban railway, the Delhi Suburban Railway exists.",
+        "passage_length": 757,
+        "question": "In what year did the Delhi Metro begin operating?",
+        "question_length": 49,
+        "question_type": "literal"
     }
 ]
