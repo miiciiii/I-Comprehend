@@ -1,89 +1,98 @@
-from PIL import Image
-import numpy as np
 import os
+import numpy as np
+from PIL import Image
+from sklearn.preprocessing import LabelEncoder
+import json
 from tqdm import tqdm
-from .label_loader import load_labels
+from label_loader import load_labels
 
-# Default directory for images
-DEFAULT_IMAGE_DIR = "datasets/raw/final_face_crops"
+def load_labels_from_file(output_file="datasets/processed/labels.json"):
+    """Load labels from a saved file."""
+    if os.path.exists(output_file):
+        with open(output_file, 'r') as f:
+            all_labels = json.load(f)
+        return all_labels
+    else:
+        raise FileNotFoundError(f"No label file found at {output_file}")
 
-def load_images_and_labels(image_dir, labels_dict, max_folders=None, max_images_per_folder=None):
-    """
-    Load images and their labels from the specified directory.
-
-    Parameters:
-    - image_dir (str): Directory containing task folders with images.
-    - labels_dict (dict): Dictionary mapping task names to labels.
-    - max_folders (int): Maximum number of folders to process.
-    - max_images_per_folder (int): Maximum number of images to process per folder.
-
-    Returns:
-    - images (list of PIL.Image.Image): List of PIL Image objects.
-    - labels (list of dict): List of labels corresponding to the images.
-    """
-    print(f"Checking image directory: {image_dir}")
+def load_images_and_labels(images_path, labels):
+    """Load images from a directory structure and associate them with their labels."""
+    image_data = []
+    image_labels = []
+    tasks = os.listdir(images_path)
     
-    if not os.path.isdir(image_dir):
-        raise ValueError(f"The directory {image_dir} does not exist or is not a directory.")
-    
-    images = []
-    labels = []
-    task_folders = os.listdir(image_dir)
-    
-    if max_folders is not None:
-        task_folders = task_folders[:max_folders]
-    print(f"Found task folders: {task_folders}")
-
-    for task_name in tqdm(task_folders, desc="Loading Images"):
-        task_path = os.path.join(image_dir, task_name)
-        print(f"Processing task folder: {task_path}")
-        
-        if os.path.isdir(task_path) and task_name in labels_dict:
-            image_files = [f for f in os.listdir(task_path) if f.endswith('.jpg') or f.endswith('.png')]
-            print(f"Found {len(image_files)} image files in folder '{task_name}'")
-
-            if max_images_per_folder is not None:
-                image_files = image_files[:max_images_per_folder]
-            print(f"Processing {len(image_files)} images from folder '{task_name}'")
-
-            for image_name in image_files:
-                image_path = os.path.join(task_path, image_name)
+    for task in tqdm(tasks, desc="Processing Tasks"):
+        task_path = os.path.join(images_path, task)
+        if os.path.isdir(task_path):
+            image_files = [f for f in os.listdir(task_path) if f.lower().endswith(('.png', '.jpg', '.jpeg'))]
+            for image_file in tqdm(image_files, desc=f"Processing Images in {task}", leave=False):
+                image_path = os.path.join(task_path, image_file)
                 try:
-                    print(f"Loading image: {image_path}")
-                    image = Image.open(image_path).convert('RGB')
-                    images.append(image)
-                    # Retrieve all labels for the task
-                    labels.append(labels_dict[task_name])
-                    print(f"Image loaded: {image.size}")  # Debugging statement
+                    # Load and preprocess image
+                    with Image.open(image_path) as img:
+                        img = img.convert('RGB')
+                        img_array = np.array(img)
+                        image_data.append(img_array)
+                    
+                    # Get the corresponding label
+                    if task in labels:
+                        metric = list(labels[task].keys())[0]  # Assuming the first metric
+                        image_labels.append(labels[task][metric])
+                    else:
+                        print(f"No labels found for task: {task}")
+
                 except Exception as e:
                     print(f"Error loading image {image_path}: {e}")
     
-    print(f"Total images loaded: {len(images)}")
-    print(f"Total labels loaded: {len(labels)}")
-    print("Images and labels:", list(zip(images, labels)))  # Debugging statement
-    return images, labels
+    return np.array(image_data), np.array(image_labels)
 
-def load_and_process_images(image_dir=DEFAULT_IMAGE_DIR, max_folders=None, max_images_per_folder=None):
-    """
-    Load labels and images from the default or specified directory, and return them.
+def prepare_data_for_training():
+    ground_truths_path = "D:/03PersonalFiles/Thesis/I-Comprehend/datasets/raw/ground_truths"
+    images_path = "D:/03PersonalFiles/Thesis/I-Comprehend/datasets/raw/final_face_crops"
+    labels_file = "D:/03PersonalFiles/Thesis/I-Comprehend/datasets/processed/labels.json"
+    
+    # Ensure labels are loaded and saved
+    load_labels(ground_truths_path, labels_file)
+    
+    # Load labels
+    labels = load_labels_from_file(labels_file)
+    
+    # Load images and corresponding labels
+    image_data, image_labels = load_images_and_labels(images_path, labels)
+    
+    # Encode labels as integers
+    label_encoder = LabelEncoder()
+    image_labels_encoded = label_encoder.fit_transform(image_labels)
+    
+    print(f"Number of images loaded: {len(image_data)}")
+    print(f"Number of labels: {len(image_labels)}")
+    print(f"Unique labels: {len(label_encoder.classes_)}")
+    print(f"Label classes: {label_encoder.classes_}")
+    
+    # Check some images
+    if len(image_data) > 0:
+        print(f"Sample image shape: {image_data[0].shape}")
+        print(f"Sample image label: {image_labels_encoded[0]}") # type: ignore
+    
+    return image_data, image_labels_encoded, label_encoder
 
-    Parameters:
-    - image_dir (str): Directory containing task folders with images. Defaults to DEFAULT_IMAGE_DIR.
-    - max_folders (int): Maximum number of folders to process.
-    - max_images_per_folder (int): Maximum number of images to process per folder.
+def loader():
+    """Loader function to check if the code is working."""
+    print("Starting data preparation and loading...")
+    
+    # Ensure the output directory exists
+    output_dir = "D:/03PersonalFiles/Thesis/I-Comprehend/datasets/processed"
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    
+    image_data, image_labels_encoded, label_encoder = prepare_data_for_training()
+    
+    # Save the preprocessed data
+    np.save(os.path.join(output_dir, "image_data.npy"), image_data)
+    np.save(os.path.join(output_dir, "image_labels_encoded.npy"), image_labels_encoded)
+    
+    print("Data preparation complete.")
+    print("Preprocessed data and labels have been saved.")
 
-    Returns:
-    - images (list of PIL.Image.Image): List of PIL Image objects.
-    - labels (list of dict): List of labels corresponding to the images.
-    """
-    try:
-        print(f"Loading labels from 'datasets/raw/ground_truths'")
-        labels_dict = load_labels("datasets/raw/ground_truths")
-        print(f"Labels loaded: {labels_dict.keys()}")
-        print(f"Loading images from directory: {image_dir}")
-        images, labels = load_images_and_labels(image_dir, labels_dict, max_folders=max_folders, max_images_per_folder=max_images_per_folder)
-        print(f"Images and labels loaded: {len(images)} images, {len(labels)} labels")  # Debugging statement
-        return images, labels
-    except Exception as e:
-        print(f"Error loading and processing images: {e}")
-        return [], []
+if __name__ == "__main__":
+    loader()
