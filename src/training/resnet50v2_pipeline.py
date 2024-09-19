@@ -3,6 +3,7 @@ import numpy as np
 import tensorflow as tf
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
+from tensorflow.keras.callbacks import EarlyStopping  # Import EarlyStopping callback
 
 # Define base directory
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
@@ -81,13 +82,19 @@ model.compile(optimizer='adam',
 print("Model summary:")
 model.summary()
 
+# Define the early stopping callback
+early_stopping = EarlyStopping(monitor='val_loss',  # Monitor validation loss
+                               patience=3,          # Number of epochs with no improvement after which training will be stopped
+                               restore_best_weights=True)  # Restore model weights from the epoch with the best value of the monitored quantity
+
 # Train the model
 print("Training the model...")
 history = model.fit(X_train, y_train,
                     validation_data=(X_val, y_val),
                     epochs=10,
                     batch_size=32,
-                    verbose=1)
+                    verbose=1,
+                    callbacks=[early_stopping])  # Include the early stopping callback
 
 # Print training history
 print("Training history:")
