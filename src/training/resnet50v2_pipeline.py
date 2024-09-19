@@ -3,7 +3,7 @@ import numpy as np
 import tensorflow as tf
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
-from tensorflow.keras.callbacks import EarlyStopping  # Import EarlyStopping callback
+from tensorflow.keras.callbacks import EarlyStopping  #type: ignore
 
 # Define base directory
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
@@ -53,13 +53,13 @@ print(f"Validation labels shape: {y_val.shape}")
 # Define the ResNet50V2 model
 def create_resnet50v2_model(input_shape, num_classes):
     print("Creating ResNet50V2 model...")
-    base_model = tf.keras.applications.ResNet50V2(weights='imagenet', include_top=False, input_shape=input_shape)
+    base_model = tf.keras.applications.ResNet50V2(weights='imagenet', include_top=False, input_shape=input_shape)  #type: ignore
     base_model.trainable = False
 
-    model = tf.keras.Sequential([
+    model = tf.keras.Sequential([ #type: ignore
         base_model,
-        tf.keras.layers.GlobalAveragePooling2D(),
-        tf.keras.layers.Dense(num_classes, activation='softmax')
+        tf.keras.layers.GlobalAveragePooling2D(), #type: ignore
+        tf.keras.layers.Dense(num_classes, activation='softmax') #type: ignore
     ])
 
     print("Model created.")
