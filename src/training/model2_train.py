@@ -1,3 +1,4 @@
+import os
 import torch
 import json
 from tqdm import tqdm
@@ -18,15 +19,20 @@ from transformers import T5ForConditionalGeneration, T5TokenizerFast
 import warnings
 warnings.filterwarnings("ignore")
 
-TOKENIZER = T5TokenizerFast.from_pretrained(r"D:\02 Personal Files\Thesis Related\Main Thesis Project\main\thesis\models\qg_tokenizer")
-MODEL = T5ForConditionalGeneration.from_pretrained(r"D:\02 Personal Files\Thesis Related\Main Thesis Project\main\thesis\models\qg_model", return_dict=True)
+MODEL2_DIR = os.path.join('..', 'src', 'models', 'qgmodel2')
+TOKENIZER_DIR = os.path.join('..', 'src', 'models', 'qgmodel2_tokenizer')
+dataset_path = os.path.join('..', 'datasets', 'processed', 'generated_qa.csv')
+
+TOKENIZER = T5TokenizerFast.from_pretrained(TOKENIZER_DIR)
+MODEL = T5ForConditionalGeneration.from_pretrained(MODEL2_DIR)
 OPTIMIZER = Adam(MODEL.parameters(), lr=0.00001)
+
 Q_LEN = 256   # Question Length
 T_LEN = 32    # Target Length
 BATCH_SIZE = 4
 DEVICE = "cpu"
 
-data = pd.read_csv(r"D:\02 Personal Files\Thesis Related\Main Thesis Project\main\thesis\datasets\output.csv")
+data = pd.read_csv(dataset_path)
 data = data.sample(n=10000).reset_index(drop=True)
 
 class QG_Dataset(Dataset):

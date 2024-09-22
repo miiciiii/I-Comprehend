@@ -7,7 +7,6 @@ from torch.optim import Adam
 import nltk
 import spacy
 import string
-import evaluate  # Bleu
 from torch.utils.data import Dataset, DataLoader, RandomSampler
 import pandas as pd
 import numpy as np
@@ -21,6 +20,7 @@ warnings.filterwarnings("ignore")
 
 MODEL3_DIR = os.path.join('..', 'src', 'models', 'qgmodel3')
 TOKENIZER_DIR = os.path.join('..', 'src', 'models', 'qgmodel3_tokenizer')
+dataset_path = os.path.join('..', 'datasets', 'processed', 'generated_qa.csv')
 
 TOKENIZER = T5TokenizerFast.from_pretrained(TOKENIZER_DIR)
 MODEL = T5ForConditionalGeneration.from_pretrained(MODEL3_DIR)
@@ -30,7 +30,7 @@ T_LEN = 32    # Target Length
 BATCH_SIZE = 4
 DEVICE = "cpu"
 
-data = pd.read_csv(r"D:\02 Personal Files\Thesis Related\Main Thesis Project\main\thesis\datasets\output.csv")
+data = pd.read_csv(dataset_path)
 data = data.sample(n=10000).reset_index(drop=True)
 
 class QG_Dataset(Dataset):
