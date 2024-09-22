@@ -14,7 +14,7 @@ import pandas as pd  # For saving history
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 print(f"BASE_DIR: {BASE_DIR}")
 
-EXPERIMENTS_DIR = os.path.join(BASE_DIR, 'experiments', 'logs')
+EXPERIMENTS_DIR = os.path.join(BASE_DIR, 'experiments')
 print(f"EXPERIMENTS_DIR: {EXPERIMENTS_DIR}")
 
 # Define paths to data (use augmented dataset paths)
@@ -33,6 +33,7 @@ PLOT_SAVE_DIR = os.path.join(BASE_DIR, 'outputs', 'plots', 'ResNet50V2_plots')
 
 # Ensure directories exist
 os.makedirs(PLOT_SAVE_DIR, exist_ok=True)
+os.makedirs(EXPERIMENTS_DIR, exist_ok=True)  # Create experiments directory if not exists
 print(f"PLOT_SAVE_DIR: {PLOT_SAVE_DIR}")
 
 # Convert labels to numeric data if necessary
@@ -91,7 +92,7 @@ previous_val_accuracy = 0
 # Iterate through each batch
 for i, (image_file, label_file) in enumerate(zip(image_files, label_files)):
     print(f"\nLoading data from {image_file} and {label_file} (batch {i + 1})...")
-    
+
     X = np.load(image_file, mmap_mode='r')
     y = np.load(label_file, mmap_mode='r')
     print(f"Loaded image data with shape {X.shape}, and label data with shape {y.shape}.")
@@ -119,9 +120,14 @@ for i, (image_file, label_file) in enumerate(zip(image_files, label_files)):
     previous_val_loss = new_loss
     previous_val_accuracy = new_val_accuracy
 
+    # Save only the model weights for the current batch
+    weights_save_path = os.path.join(EXPERIMENTS_DIR, 'weights', f'batch_{i + 1}_weights.h5')
+    best_model.save_weights(weights_save_path)
+    print(f"Model weights saved to {weights_save_path}.")
+
     # Log training history to CSV
     history_df = pd.DataFrame(history.history)
-    history_csv_path = os.path.join(EXPERIMENTS_DIR, f'batch_{i + 1}_history.csv')
+    history_csv_path = os.path.join(EXPERIMENTS_DIR, 'logs', f'batch_{i + 1}_history.csv')
     history_df.to_csv(history_csv_path, index=False)
     print(f"Training history saved to {history_csv_path}.")
 
