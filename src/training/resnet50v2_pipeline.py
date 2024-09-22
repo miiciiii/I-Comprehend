@@ -14,7 +14,7 @@ import pandas as pd  # For saving history
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 print(f"BASE_DIR: {BASE_DIR}")
 
-EXPERIMENTS_DIR = os.path.join(BASE_DIR, 'experiments')
+EXPERIMENTS_DIR = os.path.join(BASE_DIR, 'experiments', 'logs')
 print(f"EXPERIMENTS_DIR: {EXPERIMENTS_DIR}")
 
 # Define paths to data (use augmented dataset paths)
