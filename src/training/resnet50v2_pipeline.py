@@ -70,6 +70,30 @@ else:
     print(f"No existing model found at {MODEL_SAVE_PATH}, creating a new one.")
     best_model = create_resnet50v2_model(input_shape, num_classes)
 
+# Print Model Summary
+print("\nModel Summary:")
+best_model.summary()
+
+# Print Model Configuration
+print("\nModel Configuration:")
+model_config = best_model.optimizer.get_config()
+print(f"Optimizer: {model_config['name']}")
+print(f"Learning Rate: {model_config['learning_rate']}")
+print(f"Loss: {best_model.loss}")
+print(f"Metrics: {best_model.metrics_names}")
+
+# Print Model Weights Info
+print("\nModel Weights Information:")
+for layer in best_model.layers:
+    if layer.weights:
+        for weight in layer.weights:
+            print(f"Layer: {layer.name} - Weight shape: {weight.shape}")
+
+# Print Layer Details (Trainable/Non-trainable)
+print("\nLayer Details:")
+for layer in best_model.layers:
+    print(f"Layer: {layer.name}, Trainable: {layer.trainable}")
+
 # Set up learning rate schedule and optimizer
 initial_learning_rate = 0.001
 lr_schedule = ExponentialDecay(initial_learning_rate, decay_steps=100000, decay_rate=0.96, staircase=True)
@@ -77,7 +101,7 @@ optimizer = Adam(learning_rate=lr_schedule)
 
 # Compile the model
 best_model.compile(optimizer=optimizer, loss='categorical_crossentropy', metrics=['accuracy'])
-print(f"Model compiled with input shape {input_shape} and {num_classes} classes.")
+print(f"\nModel compiled with input shape {input_shape} and {num_classes} classes.")
 
 # Define the early stopping callback
 early_stopping = EarlyStopping(monitor='val_loss', patience=10, restore_best_weights=True)
@@ -89,17 +113,18 @@ model_checkpoint = ModelCheckpoint(MODEL_SAVE_PATH, monitor='val_accuracy', save
 previous_val_loss = float('inf')
 previous_val_accuracy = 0
 
-# Iterate through each batch
-for i, (image_file, label_file) in enumerate(zip(image_files, label_files)):
-    print(f"\nLoading data from {image_file} and {label_file} (batch {i + 1})...")
+# Start training from batch 2
+for i in range(1, len(image_files)):  # Start from 1 to skip batch 1
+    print(f"\nLoading data from {image_files[i]} and {label_files[i]} (batch {i + 1})...")
 
-    X = np.load(image_file, mmap_mode='r')
-    y = np.load(label_file, mmap_mode='r')
+    X = np.load(image_files[i], mmap_mode='r')
+    y = np.load(label_files[i], mmap_mode='r')
     print(f"Loaded image data with shape {X.shape}, and label data with shape {y.shape}.")
 
     y = convert_labels_to_numeric(y)
     y = to_categorical(y, num_classes=num_classes)
 
+    print('Splitting training data and validation data')
     X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=42)
     print(f"Split data into {X_train.shape[0]} training and {X_val.shape[0]} validation samples.")
 
@@ -121,7 +146,7 @@ for i, (image_file, label_file) in enumerate(zip(image_files, label_files)):
     previous_val_accuracy = new_val_accuracy
 
     # Save only the model weights for the current batch
-    weights_save_path = os.path.join(EXPERIMENTS_DIR, 'weights', f'batch_{i + 1}_weights.h5')
+    weights_save_path = os.path.join(EXPERIMENTS_DIR, 'weights', f'batch_{i + 1}_weights.weights.h5')
     best_model.save_weights(weights_save_path)
     print(f"Model weights saved to {weights_save_path}.")
 
