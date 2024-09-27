@@ -5,182 +5,225 @@ from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 import matplotlib.pyplot as plt
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.optimizers.schedules import ExponentialDecay
-from tensorflow.keras.utils import to_categorical
-from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
-import pandas as pd  # For saving history
+from sklearn.preprocessing import OneHotEncoder
+import pandas as pd
+import joblib
+import gc
 
-# Define base directory
+# Constants
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-print(f"BASE_DIR: {BASE_DIR}")
-
-EXPERIMENTS_DIR = os.path.join(BASE_DIR, 'experiments')
-print(f"EXPERIMENTS_DIR: {EXPERIMENTS_DIR}")
-
-# Define paths to data (use augmented dataset paths)
 IMAGE_DIR = os.path.join(BASE_DIR, 'datasets', 'processed', 'images')
 LABEL_DIR = os.path.join(BASE_DIR, 'datasets', 'processed', 'labels')
-print(f"IMAGE_DIR: {IMAGE_DIR}")
-print(f"LABEL_DIR: {LABEL_DIR}")
-
-# Collect all .npy files
-image_files = [os.path.join(IMAGE_DIR, f) for f in os.listdir(IMAGE_DIR) if f.endswith('.npy')]
-label_files = [os.path.join(LABEL_DIR, f) for f in os.listdir(LABEL_DIR) if f.endswith('.npy')]
-print(f"Found {len(image_files)} image files and {len(label_files)} label files.")
-
 MODEL_SAVE_PATH = os.path.join(BASE_DIR, 'src', 'models', 'resnet50v2_model.keras')
-PLOT_SAVE_DIR = os.path.join(BASE_DIR, 'outputs', 'plots', 'ResNet50V2_plots')
+PLOT_SAVE_DIR = os.path.join(BASE_DIR, 'outputs', 'plots', 'ResNet50V2_plots_4thdtraining')
+EXPERIMENTS_DIR = os.path.join(BASE_DIR, 'experiments', '4thdtrain', 'logs')
+ENCODER_SAVE_PATH_AROUSAL = os.path.join(BASE_DIR, 'label_encoder_arousal.pkl')
+ENCODER_SAVE_PATH_DOMINANCE = os.path.join(BASE_DIR, 'label_encoder_dominance.pkl')
+EPOCHS = 50
+BATCH_SIZE = 32
+TEST_SIZE = 0.2
 
 # Ensure directories exist
 os.makedirs(PLOT_SAVE_DIR, exist_ok=True)
-os.makedirs(EXPERIMENTS_DIR, exist_ok=True)  # Create experiments directory if not exists
-print(f"PLOT_SAVE_DIR: {PLOT_SAVE_DIR}")
+os.makedirs(EXPERIMENTS_DIR, exist_ok=True)
 
-# Convert labels to numeric data if necessary
-def convert_labels_to_numeric(labels):
-    if labels.ndim == 2:
-        labels = np.argmax(labels, axis=1)
-    elif labels.dtype.kind in {'U', 'S', 'O'}:
-        le = LabelEncoder()
-        labels = le.fit_transform(labels)
-    return labels
+# Load data paths
+image_files = [os.path.join(IMAGE_DIR, f) for f in os.listdir(IMAGE_DIR) if f.endswith('.npy')]
+label_files = [os.path.join(LABEL_DIR, f) for f in os.listdir(LABEL_DIR) if f.endswith('.npy')]
+
+if not image_files or not label_files:
+    raise ValueError("No .npy files found in the specified directories.")
 
 # Function to create the ResNet50V2 model
-def create_resnet50v2_model(input_shape, num_classes):
-    print("Creating ResNet50V2 model...")
+def create_resnet50v2_model(input_shape, num_arousal_classes, num_dominance_classes):
     base_model = tf.keras.applications.ResNet50V2(weights='imagenet', include_top=False, input_shape=input_shape)
     base_model.trainable = False
-    model = tf.keras.Sequential([
-        base_model,
-        tf.keras.layers.GlobalAveragePooling2D(),
-        tf.keras.layers.Dense(num_classes, activation='softmax')
-    ])
+    inputs = tf.keras.Input(shape=input_shape)
+    x = base_model(inputs)
+    x = tf.keras.layers.GlobalAveragePooling2D()(x)
+    
+    # Arousal output (categorical)
+    arousal_output = tf.keras.layers.Dense(num_arousal_classes, activation='softmax', name='arousal_output')(x)
+    
+    # Dominance output (categorical)
+    dominance_output = tf.keras.layers.Dense(num_dominance_classes, activation='softmax', name='dominance_output')(x)
+
+    # Continuous outputs (for the 5 continuous features)
+    continuous_output = tf.keras.layers.Dense(5, activation='linear', name='continuous_output')(x)
+
+    model = tf.keras.Model(inputs=inputs, outputs={'arousal_output': arousal_output, 
+                                                    'dominance_output': dominance_output,
+                                                    'continuous_output': continuous_output})
     return model
+
+# Function to train the model for a batch
+def train_model(model, X_train, y_train_arousal, y_train_dominance, y_train_continuous, 
+                X_val, y_val_arousal, y_val_dominance, y_val_continuous, batch_index):
+    
+    model_checkpoint = ModelCheckpoint(MODEL_SAVE_PATH, monitor='val_arousal_output_accuracy', save_best_only=True, verbose=1)
+    early_stopping = EarlyStopping(monitor='val_arousal_output_accuracy', patience=3, restore_best_weights=True, mode='max')
+
+    history = model.fit(
+        X_train,
+        {'arousal_output': y_train_arousal, 'dominance_output': y_train_dominance, 'continuous_output': y_train_continuous},
+        validation_data=(X_val, {'arousal_output': y_val_arousal, 'dominance_output': y_val_dominance, 'continuous_output': y_val_continuous}),
+        epochs=EPOCHS,
+        batch_size=BATCH_SIZE,
+        verbose=2,
+        callbacks=[early_stopping, model_checkpoint]
+    )
+
+    # Save training history
+    history_df = pd.DataFrame(history.history)
+    history_csv_path = os.path.join(EXPERIMENTS_DIR, f'batch_{batch_index + 1}_history.csv')
+    history_df.to_csv(history_csv_path, index=False)
+
+    # Plot training history
+    plt.figure(figsize=(12, 6))
+    
+    # Arousal precision plot
+    plt.subplot(2, 2, 1)
+    plt.plot(history.history['arousal_output_precision'], label='Train Arousal Precision')
+    plt.plot(history.history['val_arousal_output_precision'], label='Validation Arousal Precision')
+    plt.title('Arousal Model Precision')
+    plt.xlabel('Epoch')
+    plt.ylabel('Precision')
+    plt.legend()
+
+    # Arousal loss plot
+    plt.subplot(2, 2, 2)
+    plt.plot(history.history['arousal_output_loss'], label='Train Arousal Loss')
+    plt.plot(history.history['val_arousal_output_loss'], label='Validation Arousal Loss')
+    plt.title('Arousal Model Loss')
+    plt.xlabel('Epoch')
+    plt.ylabel('Loss')
+    plt.legend()
+
+    # Dominance precision plot
+    plt.subplot(2, 2, 3)
+    plt.plot(history.history['dominance_output_precision'], label='Train Dominance Precision')
+    plt.plot(history.history['val_dominance_output_precision'], label='Validation Dominance Precision')
+    plt.title('Dominance Model Precision')
+    plt.xlabel('Epoch')
+    plt.ylabel('Precision')
+    plt.legend()
+
+    # Dominance loss plot
+    plt.subplot(2, 2, 4)
+    plt.plot(history.history['dominance_output_loss'], label='Train Dominance Loss')
+    plt.plot(history.history['val_dominance_output_loss'], label='Validation Dominance Loss')
+    plt.title('Dominance Model Loss')
+    plt.xlabel('Epoch')
+    plt.ylabel('Loss')
+    plt.legend()
+
+    plot_path = os.path.join(PLOT_SAVE_DIR, f'batch_{batch_index + 1}_training_history.png')
+    plt.tight_layout()
+    plt.savefig(plot_path)
+    plt.close()
 
 # Model configuration
 input_shape = (256, 256, 3)
-num_classes = 7  # Adjust based on your dataset
-best_model = None
+num_arousal_classes = 5  # For categories like excited, calm, etc.
+num_dominance_classes = 4  # For categories like dependent, independent, etc.
 
-# Check if the model file exists and load it if available
-if os.path.exists(MODEL_SAVE_PATH):
-    print(f"Loading model from {MODEL_SAVE_PATH}...")
-    best_model = tf.keras.models.load_model(MODEL_SAVE_PATH)
+# Load or create the OneHotEncoders
+if os.path.exists(ENCODER_SAVE_PATH_AROUSAL):
+    print(f"Loading LabelEncoder for Arousal from {ENCODER_SAVE_PATH_AROUSAL}...")
+    arousal_encoder = joblib.load(ENCODER_SAVE_PATH_AROUSAL)
 else:
-    print(f"No existing model found at {MODEL_SAVE_PATH}, creating a new one.")
-    best_model = create_resnet50v2_model(input_shape, num_classes)
+    arousal_encoder = OneHotEncoder(sparse_output=False)
 
-# Print Model Summary
-print("\nModel Summary:")
-best_model.summary()
+if os.path.exists(ENCODER_SAVE_PATH_DOMINANCE):
+    print(f"Loading LabelEncoder for Dominance from {ENCODER_SAVE_PATH_DOMINANCE}...")
+    dominance_encoder = joblib.load(ENCODER_SAVE_PATH_DOMINANCE)
+else:
+    dominance_encoder = OneHotEncoder(sparse_output=False)
 
-# Print Model Configuration
-print("\nModel Configuration:")
-model_config = best_model.optimizer.get_config()
-print(f"Optimizer: {model_config['name']}")
-print(f"Learning Rate: {model_config['learning_rate']}")
-print(f"Loss: {best_model.loss}")
-print(f"Metrics: {best_model.metrics_names}")
+# Training loop
+for i in range(len(image_files)):
+    print(f"Loading data for batch {i + 1}...")
+    try:
+        X = np.load(image_files[i], mmap_mode='r').astype('float32')
+        y = np.load(label_files[i], mmap_mode='r').astype('str')  # Load as string for categorical labels
 
-# Print Model Weights Info
-print("\nModel Weights Information:")
-for layer in best_model.layers:
-    if layer.weights:
-        for weight in layer.weights:
-            print(f"Layer: {layer.name} - Weight shape: {weight.shape}")
+        # Check for empty arrays
+        if X.size == 0 or y.size == 0:
+            raise ValueError(f"Empty data found in batch {i + 1}.")
 
-# Print Layer Details (Trainable/Non-trainable)
-print("\nLayer Details:")
-for layer in best_model.layers:
-    print(f"Layer: {layer.name}, Trainable: {layer.trainable}")
+        # Separate arousal, dominance, and continuous labels
+        arousal_labels = y[:, 0]  # Assuming the first column is arousal
+        dominance_labels = y[:, 1]  # Assuming the second column is dominance
+        continuous_labels = y[:, 2:].astype(float)  # Remaining columns for continuous values
 
-# Set up learning rate schedule and optimizer
-initial_learning_rate = 0.001
-lr_schedule = ExponentialDecay(initial_learning_rate, decay_steps=100000, decay_rate=0.96, staircase=True)
-optimizer = Adam(learning_rate=lr_schedule)
+        # One-hot encoding for arousal and dominance classes
+        if i == 0:
+            # Fit the first encoder on the first categorical variable
+            y_arousal_encoded = arousal_encoder.fit_transform(arousal_labels.reshape(-1, 1))
+            y_dominance_encoded = dominance_encoder.fit_transform(dominance_labels.reshape(-1, 1))
 
-# Compile the model
-best_model.compile(optimizer=optimizer, loss='categorical_crossentropy', metrics=['accuracy'])
-print(f"\nModel compiled with input shape {input_shape} and {num_classes} classes.")
+            # Save the OneHotEncoders for later use
+            joblib.dump(arousal_encoder, ENCODER_SAVE_PATH_AROUSAL)
+            joblib.dump(dominance_encoder, ENCODER_SAVE_PATH_DOMINANCE)
+        else:
+            # For subsequent batches, transform using the existing encoders
+            y_arousal_encoded = arousal_encoder.transform(arousal_labels.reshape(-1, 1))
+            y_dominance_encoded = dominance_encoder.transform(dominance_labels.reshape(-1, 1))
 
-# Define the early stopping callback
-early_stopping = EarlyStopping(monitor='val_loss', patience=10, restore_best_weights=True)
+        # Split the data into training and validation sets
+        X_train, X_val, y_train_arousal, y_val_arousal, y_train_dominance, y_val_dominance, y_train_continuous, y_val_continuous = train_test_split(
+            X, y_arousal_encoded, y_dominance_encoded, continuous_labels, test_size=TEST_SIZE, random_state=42)
 
-# Define the ModelCheckpoint callback to save the best model
-model_checkpoint = ModelCheckpoint(MODEL_SAVE_PATH, monitor='val_accuracy', save_best_only=True, verbose=1)
+        # Create the model for each batch
+        if os.path.exists(MODEL_SAVE_PATH):
+            print(f"Loading model from {MODEL_SAVE_PATH}...")
+            best_model = tf.keras.models.load_model(MODEL_SAVE_PATH)
+        else:
+            print(f"No existing model found at {MODEL_SAVE_PATH}, creating a new one.")
+            best_model = create_resnet50v2_model(input_shape, num_arousal_classes, num_dominance_classes)
 
-# Initialize variables to track previous best metrics
-previous_val_loss = float('inf')
-previous_val_accuracy = 0
+        # Compile the model
+        initial_learning_rate = 0.001
+        lr_schedule = ExponentialDecay(initial_learning_rate, decay_steps=100000, decay_rate=0.96, staircase=True)
+        optimizer = Adam(learning_rate=lr_schedule)
+        best_model.compile(optimizer=optimizer,
+                           loss={'arousal_output': 'categorical_crossentropy', 
+                                 'dominance_output': 'categorical_crossentropy',
+                                 'continuous_output': 'mean_squared_error'},
+                           metrics={'arousal_output': ['accuracy'], 
+                                    'dominance_output': ['accuracy']})
 
-# Start training from batch 2
-for i in range(1, len(image_files)):  # Start from 1 to skip batch 1
-    print(f"\nLoading data from {image_files[i]} and {label_files[i]} (batch {i + 1})...")
+        best_model.summary()
 
-    X = np.load(image_files[i], mmap_mode='r')
-    y = np.load(label_files[i], mmap_mode='r')
-    print(f"Loaded image data with shape {X.shape}, and label data with shape {y.shape}.")
+        # Train the model
+        train_model(best_model, X_train, y_train_arousal, y_train_dominance, y_train_continuous, 
+                    X_val, y_val_arousal, y_val_dominance, y_val_continuous, i)
 
-    y = convert_labels_to_numeric(y)
-    y = to_categorical(y, num_classes=num_classes)
+        # Make predictions on validation set
+        val_predictions = best_model.predict(X_val)
 
-    print('Splitting training data and validation data')
-    X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=42)
-    print(f"Split data into {X_train.shape[0]} training and {X_val.shape[0]} validation samples.")
+        # Inverse transform the predictions to original labels
+        predicted_arousal_labels = arousal_encoder.inverse_transform(val_predictions['arousal_output'])
+        predicted_dominance_labels = dominance_encoder.inverse_transform(val_predictions['dominance_output'])
 
-    print(f"Training the model with batch {i + 1}...")
-    history = best_model.fit(X_train, y_train,
-                             validation_data=(X_val, y_val),
-                             epochs=50,
-                             batch_size=32,
-                             verbose=1,
-                             callbacks=[early_stopping, model_checkpoint])
+        # Optionally, you can save these predictions to a file
+        # predictions_df = pd.DataFrame({
+        #     'True Arousal': arousal_encoder.inverse_transform(y_val_arousal),
+        #     'Predicted Arousal': predicted_arousal_labels,
+        #     'True Dominance': dominance_encoder.inverse_transform(y_val_dominance),
+        #     'Predicted Dominance': predicted_dominance_labels
+        # })
 
-    # Evaluate the model
-    new_loss, new_val_accuracy = best_model.evaluate(X_val, y_val)
-    print(f"New validation loss: {new_loss:.4f}")
-    print(f"New validation accuracy: {new_val_accuracy:.4f}")
+        # predictions_csv_path = os.path.join(EXPERIMENTS_DIR, f'batch_{i + 1}_predictions.csv')
+        # predictions_df.to_csv(predictions_csv_path, index=False)
 
-    # Update previous metrics
-    previous_val_loss = new_loss
-    previous_val_accuracy = new_val_accuracy
+        # Clear memory
+        del X, y, X_train, X_val, y_train_arousal, y_val_arousal, y_train_dominance, y_val_dominance, y_train_continuous, y_val_continuous
+        gc.collect()
 
-    # Save only the model weights for the current batch
-    weights_save_path = os.path.join(EXPERIMENTS_DIR, 'weights', f'batch_{i + 1}_weights.weights.h5')
-    best_model.save_weights(weights_save_path)
-    print(f"Model weights saved to {weights_save_path}.")
+    except Exception as e:
+        print(f"An error occurred in batch {i + 1}: {e}")
+        break
 
-    # Log training history to CSV
-    history_df = pd.DataFrame(history.history)
-    history_csv_path = os.path.join(EXPERIMENTS_DIR, 'logs', f'batch_{i + 1}_history.csv')
-    history_df.to_csv(history_csv_path, index=False)
-    print(f"Training history saved to {history_csv_path}.")
-
-    # Save the training history plot for the current batch
-    plt.figure(figsize=(12, 4))
-
-    # Plot accuracy
-    plt.subplot(1, 2, 1)
-    plt.plot(history.history['accuracy'], label='Train Accuracy')
-    plt.plot(history.history['val_accuracy'], label='Validation Accuracy')
-    plt.title('Model Accuracy')
-    plt.xlabel('Epoch')
-    plt.ylabel('Accuracy')
-    plt.legend(loc='upper left')
-
-    # Plot loss
-    plt.subplot(1, 2, 2)
-    plt.plot(history.history['loss'], label='Train Loss')
-    plt.plot(history.history['val_loss'], label='Validation Loss')
-    plt.title('Model Loss')
-    plt.xlabel('Epoch')
-    plt.ylabel('Loss')
-    plt.legend(loc='upper left')
-
-    # Save the plot
-    plot_path = os.path.join(PLOT_SAVE_DIR, f'batch_{i + 1}_training_history.png')
-    plt.tight_layout()
-    plt.savefig(plot_path)
-    print(f"Plot saved to {plot_path}.")
-
-print("Model training complete.")
+print("Training completed.")

@@ -1,0 +1,261 @@
+
+(base) C:\Users\miiciii>Deacivate
+'Deacivate' is not recognized as an internal or external command,
+operable program or batch file.
+
+(base) C:\Users\miiciii>Deactivate
+DeprecationWarning: 'deactivate' is deprecated. Use 'conda deactivate'.
+
+(base) C:\Users\miiciii>conda.bat deactivate
+
+C:\Users\miiciii>Activate Thesis
+
+C:\Users\miiciii>conda.bat activate Thesis
+
+(Thesis) C:\Users\miiciii>D:
+
+(Thesis) D:\>cd 03PersonalFiles/Thesis/I-Comprehend/src/training
+
+(Thesis) D:\03PersonalFiles\Thesis\I-Comprehend\src\training>python resnet50v2_pipeline.py
+2024-09-24 11:32:31.181970: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-09-24 11:32:43.424788: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "D:\03PersonalFiles\Thesis\I-Comprehend\src\training\resnet50v2_pipeline.py", line 3, in <module>
+    import tensorflow as tf
+  File "D:\01SetupFiles\AnacondaNavigator\anacondanavigatorfiles\envs\Thesis\Lib\site-packages\tensorflow\__init__.py", line 47, in <module>
+    from tensorflow._api.v2 import __internal__
+  File "D:\01SetupFiles\AnacondaNavigator\anacondanavigatorfiles\envs\Thesis\Lib\site-packages\tensorflow\_api\v2\__internal__\__init__.py", line 11, in <module>
+    from tensorflow._api.v2.__internal__ import distribute
+  File "D:\01SetupFiles\AnacondaNavigator\anacondanavigatorfiles\envs\Thesis\Lib\site-packages\tensorflow\_api\v2\__internal__\distribute\__init__.py", line 8, in <module>
+    from tensorflow._api.v2.__internal__.distribute import combinations
+  File "D:\01SetupFiles\AnacondaNavigator\anacondanavigatorfiles\envs\Thesis\Lib\site-packages\tensorflow\_api\v2\__internal__\distribute\combinations\__init__.py", line 8, in <module>
+    from tensorflow.python.distribute.combinations import env # line: 456
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\01SetupFiles\AnacondaNavigator\anacondanavigatorfiles\envs\Thesis\Lib\site-packages\tensorflow\python\distribute\combinations.py", line 35, in <module>
+    from tensorflow.python.distribute import multi_process_runner
+  File "D:\01SetupFiles\AnacondaNavigator\anacondanavigatorfiles\envs\Thesis\Lib\site-packages\tensorflow\python\distribute\multi_process_runner.py", line 35, in <module>
+    from tensorflow.python.distribute import multi_process_lib
+  File "D:\01SetupFiles\AnacondaNavigator\anacondanavigatorfiles\envs\Thesis\Lib\site-packages\tensorflow\python\distribute\multi_process_lib.py", line 25, in <module>
+    from tensorflow.python.eager import test
+  File "D:\01SetupFiles\AnacondaNavigator\anacondanavigatorfiles\envs\Thesis\Lib\site-packages\tensorflow\python\eager\test.py", line 18, in <module>
+    from tensorflow.python.platform import test as _test
+  File "D:\01SetupFiles\AnacondaNavigator\anacondanavigatorfiles\envs\Thesis\Lib\site-packages\tensorflow\python\platform\test.py", line 23, in <module>
+    from tensorflow.python.framework import test_util as _test_util
+  File "D:\01SetupFiles\AnacondaNavigator\anacondanavigatorfiles\envs\Thesis\Lib\site-packages\tensorflow\python\framework\test_util.py", line 36, in <module>
+    from absl.testing import parameterized
+  File "D:\01SetupFiles\AnacondaNavigator\anacondanavigatorfiles\envs\Thesis\Lib\site-packages\absl\testing\parameterized.py", line 222, in <module>
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1087, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1187, in get_data
+KeyboardInterrupt
+^C
+(Thesis) D:\03PersonalFiles\Thesis\I-Comprehend\src\training>python resnet50v2_pipeline.py
+2024-09-24 11:35:33.406617: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-09-24 11:35:34.286688: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+BASE_DIR: D:\03PersonalFiles\Thesis\I-Comprehend
+EXPERIMENTS_DIR: D:\03PersonalFiles\Thesis\I-Comprehend\experiments
+IMAGE_DIR: D:\03PersonalFiles\Thesis\I-Comprehend\datasets\processed\images
+LABEL_DIR: D:\03PersonalFiles\Thesis\I-Comprehend\datasets\processed\labels
+Found 10 image files and 10 label files.
+PLOT_SAVE_DIR: D:\03PersonalFiles\Thesis\I-Comprehend\outputs\plots\ResNet50V2_plots
+Loading model from D:\03PersonalFiles\Thesis\I-Comprehend\src\models\resnet50v2_model.keras...
+2024-09-24 11:36:02.436914: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+Model compiled with input shape (256, 256, 3) and 7 classes.
+
+Loading data from D:\03PersonalFiles\Thesis\I-Comprehend\datasets\processed\images\images_chunk_2.npy and D:\03PersonalFiles\Thesis\I-Comprehend\datasets\processed\labels\labels_chunk_2.npy (batch 3)...
+Loaded image data with shape (9000, 256, 256, 3), and label data with shape (9000, 7).
+Splitting training data and validation data
+Split data into 7200 training and 1800 validation samples.
+Training the model with batch 3...
+Epoch 1/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m306s←[0m 1s/step - accuracy: 0.6098 - loss: 2.0669 - val_accuracy: 0.7011 - val_loss: 1.0185
+Epoch 2/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m289s←[0m 1s/step - accuracy: 0.7207 - loss: 0.9267 - val_accuracy: 0.7411 - val_loss: 0.7811
+Epoch 3/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.7609 - loss: 0.7067 - val_accuracy: 0.7750 - val_loss: 0.6352
+Epoch 4/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.8043 - loss: 0.5626 - val_accuracy: 0.7983 - val_loss: 0.5536
+Epoch 5/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.8193 - loss: 0.4842 - val_accuracy: 0.8272 - val_loss: 0.4691
+Epoch 6/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.8390 - loss: 0.4237 - val_accuracy: 0.8456 - val_loss: 0.4078
+Epoch 7/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.8719 - loss: 0.3329 - val_accuracy: 0.8611 - val_loss: 0.3675
+Epoch 8/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.8819 - loss: 0.3162 - val_accuracy: 0.8711 - val_loss: 0.3358
+Epoch 9/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.8984 - loss: 0.2809 - val_accuracy: 0.8817 - val_loss: 0.3032
+Epoch 10/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.9036 - loss: 0.2604 - val_accuracy: 0.8939 - val_loss: 0.2811
+Epoch 11/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m289s←[0m 1s/step - accuracy: 0.9015 - loss: 0.2461 - val_accuracy: 0.9017 - val_loss: 0.2621
+Epoch 12/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.9197 - loss: 0.2165 - val_accuracy: 0.9083 - val_loss: 0.2463
+Epoch 13/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.9241 - loss: 0.1953 - val_accuracy: 0.9172 - val_loss: 0.2231
+Epoch 14/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m289s←[0m 1s/step - accuracy: 0.9285 - loss: 0.1886 - val_accuracy: 0.9217 - val_loss: 0.2034
+Epoch 15/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.9338 - loss: 0.1653 - val_accuracy: 0.9256 - val_loss: 0.1916
+Epoch 16/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.9391 - loss: 0.1613 - val_accuracy: 0.9289 - val_loss: 0.1819
+Epoch 17/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.9500 - loss: 0.1310 - val_accuracy: 0.9394 - val_loss: 0.1676
+Epoch 18/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m287s←[0m 1s/step - accuracy: 0.9489 - loss: 0.1358 - val_accuracy: 0.9394 - val_loss: 0.1601
+Epoch 19/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m287s←[0m 1s/step - accuracy: 0.9531 - loss: 0.1262 - val_accuracy: 0.9322 - val_loss: 0.1653
+Epoch 20/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.9553 - loss: 0.1179 - val_accuracy: 0.9428 - val_loss: 0.1495
+Epoch 21/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.9638 - loss: 0.1050 - val_accuracy: 0.9528 - val_loss: 0.1353
+Epoch 22/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m287s←[0m 1s/step - accuracy: 0.9674 - loss: 0.0964 - val_accuracy: 0.9528 - val_loss: 0.1276
+Epoch 23/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m289s←[0m 1s/step - accuracy: 0.9682 - loss: 0.0930 - val_accuracy: 0.9544 - val_loss: 0.1224
+Epoch 24/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.9733 - loss: 0.0814 - val_accuracy: 0.9544 - val_loss: 0.1254
+Epoch 25/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.9737 - loss: 0.0834 - val_accuracy: 0.9583 - val_loss: 0.1115
+Epoch 26/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.9716 - loss: 0.0818 - val_accuracy: 0.9594 - val_loss: 0.1120
+Epoch 27/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m287s←[0m 1s/step - accuracy: 0.9780 - loss: 0.0754 - val_accuracy: 0.9478 - val_loss: 0.1239
+Epoch 28/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.9727 - loss: 0.0776 - val_accuracy: 0.9617 - val_loss: 0.1034
+Epoch 29/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m287s←[0m 1s/step - accuracy: 0.9796 - loss: 0.0687 - val_accuracy: 0.9656 - val_loss: 0.0964
+Epoch 30/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m287s←[0m 1s/step - accuracy: 0.9767 - loss: 0.0709 - val_accuracy: 0.9678 - val_loss: 0.0943
+Epoch 31/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.9858 - loss: 0.0547 - val_accuracy: 0.9661 - val_loss: 0.0956
+Epoch 32/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.9805 - loss: 0.0614 - val_accuracy: 0.9644 - val_loss: 0.0962
+Epoch 33/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.9841 - loss: 0.0568 - val_accuracy: 0.9706 - val_loss: 0.0861
+Epoch 34/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.9854 - loss: 0.0522 - val_accuracy: 0.9733 - val_loss: 0.0801
+Epoch 35/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.9862 - loss: 0.0490 - val_accuracy: 0.9722 - val_loss: 0.0798
+Epoch 36/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m287s←[0m 1s/step - accuracy: 0.9872 - loss: 0.0519 - val_accuracy: 0.9744 - val_loss: 0.0749
+Epoch 37/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.9874 - loss: 0.0468 - val_accuracy: 0.9706 - val_loss: 0.0774
+Epoch 38/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m287s←[0m 1s/step - accuracy: 0.9873 - loss: 0.0488 - val_accuracy: 0.9739 - val_loss: 0.0732
+Epoch 39/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m289s←[0m 1s/step - accuracy: 0.9901 - loss: 0.0437 - val_accuracy: 0.9756 - val_loss: 0.0710
+Epoch 40/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.9888 - loss: 0.0427 - val_accuracy: 0.9761 - val_loss: 0.0694
+Epoch 41/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m292s←[0m 1s/step - accuracy: 0.9921 - loss: 0.0398 - val_accuracy: 0.9778 - val_loss: 0.0688
+Epoch 42/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.9899 - loss: 0.0390 - val_accuracy: 0.9761 - val_loss: 0.0694
+Epoch 43/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m287s←[0m 1s/step - accuracy: 0.9927 - loss: 0.0365 - val_accuracy: 0.9778 - val_loss: 0.0659
+Epoch 44/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m1215s←[0m 5s/step - accuracy: 0.9915 - loss: 0.0376 - val_accuracy: 0.9800 - val_loss: 0.0622
+Epoch 45/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.9940 - loss: 0.0331 - val_accuracy: 0.9800 - val_loss: 0.0600
+Epoch 46/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m289s←[0m 1s/step - accuracy: 0.9941 - loss: 0.0325 - val_accuracy: 0.9828 - val_loss: 0.0581
+Epoch 47/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m287s←[0m 1s/step - accuracy: 0.9946 - loss: 0.0308 - val_accuracy: 0.9811 - val_loss: 0.0571
+Epoch 48/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m290s←[0m 1s/step - accuracy: 0.9950 - loss: 0.0311 - val_accuracy: 0.9833 - val_loss: 0.0574
+Epoch 49/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m289s←[0m 1s/step - accuracy: 0.9933 - loss: 0.0298 - val_accuracy: 0.9822 - val_loss: 0.0552
+Epoch 50/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.9965 - loss: 0.0257 - val_accuracy: 0.9856 - val_loss: 0.0533
+←[1m57/57←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m57s←[0m 1s/step - accuracy: 0.9901 - loss: 0.0514
+New validation loss: 0.0533
+New validation accuracy: 0.9856
+Model saved to D:\03PersonalFiles\Thesis\I-Comprehend\src\models\resnet50v2_model.keras.
+Model weights saved to D:\03PersonalFiles\Thesis\I-Comprehend\experiments\weights\batch_3.weights.h5.
+Training history saved to D:\03PersonalFiles\Thesis\I-Comprehend\experiments\logs\batch_3_history.csv.
+Plot saved to D:\03PersonalFiles\Thesis\I-Comprehend\outputs\plots\ResNet50V2_plots\batch_3_training_history.png.
+
+Loading data from D:\03PersonalFiles\Thesis\I-Comprehend\datasets\processed\images\images_chunk_3.npy and D:\03PersonalFiles\Thesis\I-Comprehend\datasets\processed\labels\labels_chunk_3.npy (batch 4)...
+Loaded image data with shape (9000, 256, 256, 3), and label data with shape (9000, 7).
+Splitting training data and validation data
+Split data into 7200 training and 1800 validation samples.
+Training the model with batch 4...
+Epoch 1/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m302s←[0m 1s/step - accuracy: 0.6943 - loss: 1.5399 - val_accuracy: 0.7800 - val_loss: 0.8038
+Epoch 2/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m291s←[0m 1s/step - accuracy: 0.8116 - loss: 0.6623 - val_accuracy: 0.8078 - val_loss: 0.5999
+Epoch 3/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m291s←[0m 1s/step - accuracy: 0.8437 - loss: 0.4708 - val_accuracy: 0.8406 - val_loss: 0.4707
+Epoch 4/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m290s←[0m 1s/step - accuracy: 0.8634 - loss: 0.3956 - val_accuracy: 0.8606 - val_loss: 0.4084
+Epoch 5/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m291s←[0m 1s/step - accuracy: 0.8800 - loss: 0.3258 - val_accuracy: 0.8767 - val_loss: 0.3672
+Epoch 6/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m292s←[0m 1s/step - accuracy: 0.8946 - loss: 0.2941 - val_accuracy: 0.8856 - val_loss: 0.3361
+Epoch 7/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m292s←[0m 1s/step - accuracy: 0.9050 - loss: 0.2650 - val_accuracy: 0.8844 - val_loss: 0.3318
+Epoch 8/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m291s←[0m 1s/step - accuracy: 0.9080 - loss: 0.2303 - val_accuracy: 0.8972 - val_loss: 0.2941
+Epoch 9/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m292s←[0m 1s/step - accuracy: 0.9218 - loss: 0.2109 - val_accuracy: 0.9122 - val_loss: 0.2659
+Epoch 10/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m292s←[0m 1s/step - accuracy: 0.9235 - loss: 0.2032 - val_accuracy: 0.9233 - val_loss: 0.2499
+←[1m57/57←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m58s←[0m 1s/step - accuracy: 0.7691 - loss: 0.7968
+New validation loss: 0.8038
+New validation accuracy: 0.7800
+Model saved to D:\03PersonalFiles\Thesis\I-Comprehend\src\models\resnet50v2_model.keras.
+Model weights saved to D:\03PersonalFiles\Thesis\I-Comprehend\experiments\weights\batch_4.weights.h5.
+Training history saved to D:\03PersonalFiles\Thesis\I-Comprehend\experiments\logs\batch_4_history.csv.
+Plot saved to D:\03PersonalFiles\Thesis\I-Comprehend\outputs\plots\ResNet50V2_plots\batch_4_training_history.png.
+
+Loading data from D:\03PersonalFiles\Thesis\I-Comprehend\datasets\processed\images\images_chunk_4.npy and D:\03PersonalFiles\Thesis\I-Comprehend\datasets\processed\labels\labels_chunk_4.npy (batch 5)...
+Loaded image data with shape (9000, 256, 256, 3), and label data with shape (9000, 7).
+Splitting training data and validation data
+Split data into 7200 training and 1800 validation samples.
+Training the model with batch 5...
+Epoch 1/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m300s←[0m 1s/step - accuracy: 0.6648 - loss: 1.3744 - val_accuracy: 0.8161 - val_loss: 0.6367
+Epoch 2/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.8078 - loss: 0.5880 - val_accuracy: 0.8461 - val_loss: 0.4720
+Epoch 3/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.8478 - loss: 0.4348 - val_accuracy: 0.8667 - val_loss: 0.3766
+Epoch 4/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m288s←[0m 1s/step - accuracy: 0.8698 - loss: 0.3550 - val_accuracy: 0.8856 - val_loss: 0.3084
+Epoch 5/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m290s←[0m 1s/step - accuracy: 0.8918 - loss: 0.3000 - val_accuracy: 0.8967 - val_loss: 0.2596
+Epoch 6/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m291s←[0m 1s/step - accuracy: 0.8996 - loss: 0.2754 - val_accuracy: 0.9111 - val_loss: 0.2317
+Epoch 7/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m290s←[0m 1s/step - accuracy: 0.9185 - loss: 0.2143 - val_accuracy: 0.9228 - val_loss: 0.2096
+Epoch 8/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m291s←[0m 1s/step - accuracy: 0.9276 - loss: 0.1852 - val_accuracy: 0.9272 - val_loss: 0.1894
+Epoch 9/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m289s←[0m 1s/step - accuracy: 0.9351 - loss: 0.1725 - val_accuracy: 0.9328 - val_loss: 0.1774
+Epoch 10/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m290s←[0m 1s/step - accuracy: 0.9373 - loss: 0.1553 - val_accuracy: 0.9389 - val_loss: 0.1606
+←[1m57/57←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m57s←[0m 1s/step - accuracy: 0.8160 - loss: 0.6097
+New validation loss: 0.6367
+New validation accuracy: 0.8161
+Model saved to D:\03PersonalFiles\Thesis\I-Comprehend\src\models\resnet50v2_model.keras.
+Model weights saved to D:\03PersonalFiles\Thesis\I-Comprehend\experiments\weights\batch_5.weights.h5.
+Training history saved to D:\03PersonalFiles\Thesis\I-Comprehend\experiments\logs\batch_5_history.csv.
+Plot saved to D:\03PersonalFiles\Thesis\I-Comprehend\outputs\plots\ResNet50V2_plots\batch_5_training_history.png.
+
+Loading data from D:\03PersonalFiles\Thesis\I-Comprehend\datasets\processed\images\images_chunk_5.npy and D:\03PersonalFiles\Thesis\I-Comprehend\datasets\processed\labels\labels_chunk_5.npy (batch 6)...
+Loaded image data with shape (9000, 256, 256, 3), and label data with shape (9000, 7).
+Splitting training data and validation data
+Split data into 7200 training and 1800 validation samples.
+Training the model with batch 6...
+Epoch 1/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m309s←[0m 1s/step - accuracy: 0.7654 - loss: 1.0647 - val_accuracy: 0.8383 - val_loss: 0.5515
+Epoch 2/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m297s←[0m 1s/step - accuracy: 0.8621 - loss: 0.4477 - val_accuracy: 0.8806 - val_loss: 0.3829
+Epoch 3/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m298s←[0m 1s/step - accuracy: 0.8988 - loss: 0.3069 - val_accuracy: 0.8983 - val_loss: 0.3099
+Epoch 4/50
+←[1m 15/225←[0m ←[32m━←[0m←[37m━━━━━━━━━━━━━━━━━━━←[0m ←[1m4:23←[0m 1s/step - accuracy: 0.9198 - loss: 0.2370

@@ -1,0 +1,263 @@
+
+(Thesis) D:\03PersonalFiles\Thesis\I-Comprehend\src\training>python resnet50v2_pipeline.py
+2024-09-25 21:45:19.278137: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-09-25 21:45:20.184558: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+BASE_DIR: D:\03PersonalFiles\Thesis\I-Comprehend
+EXPERIMENTS_DIR: D:\03PersonalFiles\Thesis\I-Comprehend\experiments
+IMAGE_DIR: D:\03PersonalFiles\Thesis\I-Comprehend\datasets\processed\2images
+LABEL_DIR: D:\03PersonalFiles\Thesis\I-Comprehend\datasets\processed\2labels
+Found 10 image files and 10 label files.
+PLOT_SAVE_DIR: D:\03PersonalFiles\Thesis\I-Comprehend\outputs\plots\ResNet50V2_plots
+No existing model found at D:\03PersonalFiles\Thesis\I-Comprehend\src\models\resnet50v2_model.keras, creating a new one.
+Creating ResNet50V2 model...
+2024-09-25 21:45:22.886307: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+Model Summary:
+Model: "sequential"
+┌──────────────────────────────────────┬─────────────────────────────┬─────────────────┐
+│ Layer (type)                         │ Output Shape                │         Param # │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ resnet50v2 (Functional)              │ (None, 8, 8, 2048)          │      23,564,800 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ global_average_pooling2d             │ (None, 2048)                │               0 │
+│ (GlobalAveragePooling2D)             │                             │                 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense (Dense)                        │ (None, 7)                   │          14,343 │
+└──────────────────────────────────────┴─────────────────────────────┴─────────────────┘
+ Total params: 23,579,143 (89.95 MB)
+ Trainable params: 14,343 (56.03 KB)
+ Non-trainable params: 23,564,800 (89.89 MB)
+
+Model compiled with input shape (256, 256, 3) and 7 classes.
+
+Loading data from D:\03PersonalFiles\Thesis\I-Comprehend\datasets\processed\2images\images_chunk_0.npy and D:\03PersonalFiles\Thesis\I-Comprehend\datasets\processed\2labels\labels_chunk_0.npy (batch 1)...
+Loaded image data with shape (9000, 256, 256, 3) and label data with shape (9000, 7).
+Splitting training data and validation data
+Split data into 7200 training and 1800 validation samples.
+Training the model with batch 1...
+Epoch 1/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.6517 - loss: 0.9343
+Epoch 1: val_accuracy improved from -inf to 0.89111, saving model to D:\03PersonalFiles\Thesis\I-Comprehend\src\models\resnet50v2_model.keras
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m404s←[0m 1s/step - accuracy: 0.6522 - loss: 0.9331 - val_accuracy: 0.8911 - val_loss: 0.3761
+Epoch 2/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9111 - loss: 0.3345
+Epoch 2: val_accuracy improved from 0.89111 to 0.95111, saving model to D:\03PersonalFiles\Thesis\I-Comprehend\src\models\resnet50v2_model.keras
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m298s←[0m 1s/step - accuracy: 0.9111 - loss: 0.3343 - val_accuracy: 0.9511 - val_loss: 0.2390
+Epoch 3/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9532 - loss: 0.2183
+Epoch 3: val_accuracy improved from 0.95111 to 0.96556, saving model to D:\03PersonalFiles\Thesis\I-Comprehend\src\models\resnet50v2_model.keras
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m297s←[0m 1s/step - accuracy: 0.9532 - loss: 0.2183 - val_accuracy: 0.9656 - val_loss: 0.1819
+Epoch 4/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9693 - loss: 0.1625
+Epoch 4: val_accuracy improved from 0.96556 to 0.97278, saving model to D:\03PersonalFiles\Thesis\I-Comprehend\src\models\resnet50v2_model.keras
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m297s←[0m 1s/step - accuracy: 0.9693 - loss: 0.1625 - val_accuracy: 0.9728 - val_loss: 0.1453
+Epoch 5/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9790 - loss: 0.1312
+Epoch 5: val_accuracy did not improve from 0.97278
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m295s←[0m 1s/step - accuracy: 0.9790 - loss: 0.1311 - val_accuracy: 0.9717 - val_loss: 0.1262
+Epoch 6/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9836 - loss: 0.1042
+Epoch 6: val_accuracy improved from 0.97278 to 0.98500, saving model to D:\03PersonalFiles\Thesis\I-Comprehend\src\models\resnet50v2_model.keras
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m311s←[0m 1s/step - accuracy: 0.9836 - loss: 0.1042 - val_accuracy: 0.9850 - val_loss: 0.1023
+Epoch 7/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9867 - loss: 0.0895
+Epoch 7: val_accuracy did not improve from 0.98500
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m299s←[0m 1s/step - accuracy: 0.9867 - loss: 0.0895 - val_accuracy: 0.9811 - val_loss: 0.0936
+Epoch 8/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9925 - loss: 0.0751
+Epoch 8: val_accuracy improved from 0.98500 to 0.98778, saving model to D:\03PersonalFiles\Thesis\I-Comprehend\src\models\resnet50v2_model.keras
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m299s←[0m 1s/step - accuracy: 0.9925 - loss: 0.0751 - val_accuracy: 0.9878 - val_loss: 0.0812
+Epoch 9/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9937 - loss: 0.0650
+Epoch 9: val_accuracy did not improve from 0.98778
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m299s←[0m 1s/step - accuracy: 0.9937 - loss: 0.0650 - val_accuracy: 0.9867 - val_loss: 0.0739
+Epoch 10/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9944 - loss: 0.0581
+Epoch 10: val_accuracy improved from 0.98778 to 0.98833, saving model to D:\03PersonalFiles\Thesis\I-Comprehend\src\models\resnet50v2_model.keras
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m296s←[0m 1s/step - accuracy: 0.9944 - loss: 0.0581 - val_accuracy: 0.9883 - val_loss: 0.0693
+Epoch 11/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9948 - loss: 0.0500
+Epoch 11: val_accuracy improved from 0.98833 to 0.99333, saving model to D:\03PersonalFiles\Thesis\I-Comprehend\src\models\resnet50v2_model.keras
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m297s←[0m 1s/step - accuracy: 0.9948 - loss: 0.0500 - val_accuracy: 0.9933 - val_loss: 0.0610
+Epoch 12/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9966 - loss: 0.0450
+Epoch 12: val_accuracy did not improve from 0.99333
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m296s←[0m 1s/step - accuracy: 0.9966 - loss: 0.0450 - val_accuracy: 0.9928 - val_loss: 0.0549
+Epoch 13/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9944 - loss: 0.0432
+Epoch 13: val_accuracy did not improve from 0.99333
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m296s←[0m 1s/step - accuracy: 0.9944 - loss: 0.0431 - val_accuracy: 0.9928 - val_loss: 0.0520
+Epoch 14/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9973 - loss: 0.0358
+Epoch 14: val_accuracy did not improve from 0.99333
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m296s←[0m 1s/step - accuracy: 0.9973 - loss: 0.0358 - val_accuracy: 0.9922 - val_loss: 0.0506
+Epoch 15/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9978 - loss: 0.0335
+Epoch 15: val_accuracy did not improve from 0.99333
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m296s←[0m 1s/step - accuracy: 0.9978 - loss: 0.0335 - val_accuracy: 0.9922 - val_loss: 0.0460
+Epoch 16/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9977 - loss: 0.0336
+Epoch 16: val_accuracy did not improve from 0.99333
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m296s←[0m 1s/step - accuracy: 0.9977 - loss: 0.0336 - val_accuracy: 0.9928 - val_loss: 0.0417
+Epoch 17/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9969 - loss: 0.0282
+Epoch 17: val_accuracy did not improve from 0.99333
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m304s←[0m 1s/step - accuracy: 0.9969 - loss: 0.0282 - val_accuracy: 0.9933 - val_loss: 0.0402
+Epoch 18/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9983 - loss: 0.0244
+Epoch 18: val_accuracy did not improve from 0.99333
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m296s←[0m 1s/step - accuracy: 0.9983 - loss: 0.0244 - val_accuracy: 0.9933 - val_loss: 0.0383
+Epoch 19/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9986 - loss: 0.0231
+Epoch 19: val_accuracy improved from 0.99333 to 0.99389, saving model to D:\03PersonalFiles\Thesis\I-Comprehend\src\models\resnet50v2_model.keras
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m297s←[0m 1s/step - accuracy: 0.9986 - loss: 0.0231 - val_accuracy: 0.9939 - val_loss: 0.0359
+Epoch 20/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9983 - loss: 0.0207
+Epoch 20: val_accuracy did not improve from 0.99389
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m295s←[0m 1s/step - accuracy: 0.9983 - loss: 0.0207 - val_accuracy: 0.9939 - val_loss: 0.0360
+Epoch 21/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9985 - loss: 0.0182
+Epoch 21: val_accuracy did not improve from 0.99389
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m296s←[0m 1s/step - accuracy: 0.9985 - loss: 0.0182 - val_accuracy: 0.9939 - val_loss: 0.0326
+Epoch 22/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9990 - loss: 0.0167
+Epoch 22: val_accuracy did not improve from 0.99389
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m297s←[0m 1s/step - accuracy: 0.9990 - loss: 0.0167 - val_accuracy: 0.9939 - val_loss: 0.0338
+Epoch 23/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9991 - loss: 0.0161
+Epoch 23: val_accuracy improved from 0.99389 to 0.99500, saving model to D:\03PersonalFiles\Thesis\I-Comprehend\src\models\resnet50v2_model.keras
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m296s←[0m 1s/step - accuracy: 0.9991 - loss: 0.0161 - val_accuracy: 0.9950 - val_loss: 0.0298
+Epoch 24/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9986 - loss: 0.0151
+Epoch 24: val_accuracy did not improve from 0.99500
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m296s←[0m 1s/step - accuracy: 0.9986 - loss: 0.0151 - val_accuracy: 0.9944 - val_loss: 0.0296
+Epoch 25/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9993 - loss: 0.0131
+Epoch 25: val_accuracy did not improve from 0.99500
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m296s←[0m 1s/step - accuracy: 0.9993 - loss: 0.0131 - val_accuracy: 0.9939 - val_loss: 0.0288
+Epoch 26/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9986 - loss: 0.0130
+Epoch 26: val_accuracy improved from 0.99500 to 0.99611, saving model to D:\03PersonalFiles\Thesis\I-Comprehend\src\models\resnet50v2_model.keras
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m297s←[0m 1s/step - accuracy: 0.9986 - loss: 0.0130 - val_accuracy: 0.9961 - val_loss: 0.0265
+Epoch 27/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9993 - loss: 0.0110
+Epoch 27: val_accuracy improved from 0.99611 to 0.99667, saving model to D:\03PersonalFiles\Thesis\I-Comprehend\src\models\resnet50v2_model.keras
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m297s←[0m 1s/step - accuracy: 0.9993 - loss: 0.0110 - val_accuracy: 0.9967 - val_loss: 0.0258
+Epoch 28/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9994 - loss: 0.0103
+Epoch 28: val_accuracy did not improve from 0.99667
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m298s←[0m 1s/step - accuracy: 0.9994 - loss: 0.0103 - val_accuracy: 0.9956 - val_loss: 0.0247
+Epoch 29/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9999 - loss: 0.0093
+Epoch 29: val_accuracy did not improve from 0.99667
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m296s←[0m 1s/step - accuracy: 0.9999 - loss: 0.0093 - val_accuracy: 0.9950 - val_loss: 0.0248
+Epoch 30/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9996 - loss: 0.0091
+Epoch 30: val_accuracy did not improve from 0.99667
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m296s←[0m 1s/step - accuracy: 0.9996 - loss: 0.0091 - val_accuracy: 0.9967 - val_loss: 0.0243
+Epoch 31/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9991 - loss: 0.0097
+Epoch 31: val_accuracy did not improve from 0.99667
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m296s←[0m 1s/step - accuracy: 0.9991 - loss: 0.0097 - val_accuracy: 0.9956 - val_loss: 0.0249
+Epoch 32/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9991 - loss: 0.0083
+Epoch 32: val_accuracy did not improve from 0.99667
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m296s←[0m 1s/step - accuracy: 0.9991 - loss: 0.0083 - val_accuracy: 0.9967 - val_loss: 0.0225
+Epoch 33/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9999 - loss: 0.0074
+Epoch 33: val_accuracy did not improve from 0.99667
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m296s←[0m 1s/step - accuracy: 0.9999 - loss: 0.0074 - val_accuracy: 0.9939 - val_loss: 0.0228
+Epoch 34/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 1.0000 - loss: 0.0066
+Epoch 34: val_accuracy did not improve from 0.99667
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m295s←[0m 1s/step - accuracy: 0.9999 - loss: 0.0066 - val_accuracy: 0.9950 - val_loss: 0.0220
+Epoch 35/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 1.0000 - loss: 0.0068
+Epoch 35: val_accuracy did not improve from 0.99667
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m295s←[0m 1s/step - accuracy: 1.0000 - loss: 0.0068 - val_accuracy: 0.9950 - val_loss: 0.0221
+Epoch 36/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.9999 - loss: 0.0056
+Epoch 36: val_accuracy did not improve from 0.99667
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m296s←[0m 1s/step - accuracy: 0.9999 - loss: 0.0056 - val_accuracy: 0.9950 - val_loss: 0.0225
+Epoch 37/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 1.0000 - loss: 0.0051
+Epoch 37: val_accuracy did not improve from 0.99667
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m296s←[0m 1s/step - accuracy: 1.0000 - loss: 0.0051 - val_accuracy: 0.9956 - val_loss: 0.0213
+Epoch 38/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 1.0000 - loss: 0.0046
+Epoch 38: val_accuracy did not improve from 0.99667
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m295s←[0m 1s/step - accuracy: 1.0000 - loss: 0.0046 - val_accuracy: 0.9950 - val_loss: 0.0216
+Epoch 39/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 1.0000 - loss: 0.0048
+Epoch 39: val_accuracy improved from 0.99667 to 0.99722, saving model to D:\03PersonalFiles\Thesis\I-Comprehend\src\models\resnet50v2_model.keras
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m304s←[0m 1s/step - accuracy: 1.0000 - loss: 0.0048 - val_accuracy: 0.9972 - val_loss: 0.0198
+Epoch 40/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 1.0000 - loss: 0.0040
+Epoch 40: val_accuracy did not improve from 0.99722
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m296s←[0m 1s/step - accuracy: 1.0000 - loss: 0.0040 - val_accuracy: 0.9956 - val_loss: 0.0203
+Epoch 41/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 1.0000 - loss: 0.0036
+Epoch 41: val_accuracy did not improve from 0.99722
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m297s←[0m 1s/step - accuracy: 1.0000 - loss: 0.0036 - val_accuracy: 0.9956 - val_loss: 0.0203
+Epoch 42/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 1.0000 - loss: 0.0035
+Epoch 42: val_accuracy did not improve from 0.99722
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m297s←[0m 1s/step - accuracy: 1.0000 - loss: 0.0035 - val_accuracy: 0.9967 - val_loss: 0.0206
+←[1m57/57←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m59s←[0m 1s/step - accuracy: 0.9984 - loss: 0.0172
+New validation loss: 0.0198
+New validation accuracy: 0.9972
+Model weights saved to D:\03PersonalFiles\Thesis\I-Comprehend\experiments\weights\2batch_1_weights.weights.h5.
+Training history saved to D:\03PersonalFiles\Thesis\I-Comprehend\experiments\logs\2batch_1_history.csv.
+Plot saved to D:\03PersonalFiles\Thesis\I-Comprehend\outputs\plots\ResNet50V2_plots\2batch_1_training_history.png.
+
+Loading data from D:\03PersonalFiles\Thesis\I-Comprehend\datasets\processed\2images\images_chunk_1.npy and D:\03PersonalFiles\Thesis\I-Comprehend\datasets\processed\2labels\labels_chunk_1.npy (batch 2)...
+Loaded image data with shape (9000, 256, 256, 3) and label data with shape (9000, 7).
+Splitting training data and validation data
+Split data into 7200 training and 1800 validation samples.
+Training the model with batch 2...
+Epoch 1/50
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m0s←[0m 1s/step - accuracy: 0.6157 - loss: 1.4601
+Epoch 1: val_accuracy improved from -inf to 0.81889, saving model to D:\03PersonalFiles\Thesis\I-Comprehend\src\models\resnet50v2_model.keras
+←[1m225/225←[0m ←[32m━━━━━━━━━━━━━━━━━━━━←[0m←[37m←[0m ←[1m301s←[0m 1s/step - accuracy: 0.6161 - loss: 1.4578 - val_accuracy: 0.8189 - val_loss: 0.4837
+Epoch 2/50
+←[1m 32/225←[0m ←[32m━━←[0m←[37m━━━━━━━━━━━━━━━━━━←[0m ←[1m3:25←[0m 1s/step - accuracy: 0.8409 - loss: 0.4424Traceback (most recent call last):
+  File "D:\03PersonalFiles\Thesis\I-Comprehend\src\training\resnet50v2_pipeline.py", line 158, in <module>
+    history = best_model.fit(X_train, y_train,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\01SetupFiles\AnacondaNavigator\anacondanavigatorfiles\envs\Thesis\Lib\site-packages\keras\src\utils\traceback_utils.py", line 117, in error_handler
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\01SetupFiles\AnacondaNavigator\anacondanavigatorfiles\envs\Thesis\Lib\site-packages\keras\src\backend\tensorflow\trainer.py", line 320, in fit
+    logs = self.train_function(iterator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\01SetupFiles\AnacondaNavigator\anacondanavigatorfiles\envs\Thesis\Lib\site-packages\tensorflow\python\util\traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\01SetupFiles\AnacondaNavigator\anacondanavigatorfiles\envs\Thesis\Lib\site-packages\tensorflow\python\eager\polymorphic_function\polymorphic_function.py", line 833, in __call__
+    result = self._call(*args, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\01SetupFiles\AnacondaNavigator\anacondanavigatorfiles\envs\Thesis\Lib\site-packages\tensorflow\python\eager\polymorphic_function\polymorphic_function.py", line 878, in _call
+    results = tracing_compilation.call_function(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\01SetupFiles\AnacondaNavigator\anacondanavigatorfiles\envs\Thesis\Lib\site-packages\tensorflow\python\eager\polymorphic_function\tracing_compilation.py", line 139, in call_function
+    return function._call_flat(  # pylint: disable=protected-access
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\01SetupFiles\AnacondaNavigator\anacondanavigatorfiles\envs\Thesis\Lib\site-packages\tensorflow\python\eager\polymorphic_function\concrete_function.py", line 1322, in _call_flat
+    return self._inference_function.call_preflattened(args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\01SetupFiles\AnacondaNavigator\anacondanavigatorfiles\envs\Thesis\Lib\site-packages\tensorflow\python\eager\polymorphic_function\atomic_function.py", line 216, in call_preflattened
+    flat_outputs = self.call_flat(*args)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\01SetupFiles\AnacondaNavigator\anacondanavigatorfiles\envs\Thesis\Lib\site-packages\tensorflow\python\eager\polymorphic_function\atomic_function.py", line 251, in call_flat
+    outputs = self._bound_context.call_function(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\01SetupFiles\AnacondaNavigator\anacondanavigatorfiles\envs\Thesis\Lib\site-packages\tensorflow\python\eager\context.py", line 1552, in call_function
+    outputs = execute.execute(
+              ^^^^^^^^^^^^^^^^
+  File "D:\01SetupFiles\AnacondaNavigator\anacondanavigatorfiles\envs\Thesis\Lib\site-packages\tensorflow\python\eager\execute.py", line 53, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+^C
+(Thesis) D:\03PersonalFiles\Thesis\I-Comprehend\src\training>py0hohttps://github.com/miiciiii/I-Comprehendhttps://github.com/miiciiii/I-Comprehend
