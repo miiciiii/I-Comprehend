@@ -67,11 +67,16 @@ dominance_class_index = np.argmax(dominance_pred, axis=1)
 arousal_label = arousal_encoder.inverse_transform(np.eye(arousal_encoder.categories_[0].shape[0])[arousal_class_index].reshape(1, -1))
 dominance_label = dominance_encoder.inverse_transform(np.eye(dominance_encoder.categories_[0].shape[0])[dominance_class_index].reshape(1, -1))
 
-# Print the mapped labels
-print(f"Arousal prediction (as string label): {arousal_label}")
-print(f"Dominance prediction (as string label): {dominance_label}")
+# Define the class names for the continuous output
+class_names = ['effort', 'frustration', 'mental_demand', 'performance', 'physical_demand']
 
-# Continuous predictions (if applicable)
-print(f"Continuous output prediction: {continuous_pred}")
+# Format and print the output
+print("Prediction Results:")
+print(f"Arousal: {arousal_label[0][0]}")  # Arousal label
+print(f"Dominance: {dominance_label[0][0]}")  # Dominance label
+
+# Map continuous output to corresponding class names
+for i, name in enumerate(class_names):
+    print(f"{name.capitalize()}: {continuous_pred[0][i]}")
 
 print("Single image prediction completed.")

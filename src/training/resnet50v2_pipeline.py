@@ -141,35 +141,38 @@ if os.path.exists(ENCODER_SAVE_PATH_DOMINANCE):
 else:
     dominance_encoder = OneHotEncoder(sparse_output=False)
 
-# Training loop
-for i in range(len(image_files)):
+# First, fit the encoders using the first batch (i=0)
+print("Fitting encoders using the first batch...")
+X_first_batch = np.load(image_files[0], mmap_mode='r').astype('float32')
+y_first_batch = np.load(label_files[0], mmap_mode='r').astype('str')
+
+# Separate arousal, dominance, and continuous labels for the first batch
+arousal_labels_first = y_first_batch[:, 0]
+dominance_labels_first = y_first_batch[:, 1]
+
+# Fit the encoders on the first batch
+y_arousal_encoded_first = arousal_encoder.fit_transform(arousal_labels_first.reshape(-1, 1))
+y_dominance_encoded_first = dominance_encoder.fit_transform(dominance_labels_first.reshape(-1, 1))
+
+# Save the OneHotEncoders for later use
+joblib.dump(arousal_encoder, ENCODER_SAVE_PATH_AROUSAL)
+joblib.dump(dominance_encoder, ENCODER_SAVE_PATH_DOMINANCE)
+
+# Training loop: start from the second batch
+for i in range(1, len(image_files)):  # Start from i = 1 (second batch)
     print(f"Loading data for batch {i + 1}...")
     try:
         X = np.load(image_files[i], mmap_mode='r').astype('float32')
-        y = np.load(label_files[i], mmap_mode='r').astype('str')  # Load as string for categorical labels
-
-        # Check for empty arrays
-        if X.size == 0 or y.size == 0:
-            raise ValueError(f"Empty data found in batch {i + 1}.")
+        y = np.load(label_files[i], mmap_mode='r').astype('str')
 
         # Separate arousal, dominance, and continuous labels
-        arousal_labels = y[:, 0]  # Assuming the first column is arousal
-        dominance_labels = y[:, 1]  # Assuming the second column is dominance
-        continuous_labels = y[:, 2:].astype(float)  # Remaining columns for continuous values
+        arousal_labels = y[:, 0]
+        dominance_labels = y[:, 1]
+        continuous_labels = y[:, 2:].astype(float)
 
-        # One-hot encoding for arousal and dominance classes
-        if i == 0:
-            # Fit the first encoder on the first categorical variable
-            y_arousal_encoded = arousal_encoder.fit_transform(arousal_labels.reshape(-1, 1))
-            y_dominance_encoded = dominance_encoder.fit_transform(dominance_labels.reshape(-1, 1))
-
-            # Save the OneHotEncoders for later use
-            joblib.dump(arousal_encoder, ENCODER_SAVE_PATH_AROUSAL)
-            joblib.dump(dominance_encoder, ENCODER_SAVE_PATH_DOMINANCE)
-        else:
-            # For subsequent batches, transform using the existing encoders
-            y_arousal_encoded = arousal_encoder.transform(arousal_labels.reshape(-1, 1))
-            y_dominance_encoded = dominance_encoder.transform(dominance_labels.reshape(-1, 1))
+        # One-hot encoding for arousal and dominance classes using pre-fitted encoders
+        y_arousal_encoded = arousal_encoder.transform(arousal_labels.reshape(-1, 1))
+        y_dominance_encoded = dominance_encoder.transform(dominance_labels.reshape(-1, 1))
 
         # Split the data into training and validation sets
         X_train, X_val, y_train_arousal, y_val_arousal, y_train_dominance, y_val_dominance, y_train_continuous, y_val_continuous = train_test_split(
@@ -199,24 +202,6 @@ for i in range(len(image_files)):
         # Train the model
         train_model(best_model, X_train, y_train_arousal, y_train_dominance, y_train_continuous, 
                     X_val, y_val_arousal, y_val_dominance, y_val_continuous, i)
-
-        # Make predictions on validation set
-        val_predictions = best_model.predict(X_val)
-
-        # Inverse transform the predictions to original labels
-        predicted_arousal_labels = arousal_encoder.inverse_transform(val_predictions['arousal_output'])
-        predicted_dominance_labels = dominance_encoder.inverse_transform(val_predictions['dominance_output'])
-
-        # Optionally, you can save these predictions to a file
-        # predictions_df = pd.DataFrame({
-        #     'True Arousal': arousal_encoder.inverse_transform(y_val_arousal),
-        #     'Predicted Arousal': predicted_arousal_labels,
-        #     'True Dominance': dominance_encoder.inverse_transform(y_val_dominance),
-        #     'Predicted Dominance': predicted_dominance_labels
-        # })
-
-        # predictions_csv_path = os.path.join(EXPERIMENTS_DIR, f'batch_{i + 1}_predictions.csv')
-        # predictions_df.to_csv(predictions_csv_path, index=False)
 
         # Clear memory
         del X, y, X_train, X_val, y_train_arousal, y_val_arousal, y_train_dominance, y_val_dominance, y_train_continuous, y_val_continuous
