@@ -16,10 +16,11 @@ BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 IMAGE_DIR = os.path.join(BASE_DIR, 'datasets', 'processed', 'images')
 LABEL_DIR = os.path.join(BASE_DIR, 'datasets', 'processed', 'labels')
 MODEL_SAVE_PATH = os.path.join(BASE_DIR, 'src', 'models', 'resnet50v2_model.keras')
-PLOT_SAVE_DIR = os.path.join(BASE_DIR, 'outputs', 'plots', 'ResNet50V2_plots_4thdtraining')
-EXPERIMENTS_DIR = os.path.join(BASE_DIR, 'experiments', '4thdtrain', 'logs')
-ENCODER_SAVE_PATH_AROUSAL = os.path.join(BASE_DIR, 'label_encoder_arousal.pkl')
-ENCODER_SAVE_PATH_DOMINANCE = os.path.join(BASE_DIR, 'label_encoder_dominance.pkl')
+PLOT_SAVE_DIR = os.path.join(BASE_DIR, 'outputs', 'plots', 'ResNet50V2_plots_finaltraining')
+EXPERIMENTS_DIR = os.path.join(BASE_DIR, 'experiments', 'ResNet50V2_plots_finaltraining', 'logs')
+ENCODER_SAVE_PATH = os.path.join(BASE_DIR, 'outputs', 'label_encoder')
+ENCODER_SAVE_PATH_AROUSAL = os.path.join(ENCODER_SAVE_PATH, 'label_encoder_arousal.pkl')
+ENCODER_SAVE_PATH_DOMINANCE = os.path.join(ENCODER_SAVE_PATH, 'label_encoder_dominance.pkl')
 EPOCHS = 50
 BATCH_SIZE = 32
 TEST_SIZE = 0.2
@@ -82,13 +83,13 @@ def train_model(model, X_train, y_train_arousal, y_train_dominance, y_train_cont
     # Plot training history
     plt.figure(figsize=(12, 6))
     
-    # Arousal precision plot
+    # Arousal accuracy plot
     plt.subplot(2, 2, 1)
-    plt.plot(history.history['arousal_output_precision'], label='Train Arousal Precision')
-    plt.plot(history.history['val_arousal_output_precision'], label='Validation Arousal Precision')
-    plt.title('Arousal Model Precision')
+    plt.plot(history.history['arousal_output_accuracy'], label='Train Arousal Accuracy')
+    plt.plot(history.history['val_arousal_output_accuracy'], label='Validation Arousal Accuracy')
+    plt.title('Arousal Model Accuracy')
     plt.xlabel('Epoch')
-    plt.ylabel('Precision')
+    plt.ylabel('Accuracy')
     plt.legend()
 
     # Arousal loss plot
@@ -100,13 +101,13 @@ def train_model(model, X_train, y_train_arousal, y_train_dominance, y_train_cont
     plt.ylabel('Loss')
     plt.legend()
 
-    # Dominance precision plot
+    # Dominance accuracy plot
     plt.subplot(2, 2, 3)
-    plt.plot(history.history['dominance_output_precision'], label='Train Dominance Precision')
-    plt.plot(history.history['val_dominance_output_precision'], label='Validation Dominance Precision')
-    plt.title('Dominance Model Precision')
+    plt.plot(history.history['dominance_output_accuracy'], label='Train Dominance Accuracy')
+    plt.plot(history.history['val_dominance_output_accuracy'], label='Validation Dominance Accuracy')
+    plt.title('Dominance Model Accuracy')
     plt.xlabel('Epoch')
-    plt.ylabel('Precision')
+    plt.ylabel('Accuracy')
     plt.legend()
 
     # Dominance loss plot
@@ -126,51 +127,36 @@ def train_model(model, X_train, y_train_arousal, y_train_dominance, y_train_cont
 # Model configuration
 input_shape = (256, 256, 3)
 num_arousal_classes = 5  # For categories like excited, calm, etc.
-num_dominance_classes = 4  # For categories like dependent, independent, etc.
+num_dominance_classes = 5  # For categories like dependent, independent, etc.
 
 # Load or create the OneHotEncoders
 if os.path.exists(ENCODER_SAVE_PATH_AROUSAL):
-    print(f"Loading LabelEncoder for Arousal from {ENCODER_SAVE_PATH_AROUSAL}...")
+    print(f"Loading OneHotEncoder for Arousal from {ENCODER_SAVE_PATH_AROUSAL}...")
     arousal_encoder = joblib.load(ENCODER_SAVE_PATH_AROUSAL)
 else:
     arousal_encoder = OneHotEncoder(sparse_output=False)
 
 if os.path.exists(ENCODER_SAVE_PATH_DOMINANCE):
-    print(f"Loading LabelEncoder for Dominance from {ENCODER_SAVE_PATH_DOMINANCE}...")
+    print(f"Loading OneHotEncoder for Dominance from {ENCODER_SAVE_PATH_DOMINANCE}...")
     dominance_encoder = joblib.load(ENCODER_SAVE_PATH_DOMINANCE)
 else:
     dominance_encoder = OneHotEncoder(sparse_output=False)
 
-# First, fit the encoders using the first batch (i=0)
-print("Fitting encoders using the first batch...")
-X_first_batch = np.load(image_files[0], mmap_mode='r').astype('float32')
-y_first_batch = np.load(label_files[0], mmap_mode='r').astype('str')
 
-# Separate arousal, dominance, and continuous labels for the first batch
-arousal_labels_first = y_first_batch[:, 0]
-dominance_labels_first = y_first_batch[:, 1]
-
-# Fit the encoders on the first batch
-y_arousal_encoded_first = arousal_encoder.fit_transform(arousal_labels_first.reshape(-1, 1))
-y_dominance_encoded_first = dominance_encoder.fit_transform(dominance_labels_first.reshape(-1, 1))
-
-# Save the OneHotEncoders for later use
-joblib.dump(arousal_encoder, ENCODER_SAVE_PATH_AROUSAL)
-joblib.dump(dominance_encoder, ENCODER_SAVE_PATH_DOMINANCE)
-
-# Training loop: start from the second batch
-for i in range(1, len(image_files)):  # Start from i = 1 (second batch)
+# Training loop: start from the first batch and exclude the last batch
+for i in range(0, len(image_files) - 1):  # Start from i=0 (first batch) and exclude last batch
     print(f"Loading data for batch {i + 1}...")
     try:
+        # Load the data
         X = np.load(image_files[i], mmap_mode='r').astype('float32')
         y = np.load(label_files[i], mmap_mode='r').astype('str')
 
         # Separate arousal, dominance, and continuous labels
-        arousal_labels = y[:, 0]
-        dominance_labels = y[:, 1]
-        continuous_labels = y[:, 2:].astype(float)
+        arousal_labels = y[:, 0]  # Arousal is in the first column
+        dominance_labels = y[:, 1]  # Dominance is in the second column
+        continuous_labels = y[:, 2:].astype(float)  # Continuous features start from the third column
 
-        # One-hot encoding for arousal and dominance classes using pre-fitted encoders
+        # One-hot encoding for arousal and dominance using the loaded (pre-fitted) encoders
         y_arousal_encoded = arousal_encoder.transform(arousal_labels.reshape(-1, 1))
         y_dominance_encoded = dominance_encoder.transform(dominance_labels.reshape(-1, 1))
 
@@ -197,18 +183,14 @@ for i in range(1, len(image_files)):  # Start from i = 1 (second batch)
                            metrics={'arousal_output': ['accuracy'], 
                                     'dominance_output': ['accuracy']})
 
-        best_model.summary()
-
         # Train the model
         train_model(best_model, X_train, y_train_arousal, y_train_dominance, y_train_continuous, 
                     X_val, y_val_arousal, y_val_dominance, y_val_continuous, i)
 
-        # Clear memory
-        del X, y, X_train, X_val, y_train_arousal, y_val_arousal, y_train_dominance, y_val_dominance, y_train_continuous, y_val_continuous
+        # Free up memory
+        del X, y, y_arousal_encoded, y_dominance_encoded
         gc.collect()
 
     except Exception as e:
-        print(f"An error occurred in batch {i + 1}: {e}")
+        print(f"An error occurred while processing batch {i + 1}: {str(e)}")
         break
-
-print("Training completed.")
