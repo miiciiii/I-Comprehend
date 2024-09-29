@@ -22,7 +22,7 @@ ENCODER_SAVE_PATH = os.path.join(BASE_DIR, 'outputs', 'label_encoder')
 ENCODER_SAVE_PATH_AROUSAL = os.path.join(ENCODER_SAVE_PATH, 'label_encoder_arousal.pkl')
 ENCODER_SAVE_PATH_DOMINANCE = os.path.join(ENCODER_SAVE_PATH, 'label_encoder_dominance.pkl')
 EPOCHS = 50
-BATCH_SIZE = 32
+BATCH_SIZE = 64
 TEST_SIZE = 0.2
 
 # Ensure directories exist
@@ -56,6 +56,9 @@ def create_resnet50v2_model(input_shape, num_arousal_classes, num_dominance_clas
     model = tf.keras.Model(inputs=inputs, outputs={'arousal_output': arousal_output, 
                                                     'dominance_output': dominance_output,
                                                     'continuous_output': continuous_output})
+    
+    model.summary()
+
     return model
 
 # Function to train the model for a batch
@@ -144,7 +147,7 @@ else:
 
 
 # Training loop: start from the first batch and exclude the last batch
-for i in range(0, len(image_files) - 1):  # Start from i=0 (first batch) and exclude last batch
+for i in range(5, len(image_files) - 1):  # Start from i=0 (first batch) and exclude last batch
     print(f"Loading data for batch {i + 1}...")
     try:
         # Load the data

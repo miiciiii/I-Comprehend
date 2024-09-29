@@ -8,8 +8,9 @@ from tensorflow.keras.preprocessing import image
 # Constants
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 MODEL_SAVE_PATH = os.path.join(BASE_DIR, 'src', 'models', 'resnet50v2_model.keras')
-ENCODER_SAVE_PATH_AROUSAL = os.path.join(BASE_DIR, 'label_encoder_arousal.pkl')
-ENCODER_SAVE_PATH_DOMINANCE = os.path.join(BASE_DIR, 'label_encoder_dominance.pkl')
+ENCODER_SAVE_PATH = os.path.join(BASE_DIR, 'outputs', 'label_encoder')
+ENCODER_SAVE_PATH_AROUSAL = os.path.join(ENCODER_SAVE_PATH, 'label_encoder_arousal.pkl')
+ENCODER_SAVE_PATH_DOMINANCE = os.path.join(ENCODER_SAVE_PATH, 'label_encoder_dominance.pkl')
 PREDICTION_OUTPUT_DIR = os.path.join(BASE_DIR, 'outputs', 'predictions')
 
 # Ensure output directory exists
